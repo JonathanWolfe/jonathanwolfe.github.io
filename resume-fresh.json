@@ -1,10 +1,14 @@
 {
     "name": "Jon Wolfe",
+    "meta": {
+        "format": "FRESH@0.6.0",
+        "version": "1.0.0"
+    },
     "info": {
         "label": "Frontend Developer",
         "characterClass": "Programmer",
         "image": "https://scontent-iad3-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/11692524_10207153247408203_4755448860691554071_n.jpg?oh=d6b5e60e9c161d4bf9aa1e8c45a4f499&oe=56F62991",
-        "brief": "Originally from Greenville, SC and then Charlotte, NC, Jon has spent a lot of time moving around the Carolinas. He obtained a degree in Social Psychology while at Appalachian State University. Jon got his start in web development early on in his life during middle school and has continued that ever since. When he's not programming for a client or making a small tool for himself or his friends, he can usually be found enjoying a book, manga, movie, or anime (that is if he's not playing a video game with his friends).",
+        "brief": "Originally from Greenville, SC and then Charlotte, NC, Jon has spent a lot of time moving around the Carolinas. He obtained a degree in Social Psychology while at Appalachian State University. Jon got his start in web development early on in his life during middle school and has continued that ever since. When he's not programming for a client or making a small tool for himself or his friends, he can usually be found enjoying a book, manga, movie, or anime (that is if he's not playing a video game with his friends)."
     },
     "contact": {
         "website": "https://jonathanwolfe.github.io",
@@ -53,7 +57,7 @@
             "start": "2015-03",
             "end": "2016-03",
             "summary": "Initially brought on to salvage the original product of the same name which was a large scale social network intent on bringing people together at real life physical locations and helping them plan their future endeavors and plans.  The app also helped business to connect and identify their clientele and offer them much more direct engagement.  After stabilizing the project and fixing all bugs, a mostly comprehensive overhaul was done which drastically improved the application's responsiveness, features, and usability.",
-            "keyworks": ["Ember.js", "Node.js", "Riot.js", "JavaScript", "HTML", "CSS", "PostCSS", "Sass", "SPA", "Server-side Rendering"],
+            "keywords": ["Ember.js", "Node.js", "Riot.js", "JavaScript", "HTML", "CSS", "PostCSS", "Sass", "SPA", "Server-side Rendering"],
             "highlights": [
                 "Salvaged a completely broken and unfinished large-scale product",
                 "Greatly improved existing feature set",
@@ -67,7 +71,7 @@
             "start": "2015-01-04",
             "end": "2015-03-01",
             "summary": "Was tasked with handling the company's agency work while most of it's developers where engaged in building the Socialtopias App (see next employer).  After failing to complete the project and losing the contract, I was let go for monetary reasons.",
-            "keyworks": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"],
+            "keywords": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"],
             "highlights": [
                 "Built modern Wordpress templates with fully responsive capabilities",
                 "Helped teach co-workers how to use Git and other tools"
@@ -79,18 +83,18 @@
             "start": "2014-08-10",
             "end": "2014-11-24",
             "summary": "Maintained many existing company and business sites as well implemented new features and fixes for those. Crafted new products for their budding digital presence.",
-            "keyworks": ["HTML", "CSS", "JavaScript", "PHP", "SPA"],
+            "keywords": ["HTML", "CSS", "JavaScript", "PHP", "SPA"],
             "highlights": [
                 "Integrated new online payment platform and interactions",
                 "Constructed a complete real estate platform with fully responsive elements"
             ]
         }, {
-            "company": "Fire Studios",
+            "employer": "Fire Studios",
             "position": "Owner & Sole Developer",
             "start": "2005-02-12",
             "end": "2013-02-12",
             "summary": "Owned and operated a small freelance company that covered both back-end PHP work as well as front-end contracts (HTML, CSS, JS). Outsourced any excess work and managed those contractors.",
-            "keyworks": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"],
+            "keywords": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"],
             "highlights": [
                 "Worked across several languages like JS & PHP",
                 "Worked with various size companies and the semi-local University of South Carolina",
@@ -109,7 +113,7 @@
             "summary": "Obtained a Bachelor of Arts degree in Social Psychology which focused on the interaction and thinking of people in various environments.",
             "start": "2010-08-15",
             "end": "2014-05-05",
-            "grade": "3.0",
+            "grade": "3.0"
         }]
     },
     "writing": [{
@@ -147,7 +151,7 @@
         "sets": [{
             "name": "Frontend Development",
             "level": "Master",
-            "keywords": [
+            "skills": [
                 "HTML",
                 "CSS",
                 "JavaScript",
@@ -158,14 +162,14 @@
         }, {
             "name": "Backend Development",
             "level": "Intermediate",
-            "keywords": [
+            "skills": [
                 "PHP",
                 "Node.JS"
             ]
         }, {
             "name": "Software Architecture",
             "level": "Intermediate",
-            "keywords": [
+            "skills": [
                 "Nginx",
                 "Node.JS",
                 "Linux"
@@ -187,7 +191,7 @@
     }, {
         "language": "German",
         "fluency": "Intermediate",
-        "years": 2,
+        "years": 2
     }],
     "interests": [{
         "name": "Computer Programming",
