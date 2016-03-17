@@ -11,6 +11,7 @@
             html, body, main, section, header, ul, p, h1, h2, h3 {
               font-family: 'Calibri', 'Open Sans', 'sans-serif';
               font-size: 14px;
+              line-height: 1.4;
               margin: 0; padding: 0;
               display: block;
             }
@@ -48,7 +49,8 @@
             
             h3 {
               margin-top: 0;
-              width: 66%;
+              margin-bottom: 5px;
+              width: 85%;
               float: left;
             }
             
@@ -60,8 +62,8 @@
             
             td:first-child {
               text-align: right;
-              color: #A9A9A9;
-              letter-spacing: 5px;
+              color: #c00000;
+              letter-spacing: 2px;
               font-weight: bold;
             }
             
@@ -80,7 +82,7 @@
             }
             
             section {
-              margin-top: 1em;
+              margin-top: 2em;
             }
             
             section > div {
@@ -94,6 +96,10 @@
             
             section > header {
               position: relative;
+            }
+            
+            p + ul {
+              margin: 1em;
             }
             
             ul {
@@ -118,7 +124,7 @@
             }
             
             span.keywords {
-              font-size: 10px;
+              font-size: 12px;
               color: #B16666;
             }
             
@@ -146,6 +152,11 @@
             #contact {
              clear: both;
              float: right;
+             margin-top: 2px;
+            }
+            
+            #contact span + span {
+              margin-left: 10px;
             }
             
             header > span.fa {
@@ -168,6 +179,12 @@
             #summary {
               color: #717171;
               font-size: 1.25em;
+              margin-top: 6em;
+            }
+            
+            #skills td {
+              padding-top: 7px;
+              padding-bottom: 7px;
             }
         </style>
     </head>
