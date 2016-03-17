@@ -5,7 +5,8 @@
   "description": "resume for jon wolfe",
   "main": "index.html",
   "scripts": {
-    "build": "hackmyresume build resume.json to index.html resume.all",
+    "build": "hackmyresume build resume.json to index.html readme.md resume.pdf -t positive",
+    "postbuild": "rm -rf *pdf.*",
     "analyze": "hackmyresume analyze resume.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
