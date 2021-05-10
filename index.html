@@ -9,76 +9,77 @@
 			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
 		<style>
-			/* Utils */
-			/*----- Colors -----*/
-			/*----- Fonts -----*/
-			/*----- Dimensions and sizes -----*/
-			/* Base */
 			@font-face {
-				font-family: 'Josefin Sans';
+				font-family: "Josefin Sans";
 				font-style: normal;
 				font-weight: 300;
-				src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04zwV_pQ1T3xN3K1c3sB361us.ttf) format('truetype');
+				src: local("Josefin Sans Light"), local("JosefinSans-Light"),
+					url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04zwV_pQ1T3xN3K1c3sB361us.ttf) format("truetype");
 			}
 
 			@font-face {
-				font-family: 'Josefin Sans';
+				font-family: "Josefin Sans";
 				font-style: normal;
 				font-weight: 700;
-				src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z306qf9KHRHwsVx7iw5MXmY.ttf) format('truetype');
+				src: local("Josefin Sans Bold"), local("JosefinSans-Bold"),
+					url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z306qf9KHRHwsVx7iw5MXmY.ttf) format("truetype");
 			}
 
 			@font-face {
-				font-family: 'Lato';
+				font-family: "Lato";
 				font-style: normal;
 				font-weight: 300;
-				src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/nj47mAZe0mYUIySgfn0wpQ.ttf) format('truetype');
+				src: local("Lato Light"), local("Lato-Light"),
+					url(https://fonts.gstatic.com/s/lato/v11/nj47mAZe0mYUIySgfn0wpQ.ttf) format("truetype");
 			}
 
 			@font-face {
-				font-family: 'Lato';
+				font-family: "Lato";
 				font-style: normal;
 				font-weight: 400;
-				src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+				src: local("Lato Regular"), local("Lato-Regular"),
+					url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format("truetype");
 			}
 
 			@font-face {
-				font-family: 'Lato';
+				font-family: "Lato";
 				font-style: normal;
 				font-weight: 700;
-				src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/DvlFBScY1r-FMtZSYIYoYw.ttf) format('truetype');
+				src: local("Lato Bold"), local("Lato-Bold"),
+					url(https://fonts.gstatic.com/s/lato/v11/DvlFBScY1r-FMtZSYIYoYw.ttf) format("truetype");
 			}
 
 			@font-face {
-				font-family: 'Lato';
+				font-family: "Lato";
 				font-style: italic;
 				font-weight: 300;
-				src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+				src: local("Lato Light Italic"), local("Lato-LightItalic"),
+					url(https://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivKCWcynf_cDxXwCLxiixG1c.ttf) format("truetype");
 			}
 
 			@font-face {
-				font-family: 'Lato';
+				font-family: "Lato";
 				font-style: italic;
 				font-weight: 400;
-				src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/LqowQDslGv4DmUBAfWa2Vw.ttf) format('truetype');
+				src: local("Lato Italic"), local("Lato-Italic"),
+					url(https://fonts.gstatic.com/s/lato/v11/LqowQDslGv4DmUBAfWa2Vw.ttf) format("truetype");
 			}
 
 			@font-face {
-				font-family: 'Lato';
+				font-family: "Lato";
 				font-style: italic;
 				font-weight: 700;
-				src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+				src: local("Lato Bold Italic"), local("Lato-BoldItalic"),
+					url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEKCWcynf_cDxXwCLxiixG1c.ttf) format("truetype");
 			}
 
 			body {
 				font-family: "Lato", Helvetica, Arial, sans-serif;
 				font-weight: 400;
 				background: #393e46;
-				/* background: #f8f8f8; */
-				/* margin: 50px 0 100px; */
 				margin: 0;
-				letter-spacing: .3px;
-				color: #39424B;
+				color: #39424b;
+				line-height: 1.6;
 			}
 
 			h1,
@@ -87,7 +88,6 @@
 			h4,
 			h5,
 			h6 {
-				text-transform: uppercase;
 				margin: 0;
 			}
 
@@ -102,27 +102,26 @@
 				font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
 				font-weight: 300;
 				font-size: 16px;
-				letter-spacing: .5px;
+				letter-spacing: 0.5px;
 			}
 
 			h3 {
 				font-family: "Lato", Helvetica, Arial, sans-serif;
 				font-weight: 300;
-				font-size: 14px;
-				letter-spacing: .4px;
+				letter-spacing: 0.4px;
 				padding-top: 4px;
-				padding-left: 2px;
-				padding-right: 2px;
+				padding-left: 10px;
+				padding-right: 10px;
 			}
 
 			h3.bold {
 				font-weight: 700;
+				padding-left: 0;
 			}
 
 			h4 {
 				font-family: "Lato", Helvetica, Arial, sans-serif;
 				font-weight: 300;
-				font-size: 12px;
 			}
 
 			h4.bold {
@@ -132,7 +131,7 @@
 			h5 {
 				font-family: "Lato", Helvetica, Arial, sans-serif;
 				font-weight: 300;
-				font-size: 11px;
+				font-size: 14px;
 			}
 
 			h5.italic {
@@ -142,7 +141,7 @@
 			h6 {
 				font-family: "Lato", Helvetica, Arial, sans-serif;
 				font-weight: 400;
-				font-size: 11px;
+				font-size: 12px;
 			}
 
 			a {
@@ -153,7 +152,7 @@
 			a:hover,
 			a:hover>i.fa-external-link,
 			.info-tag-container a:hover .fa.fa-external-link {
-				color: #2895F1;
+				color: #2895f1;
 			}
 
 			a .fa-external-link {
@@ -165,13 +164,11 @@
 
 			p,
 			li {
-				font-size: 13px;
 				font-weight: 200;
-				letter-spacing: .4px;
+				letter-spacing: 0.4px;
 			}
 
 			blockquote {
-				font-size: 11px;
 				font-family: "Lato", Helvetica, Arial, sans-serif;
 				font-weight: 400;
 				font-style: italic;
@@ -216,7 +213,7 @@
 			}
 
 			@page {
-				size: A4;
+				size: letter;
 			}
 
 			.container {
@@ -225,9 +222,8 @@
 
 			.keyline {
 				width: 45px;
-				/* margin: 8px 0 10px; */
 				margin: 4px 0 10px;
-				border-top: 1px solid #FF5701;
+				border-top: 1px solid #ff5701;
 			}
 
 			.pull-left {
@@ -252,33 +248,13 @@
 				clear: both;
 			}
 
-			/*
-.profile-header {
-    width: auto;
-    max-width:  300px;
-    margin-right: 50px;
-}
-*/
-
-			/*
-.profile-pic {
-    width: auto;
-    max-width: 800px;
-    margin-right: auto;
-    /* margin-top: -5px; */
-			/* margin-right: 18px; */
-			/*
-}
-*/
-
 			.profile-pic img {
 				height: 150px;
-				width: 120px;
 				border-radius: 10%;
 				padding: 2px;
-				border: 2px solid #FF5701;
+				border: 2px solid #ff5701;
 				object-fit: cover;
-				background: #FFFFFF;
+				background: #ffffff;
 				float: right;
 			}
 
@@ -290,15 +266,13 @@
 			.page {
 				background: #222831;
 				color: #eeeeee;
-				/* width: 612px; */
 				min-height: 792px;
 				display: block;
 				margin: 0 auto;
-				border-top: 10px solid #FF5701;
-				/* padding: 36px 22px 30px 34px; */
+				border-top: 10px solid #ff5701;
 				padding: 50px;
-				/* 50px calc(50px + 10%);*/
 				box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+				max-width: 1000px;
 			}
 
 			.page:after {
@@ -310,9 +284,7 @@
 			.left-column,
 			.profile-header {
 				float: left;
-				/* width: 160px; */
 				width: 300px;
-				/* margin-right: 20px; */
 				margin-right: 50px;
 				word-wrap: break-word;
 			}
@@ -322,12 +294,10 @@
 				width: auto;
 				overflow: hidden;
 				max-width: 850px;
-				/* margin-right: 50px; */
 				margin: 0 auto;
 			}
 
 			.item {
-				/* margin-bottom: 15px; */
 				margin-top: 20px;
 				padding-top: 20px;
 				border-top: 1px solid #393e46;
@@ -346,9 +316,9 @@
 
 			.title>i {
 				float: left;
-				padding-top: 4px;
-				padding-left: 4px;
-				padding-right: 4px;
+				padding-top: 11px;
+				padding-left: 10px;
+				padding-right: 10px;
 			}
 
 			.right-column>.container>.title {
@@ -356,7 +326,7 @@
 			}
 
 			.gpa {
-				border: 1px solid #FFFFFF;
+				border: 1px solid #ffffff;
 				border-radius: 35%;
 				padding: 2px;
 				margin-left: 5px;
@@ -373,40 +343,13 @@
 					margin: 0;
 				}
 
-				.skills-container>section>ul>li
-
-				/*,.languages-container > ul > li */
-					{
+				.skills-container>section>ul>li {
 					display: inline;
 				}
 
-				.skills-container>section>ul>li>h6
-
-				/*,.languages-container > ul > li > h6 */
-					{
+				.skills-container>section>ul>li>h6 {
 					padding-right: 10px;
 					display: inline;
-				}
-
-				.info-tag-container .info-text {
-					font-size: 14px !important;
-				}
-
-				h3 {
-					font-size: 16px !important;
-				}
-
-				h4 {
-					font-size: 14px !important;
-				}
-
-				h6 {
-					font-size: 12px !important;
-				}
-
-				p,
-				li {
-					font-size: 14px;
 				}
 
 				.item {
@@ -418,17 +361,17 @@
 			@media print {
 				body {
 					margin: 0;
-					background: #FFFFFF;
+					background: #ffffff;
 					color: #000;
 				}
 
 				main {
-					background: #FFFFFF !important;
+					background: #ffffff !important;
 					color: black !important;
 				}
 
 				@page {
-					border-top: 2px solid #FFFFFF;
+					border-top: 2px solid #ffffff;
 				}
 
 				.page {
@@ -437,30 +380,24 @@
 					height: 100%;
 					margin: 0;
 					padding: 35px 0 35px;
-					/* 35px  35px; */
 					box-shadow: none;
 				}
 
 				.title {
 					background-color: #393e46;
-					color: #FFFFFF;
+					color: #ffffff;
 					page-break-inside: avoid;
 				}
 
 				.keyline {
 					width: 45px;
-					/* margin: 8px 0 10px; */
 					margin: 4px 0 10px;
-					border-top: 2px solid #FF5701;
+					border-top: 2px solid #ff5701;
 				}
 
 				.page .resume-header,
 				.page .resume-content {
 					padding: 0 35px 0 35px;
-				}
-
-				.container>section {
-					page-break-inside: avoid;
 				}
 
 				.left-column {
@@ -488,27 +425,10 @@
 			}
 
 			.info-tag-container .fa {
-				font-size: 14px;
 				width: 12px;
 				margin-right: 5px;
 				text-align: center;
 				vertical-align: middle;
-			}
-
-			.info-tag-container .fa.fa-map-marker {
-				font-size: 16px;
-			}
-
-			.info-tag-container .fa.fa-mobile {
-				font-size: 18px;
-			}
-
-			.info-tag-container .fa.fa-envelope-o {
-				font-size: 12px;
-			}
-
-			.info-tag-container .fa.fa-desktop {
-				font-size: 11px;
 			}
 
 			.info-tag-container .fa.fa-external-link {
@@ -520,14 +440,9 @@
 			}
 
 			.info-tag-container .info-text {
-				font-size: 11px;
+				font-size: 14px;
 				display: inline-block;
 				vertical-align: middle;
-				/* width: 139px; */
-			}
-
-			.references-container .fa {
-				font-size: 14px;
 			}
 
 		</style>
@@ -650,6 +565,9 @@
 								<li>
 									<h6>Next.js</h6>
 								</li>
+								<li>
+									<h6>React</h6>
+								</li>
 							</ul>
 						</section>
 						<section class="container">
@@ -735,7 +653,7 @@
 						<section class="item">
 							<h4 class="bold">Trivia</h4>
 							<ul class="minimal">
-								<li>How It's Made</li>
+								<li>How It&#x27;s Made</li>
 								<li>How Do They Do It</li>
 								<li>Unwrapped</li>
 							</ul>
@@ -875,8 +793,8 @@
 									</a>
 								</h3>
 								<h5 class="italic pull-right">
-									<span class="startDate">03/01/2015</span>
-									<span class="endDate"> - 28/02/2015</span>
+									<span class="startDate">12/2014</span>
+									<span class="endDate"> - 02/2015</span>
 								</h5>
 							</div>
 
@@ -901,8 +819,8 @@
 									</a>
 								</h3>
 								<h5 class="italic pull-right">
-									<span class="startDate">09/08/2014</span>
-									<span class="endDate"> - 23/11/2014</span>
+									<span class="startDate">07/2014</span>
+									<span class="endDate"> - 10/2014</span>
 								</h5>
 							</div>
 
@@ -924,8 +842,8 @@
 									Fire Studios
 								</h3>
 								<h5 class="italic pull-right">
-									<span class="startDate">11/02/2005</span>
-									<span class="endDate"> - 11/02/2013</span>
+									<span class="startDate">01/2005</span>
+									<span class="endDate"> - 01/2013</span>
 								</h5>
 							</div>
 
@@ -1014,9 +932,9 @@
 						<section class="item clearfix">
 							<i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
 							<blockquote>
-								It’s rare that you come across standout talent and mind like Jon's. I hired Jon as a
-								front end web developer and he is quite skilled in this area. Jon always has a handle on
-								the latest available technologies and tools and went beyond his role as developer to
+								It’s rare that you come across standout talent and mind like Jon&#x27;s. I hired Jon as
+								a front end web developer and he is quite skilled in this area. Jon always has a handle
+								on the latest available technologies and tools and went beyond his role as developer to
 								also help out other team members with other aspects of our tech stack outside the front
 								end web application development arena. He is also masterful with git version control
 								tools, which helped a lot as our project was ramping up and we were creating the

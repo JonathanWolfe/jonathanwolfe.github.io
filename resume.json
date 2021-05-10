@@ -145,7 +145,8 @@
                 "Gulp",
                 "Ember",
                 "Polymer",
-                "Next.js"
+                "Next.js",
+                "React"
             ]
         },
         {

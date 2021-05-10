@@ -98,7 +98,7 @@ Helped dig troughs for the water pipes to the building
 
 ## Skills
 
-* Master in Frontend Development (HTML, CSS, JavaScript, Riot.js, Gulp, Ember, Polymer, Next.js)
+* Master in Frontend Development (HTML, CSS, JavaScript, Riot.js, Gulp, Ember, Polymer, Next.js, React)
 * Intermediate in Backend Development (Python, Node.JS, MySQL)
 * Intermediate in Software Architecture (Terraform, AWS, Nginx, Node.JS, Linux)
 
@@ -116,10 +116,18 @@ Helped dig troughs for the water pipes to the building
 
 ## References
 
-> Jon is one of the best developers I had pleasure to work with. He is passionate about what he is doing and never cuts corners. Never afraid to raise his concerns and propose the best solution for given problem. I have learned a lot from him and think he is going to be a great addition to any team. -- <cite>Yury Katko - Siemens</cite>
+> Jon is one of the best developers I had pleasure to work with. He is passionate about what he is doing and never cuts corners. Never afraid to raise his concerns and propose the best solution for given problem. I have learned a lot from him and think he is going to be a great addition to any team.
+>
+> -- <cite>Yury Katko - Siemens</cite>
 
-> It’s rare that you come across standout talent and mind like Jon's. I hired Jon as a front end web developer and he is quite skilled in this area. Jon always has a handle on the latest available technologies and tools and went beyond his role as developer to also help out other team members with other aspects of our tech stack outside the front end web application development arena. He is also masterful with git version control tools, which helped a lot as our project was ramping up and we were creating the internal tools and processes to get things done. Jon is punctual and reliable too. Jon would be good on any web app team. -- <cite>Corky Kaericher - Socialtopias</cite>
+> It’s rare that you come across standout talent and mind like Jon's. I hired Jon as a front end web developer and he is quite skilled in this area. Jon always has a handle on the latest available technologies and tools and went beyond his role as developer to also help out other team members with other aspects of our tech stack outside the front end web application development arena. He is also masterful with git version control tools, which helped a lot as our project was ramping up and we were creating the internal tools and processes to get things done. Jon is punctual and reliable too. Jon would be good on any web app team.
+>
+> -- <cite>Corky Kaericher - Socialtopias</cite>
 
-> A wonderful and talented developer. -- <cite>Bill McCowen - The Idea People</cite>
+> A wonderful and talented developer.
+>
+> -- <cite>Bill McCowen - The Idea People</cite>
 
-> Every bit the developer he claimed to be and then some. -- <cite>Sara Garces Roselli - Mythic</cite>
+> Every bit the developer he claimed to be and then some.
+>
+> -- <cite>Sara Garces Roselli - Mythic</cite>

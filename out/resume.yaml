@@ -70,8 +70,8 @@
       company: "The Idea People"
       position: "Frontend Developer"
       website: "http://theideapeople.com/"
-      startDate: "2015-01-04"
-      endDate: "2015-03-01"
+      startDate: "2015-01"
+      endDate: "2015-03"
       summary: "Was tasked with handling the company's agency work while most of it's developers where engaged in building the Socialtopias App (see next company).  After failing to complete the project and losing the contract, I was let go for monetary reasons."
       highlights: 
         - "Built modern Wordpress templates with fully responsive capabilities"
@@ -80,8 +80,8 @@
       company: "Mythic"
       position: "Frontend Developer - Consultant"
       website: "http://bemythic.com/"
-      startDate: "2014-08-10"
-      endDate: "2014-11-24"
+      startDate: "2014-08"
+      endDate: "2014-11"
       summary: "Maintained many existing company and business sites as well implemented new features and fixes for those. Crafted new products for their budding digital presence."
       highlights: 
         - "Integrated new online payment platform and interactions"
@@ -89,8 +89,8 @@
     - 
       company: "Fire Studios"
       position: "Owner and Sole Developer"
-      startDate: "2005-02-12"
-      endDate: "2013-02-12"
+      startDate: "2005-02"
+      endDate: "2013-02"
       summary: "Owned and operated a small freelance company that covered both back-endDate PHP work as well as front-endDate contracts (HTML, CSS, JS). Outsourced any excess work and managed those contractors."
       highlights: 
         - "Worked across several languages like JS & PHP"
@@ -122,6 +122,7 @@
         - "Ember"
         - "Polymer"
         - "Next.js"
+        - "React"
     - 
       name: "Backend Development"
       level: "Intermediate"
@@ -145,32 +146,27 @@
     - 
       language: "German"
       fluency: "Beginner"
-      years: 2
   interests: 
     - 
       name: "Computer Programming"
-      summary: "Jon seriously loves programming and computer science."
       keywords: 
         - "Video Game Programming"
         - "IDE / Text Editors"
         - "UI Programming Languages/Libraries"
     - 
       name: "Video Game Playing"
-      summary: "Jon's a big fan of Japanese role-playing games and various other games inbetween play throughs."
       keywords: 
         - "JRPGs"
         - "League of Legends"
         - "Competitive Shooters"
     - 
       name: "Trivia"
-      summary: "Jon frequently hears \"Why do you even know that!?\""
       keywords: 
         - "How It's Made"
         - "How Do They Do It"
         - "Unwrapped"
     - 
       name: "Reading / Writing"
-      summary: "Jon enjoys reading when he needs a break from everything else."
       keywords: 
         - "Manga"
         - "High Fantasy Novels"
@@ -179,17 +175,13 @@
   references: 
     - 
       name: "Yury Katko - Siemens"
-      flavor: "professional"
       reference: "Jon is one of the best developers I had pleasure to work with. He is passionate about what he is doing and never cuts corners. Never afraid to raise his concerns and propose the best solution for given problem. I have learned a lot from him and think he is going to be a great addition to any team."
     - 
       name: "Corky Kaericher - Socialtopias"
-      flavor: "professional"
       reference: "It’s rare that you come across standout talent and mind like Jon's. I hired Jon as a front end web developer and he is quite skilled in this area. Jon always has a handle on the latest available technologies and tools and went beyond his role as developer to also help out other team members with other aspects of our tech stack outside the front end web application development arena. He is also masterful with git version control tools, which helped a lot as our project was ramping up and we were creating the internal tools and processes to get things done. Jon is punctual and reliable too. Jon would be good on any web app team."
     - 
       name: "Bill McCowen - The Idea People"
-      flavor: "professional"
       reference: "A wonderful and talented developer."
     - 
       name: "Sara Garces Roselli - Mythic"
-      flavor: "professional"
       reference: "Every bit the developer he claimed to be and then some."
