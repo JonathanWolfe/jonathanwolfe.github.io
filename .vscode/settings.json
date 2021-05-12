@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "resume.{docx,html,pdf,png,yaml}": true,
+        "yarn.lock": true
+    }
+}
