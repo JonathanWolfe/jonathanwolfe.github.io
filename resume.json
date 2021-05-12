@@ -58,7 +58,7 @@
             "website": "https://product-intelligence.mindsphere.io",
             "startDate": "2015-05",
             "endDate": "2020-01",
-            "summary": "Refactor and replace a legacy prototype shipped to production with a modern, web-components based UI for Mindsphere's \"Big Data\" Analytics product, Product Intelligence. Built with Polymer 1 (web components v0), sass, and lots of reusable and composable componets that are the being used as the base line for quality for the rest of Mindsphere UI.",
+            "summary": "Refactor and replace a legacy prototype shipped to production with a modern, web-components based UI for Mindsphere's \"Big Data\" Analytics product, Product Intelligence. Built with Polymer 1 (web components v0), sass, and lots of reusable and composable components that are the being used as the base line for quality for the rest of Mindsphere UI.",
             "highlights": [
                 "Refactored a multi-million dollar application to modern standards",
                 "Improved UI performance by 7x",

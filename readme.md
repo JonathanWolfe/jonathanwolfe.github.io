@@ -40,7 +40,7 @@ Primary developer on a full stack Next.JS client and node-based API for managing
 * Improved UI performance by 7x
 * Decreased page weight by 1-4mb (down to 200kb-1mb depending on the page)
 
-Refactor and replace a legacy prototype shipped to production with a modern, web-components based UI for Mindsphere's &quot;Big Data&quot; Analytics product, Product Intelligence. Built with Polymer 1 (web components v0), sass, and lots of reusable and composable componets that are the being used as the base line for quality for the rest of Mindsphere UI.
+Refactor and replace a legacy prototype shipped to production with a modern, web-components based UI for Mindsphere's &quot;Big Data&quot; Analytics product, Product Intelligence. Built with Polymer 1 (web components v0), sass, and lots of reusable and composable components that are the being used as the base line for quality for the rest of Mindsphere UI.
 
 ### Frontend Developer, [Socialtopias](https://socialtopias.com)
 ##### 2015-03 - 2016-03
