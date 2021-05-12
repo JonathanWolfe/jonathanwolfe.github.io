@@ -5,7 +5,7 @@
   "description": "resume for jon wolfe",
   "main": "index.html",
   "scripts": {
-    "build": "cross-env RENDER_MARKDOWN=true PROCESS_IMAGE=true kissmyresume build ./resume.json --theme my-theme",
+    "build": "cross-env RENDER_MARKDOWN=true PROCESS_IMAGE=true kissmyresume build ./resume.json --theme my-theme --out .",
     "serve": "cross-env RENDER_MARKDOWN=true PROCESS_IMAGE=true kissmyresume serve ./resume.json --theme my-theme",
     "markdown": "resume export markdown.html -r resume.json -t markdown && mv -f markdown.html readme.md",
     "validate": "kissmyresume validate ./resume.json"
