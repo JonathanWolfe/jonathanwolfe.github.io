@@ -32,9 +32,9 @@ Frontend Developer of 13 years turned Fullstack when Node.JS exploded in popular
 
 * Increased TypeScript adoption and coverage throughout the codebase
 * Acting engineering manager for the team for 2 years
-* Maintained a collection of teaching resources for other to use and learn from
+* Maintained a collection of teaching resources for others to use and learn from
 
-Tech lead for the Growth team. Launched large additions to the payment/subscription system to allow for international currencies and automatic tax collection. Converted the marketing site to a headless CMS to allow for legacy content and new components to coexist. Owned and integrated a feature-flag and experiment system into the product with strong team adoption.
+Tech lead for the Growth team. Launched large additions to the payment/subscription system to allow for international currencies and automatic tax collection. Converted the marketing site to a headless CMS to allow for legacy content and new components to coexist. Owned and integrated a feature-flag and experiment system into the product with strong adoption across all teams.
 
 ### Lead Developer, [PigKnows](https://pigknows.com)
 ##### 2020-01 - 2021-05
@@ -130,7 +130,11 @@ Helped dig troughs for the water pipes to the building
 ## References
 
 > Jon is a highly skilled developer with a unique capacity to cut through noise and identify an optimal path to a technical solution. He is consistent in his output, and can be relied upon to produce at a steady, predictable pace. This is in regards to not only his work ethic, but also his ability to move through previously un-encountered technical challenges. Give Jon a codebase in which he has not previously worked, and he will sort it out and be producing with it in very short order. He is very aware of current and emerging technologies, but applies them to solutions in a sensible manner (rather than using personal interest as a primary motivator). -- <cite>Nick Hendricks - PigKnows</cite>
+>
 > Jon is one of the best developers I had pleasure to work with. He is passionate about what he is doing and never cuts corners. Never afraid to raise his concerns and propose the best solution for given problem. I have learned a lot from him and think he is going to be a great addition to any team. -- <cite>Yury Katko - Siemens</cite>
+>
 > It’s rare that you come across standout talent and mind like Jon&#x27;s. I hired Jon as a front end web developer and he is quite skilled in this area. Jon always has a handle on the latest available technologies and tools and went beyond his role as developer to also help out other team members with other aspects of our tech stack outside the front end web application development arena. He is also masterful with git version control tools, which helped a lot as our project was ramping up and we were creating the internal tools and processes to get things done. Jon is punctual and reliable too. Jon would be good on any web app team. -- <cite>Corky Kaericher - Socialtopias</cite>
+>
 > A wonderful and talented developer. -- <cite>Bill McCowen - The Idea People</cite>
+>
 > Every bit the developer he claimed to be and then some. -- <cite>Sara Garces Roselli - Mythic</cite>
