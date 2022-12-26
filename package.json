@@ -21,12 +21,12 @@
   },
   "homepage": "https://github.com/JonathanWolfe/jonathanwolfe.github.io#readme",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "cross-env": "^7.0.3",
     "jsonresume-theme-markdown": "^1.0.2",
     "jsonresume-theme-my-theme": "JonathanWolfe/jsonresume-theme-mocha-responsive",
     "kiss-my-resume": "^0.8.2",
-    "resume-cli": "^3.0.4"
+    "resume-cli": "^3.0.8"
   },
   "resolutions": {
     "debug": "^4.3.1"
