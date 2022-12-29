@@ -9,10 +9,9 @@ Email: [jonathanwolfe5@gmail.com](mailto:jonathanwolfe5@gmail.com)
 Website: [https://jonathanwolfe.github.io](https://jonathanwolfe.github.io)
 Phone: (704) 301-7568
 
-City: Columbus
-Postal Code: 43016
-
-Country: Ohio
+City: NYC
+Postal Code: 11358
+State: NY
 
 ## Profiles
 
