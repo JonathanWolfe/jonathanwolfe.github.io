@@ -24,7 +24,7 @@ Postal Code: 11358
 
 Over more than a dozen years as a developer, I&#x27;ve grown from a PSD slicer, to a static site developer, to building CMS templates, to a dedicated Frontend Developer, and now a fullstack developer. I&#x27;ve watched the web as an industry grow and mature from Java Applets, then to PHP &amp; jQuery, next the MVC framework explosion, and now the meta-framework era. With each turn of the ages, I grew and evolved alongside the industry, making sure I was always riding the most-likely big waves and learning not just how a singular library or framework worked, but how they were built and how the underlying fundamentals interacted to create the interactions and patterns we used.
 
- I see myself currently as a someone who strives to create software that brings direct value to users, and does so while being built on patterns and systems that should let the software outlive me. I&#x27;ve spent a majority of the second half of my career moving legacy systems over to modern toolsets, leading projects to help scale systems to new orders of magnitude, and creating tooling that brings more speed and reliability to developers and companies.
+ I see myself currently as someone who strives to create software that brings direct value to users, and does so while being built on patterns and systems that should let the software outlive me. I&#x27;ve spent a majority of the second half of my career moving legacy systems over to modern toolsets, leading projects to help scale systems to new orders of magnitude, and creating tooling that brings more speed and reliability to developers and companies.
 
 ## Work
 
