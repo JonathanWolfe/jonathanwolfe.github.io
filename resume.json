@@ -176,7 +176,12 @@
             ]
         }]
     },
-    "testimonials": [{
+    "testimonials": [
+    {
+        "name": "Corky Kaericher - Socialtopias",
+        "flavor": "professional",
+        "quote": "It’s rare that you come across standout talent and mind like Jon's. I hired Jon as a front end web developer and he is quite skilled in this area. Jon always has a handle on the latest available technologies and tools and went beyond his role as developer to also help out other team members with other aspects of our tech stack outside the front end web application development arena. He is also masterful with git version control tools, which helped a lot as our project was ramping up and we were creating the internal tools and processes to get things done. Jon is punctual and reliable too. Jon would be good on any web app team."
+        },{
         "name": "Bill McCowen - The Idea People",
         "flavor": "professional",
         "quote": "A wonderful and talented developer."
