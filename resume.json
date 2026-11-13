@@ -124,7 +124,10 @@
 		"keywords": [
 			"HTML",
 			"CSS",
-			"JavaScript"
+			"JavaScript",
+			"Riot.js",
+			"Gulp",
+			"Ember"
 		]
 	}, {
 		"name": "Backend Development",
