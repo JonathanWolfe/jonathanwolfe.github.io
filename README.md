@@ -1,4 +1,4 @@
 # jonathanwolfe.github.io
 About Jon Wolfe
 
-Made with [jsonresume.org](https://jsonresume.org).
+Originally based on [jsonresume.org](https://jsonresume.org).
