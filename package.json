@@ -1,0 +1,23 @@
+{
+  "name": "jonathanwolfe.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "resume for jon wolfe",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanWolfe/jonathanwolfe.github.io.git"
+  },
+  "author": "Jon Wolfe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JonathanWolfe/jonathanwolfe.github.io/issues"
+  },
+  "homepage": "https://github.com/JonathanWolfe/jonathanwolfe.github.io#readme",
+  "dependencies": {
+    "hackmyresume": "latest"
+  }
+}
