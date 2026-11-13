@@ -1642,6 +1642,14 @@ handlebars-wax@^5.0.0:
     object-assign "^4.1.1"
     require-glob "^3.2.0"
 
+handlebars-wax@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/handlebars-wax/-/handlebars-wax-6.1.0.tgz#9d9a899e6c67b946c7742ce1b7d1bf58f2ba1722"
+  integrity sha1-nZqJnmxnuUbHdCzht9G/WPK6FyI=
+  dependencies:
+    object-assign "^4.1.1"
+    require-glob "^3.2.0"
+
 handlebars@^2.0.0, handlebars@^2.0.0-alpha.4:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-2.0.0.tgz#6e9d7f8514a3467fa5e9f82cc158ecfc1d5ac76f"
@@ -2299,7 +2307,7 @@ jsonresume-theme-markdown@^1.0.2:
   dependencies:
     handlebars "^2.0.0"
 
-jsonresume-theme-mocha-responsive@^1.0.0, jsonresume-theme-mocha-responsive@^1.1.1:
+jsonresume-theme-mocha-responsive@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/jsonresume-theme-mocha-responsive/-/jsonresume-theme-mocha-responsive-1.1.1.tgz#ff5cffeb1399de64bc92e0c216bc2dd328489b51"
   integrity sha512-WNvBM1QUWsqSs8HrqFQRggPUEORfZkIWOL52VBBmUEnFFS9SVHfnMXRQh5yoHyHqZE4YV7SfeP6HCQwiUtgtbA==
@@ -2309,6 +2317,18 @@ jsonresume-theme-mocha-responsive@^1.0.0, jsonresume-theme-mocha-responsive@^1.1
     handlebars-wax "^5.0.0"
     image-to-base64 "^2.1.1"
     marked "^0.8.2"
+    promised-handlebars "^2.0.1"
+
+jsonresume-theme-my-theme@JonathanWolfe/jsonresume-theme-mocha-responsive:
+  version "1.2.0"
+  resolved "https://codeload.github.com/JonathanWolfe/jsonresume-theme-mocha-responsive/tar.gz/2d8d77f4f6597124966c598725d134c747a8d309"
+  dependencies:
+    "@fortawesome/fontawesome-free" "^5.15.3"
+    address-format "0.0.3"
+    handlebars "^4.7.6"
+    handlebars-wax "^6.1.0"
+    image-to-base64 "^2.1.1"
+    marked "^2.0.3"
     promised-handlebars "^2.0.1"
 
 jszip@^2.3.0:
@@ -2601,6 +2621,11 @@ marked@^0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.8.2.tgz#4faad28d26ede351a7a1aaa5fec67915c869e355"
   integrity sha512-EGwzEeCcLniFX51DhTpmTom+dSA/MG/OBUDjnWtHbEnjAH180VzUeAw+oE4+Zv+CoYBWyRlYOTR0N8SO9R1PVw==
+
+marked@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-2.0.3.tgz#3551c4958c4da36897bda2a16812ef1399c8d6b0"
+  integrity sha512-5otztIIcJfPc2qGTN8cVtOJEjNJZ0jwa46INMagrYfk0EvqtRuEHLsEe0LrFS0/q+ZRKT0+kXK7P2T1AN5lWRA==
 
 media-typer@0.3.0:
   version "0.3.0"

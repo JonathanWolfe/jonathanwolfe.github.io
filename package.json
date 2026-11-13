@@ -5,8 +5,8 @@
   "description": "resume for jon wolfe",
   "main": "index.html",
   "scripts": {
-    "build": "cross-env RENDER_MARKDOWN=true PROCESS_IMAGE=true kissmyresume build ./resume.json --theme jsonresume-theme-mocha-responsive",
-    "serve": "cross-env RENDER_MARKDOWN=true PROCESS_IMAGE=true kissmyresume serve ./resume.json --theme jsonresume-theme-mocha-responsive",
+    "build": "cross-env RENDER_MARKDOWN=true PROCESS_IMAGE=true kissmyresume build ./resume.json --theme my-theme",
+    "serve": "cross-env RENDER_MARKDOWN=true PROCESS_IMAGE=true kissmyresume serve ./resume.json --theme my-theme",
     "markdown": "resume export markdown.html -r resume.json -t markdown && mv -f markdown.html readme.md",
     "validate": "kissmyresume validate ./resume.json"
   },
@@ -24,7 +24,7 @@
     "@fortawesome/fontawesome-free": "^5.15.3",
     "cross-env": "^7.0.3",
     "jsonresume-theme-markdown": "^1.0.2",
-    "jsonresume-theme-mocha-responsive": "^1.1.1",
+    "jsonresume-theme-my-theme": "JonathanWolfe/jsonresume-theme-mocha-responsive",
     "kiss-my-resume": "^0.8.2",
     "resume-cli": "^3.0.4"
   },
