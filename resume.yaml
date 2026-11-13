@@ -2,7 +2,7 @@
   basics: 
     name: "Jon Wolfe"
     label: "Fullstack Developer"
-    picture: "https://i.imgur.com/n1Zz9Nv.jpg"
+    picture: "./square-headshot.jpg"
     email: "jonathanwolfe5@gmail.com"
     phone: "(704) 301-7568"
     website: "https://jonathanwolfe.github.io"
@@ -31,6 +31,16 @@
         username: "Jon_Wolfe"
         url: "https://www.instagram.com/jon_wolfe/"
   work: 
+    - 
+      company: "Doxy.me"
+      position: "Lead FullStack Developer"
+      startDate: "2021-06"
+      summary: "Tech lead for the Growth team. Launched large additions to the payment/subscription system to allow for international currencies and automatic tax collection. Converted the marketing site to a headless CMS to allow for legacy content and new components to coexist. Owned and integrated a feature-flag and experiment system into the product with strong team adoption."
+      website: "https://doxy.me"
+      highlights: 
+        - "Increased TypeScript adoption and coverage throughout the codebase"
+        - "Acting engineering manager for the team for 2 years"
+        - "Maintained a collection of teaching resources for other to use and learn from"
     - 
       company: "PigKnows"
       position: "Lead Developer"
@@ -117,7 +127,7 @@
         - "HTML"
         - "CSS"
         - "JavaScript"
-        - "Riot.js"
+        - "TypeScript"
         - "Gulp"
         - "Ember"
         - "Polymer"
@@ -137,7 +147,6 @@
         - "Terraform"
         - "AWS"
         - "Nginx"
-        - "Node.JS"
         - "Linux"
   languages: 
     - 
@@ -154,11 +163,10 @@
         - "IDE / Text Editors"
         - "UI Programming Languages/Libraries"
     - 
-      name: "Video Game Playing"
+      name: "Video Games"
       keywords: 
         - "JRPGs"
         - "League of Legends"
-        - "Competitive Shooters"
     - 
       name: "Trivia"
       keywords: 
