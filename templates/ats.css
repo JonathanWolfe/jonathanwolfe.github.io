@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #000;
+  font: 10.5pt/1.45 Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+blockquote {
+  margin: 0;
+}
+
+.page {
+  max-width: 8.5in;
+  margin: 0 auto;
+  padding: 0.5in;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font: 400 32px Georgia, "Times New Roman", serif;
+}
+
+.label {
+  margin-top: 4px;
+  font: italic 14px Georgia, "Times New Roman", serif;
+  color: #555;
+}
+
+address {
+  margin: 14px 0 0;
+  padding: 8px 0;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  font-style: normal;
+}
+
+h2 {
+  margin: 22px 0 8px;
+  font: 700 12px Georgia, "Times New Roman", serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+p + p {
+  margin-top: 6px;
+}
+
+article {
+  margin-top: 14px;
+}
+
+h2 + article {
+  margin-top: 0;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+h3 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dates {
+  white-space: nowrap;
+}
+
+article p {
+  margin: 2px 0;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+li {
+  padding-left: 2px;
+}
+
+blockquote {
+  margin-top: 10px;
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+footer {
+  text-align: right;
+  color: #555;
+}
+
+@page {
+  size: letter;
+  margin: 0.5in;
+}
+
+@media print {
+  .page {
+    max-width: none;
+    padding: 0;
+  }
+
+  h2,
+  .head {
+    break-after: avoid;
+  }
+
+  li,
+  blockquote {
+    break-inside: avoid;
+  }
+}

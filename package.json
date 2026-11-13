@@ -6,7 +6,8 @@
   "main": "index.html",
   "scripts": {
     "optimize": "bun optimize.ts",
-    "build": "bun optimize.ts && bun build.ts"
+    "build": "bun optimize.ts && bun build.ts",
+    "build:sidebar": "bun optimize.ts && bun build.ts --template sidebar"
   },
   "repository": {
     "type": "git",
