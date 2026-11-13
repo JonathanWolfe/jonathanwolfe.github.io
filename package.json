@@ -8,7 +8,9 @@
     "build": "cross-env RENDER_MARKDOWN=true PROCESS_IMAGE=true kissmyresume build ./resume.json --theme my-theme --out .",
     "serve": "cross-env RENDER_MARKDOWN=true PROCESS_IMAGE=true kissmyresume serve ./resume.json --theme my-theme",
     "markdown": "resume export markdown.html -r resume.json -t markdown && mv -f markdown.html readme.md",
-    "validate": "kissmyresume validate ./resume.json"
+    "pdf": "qpdf resume.pdf --replace-input --pages . 1-5 --",
+    "validate": "kissmyresume validate ./resume.json",
+    "export": "yarn run build && yarn run pdf && yarn run markdown"
   },
   "repository": {
     "type": "git",
