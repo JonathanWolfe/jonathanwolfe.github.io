@@ -81,7 +81,7 @@ export function parseDates(range: string) {
   return { start, end };
 }
 
-const PRINT_BULLETS = [4, 4, 2, 2] as const;
+const PRINT_BULLETS = [5, 4, 2, 2] as const;
 
 export const printBullets = (index: number): number =>
   PRINT_BULLETS[index] ?? 0;

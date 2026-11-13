@@ -31,7 +31,8 @@ Fullstack developer with 18 years of experience, from freelance sites to staff-l
 ##### 2023-05
 
 - Led the frontend rebuild of the entire product in about 6 months, on observables, strict module boundaries, and MVVM
-- Led the auditor API rebuild and a new auth system, and co-led frontend architecture
+- Co-led frontend code and architecture
+- Built a state-machine auth system with SSO, magic links, and multi-tab sessions
 - Added TypeScript and contributed 13,000+ lint rules and fixes
 - Built AI determinism benchmark and eval tooling, and used it to improve coding-guideline adherence and reduce LLM context usage
 - Worked across all areas of the business as a fullstack staff developer
@@ -43,7 +44,7 @@ Fullstack developer with 18 years of experience, from freelance sites to staff-l
 
 - Tech lead for the Growth team and acting engineering manager for 2 years
 - Launched multi-currency payments and automatic tax collection for subscriptions, built to support every currency Stripe offers
-- Converted the marketing site to a headless CMS so legacy content and new components could coexist, and integrated a feature-flag and experiment system that every team adopted
+- Converted the marketing site to a headless CMS so legacy content and new components coexist, and integrated a feature-flag and experiment system every team adopted
 - Took TypeScript from a small fraction of the codebase to most of it
 - Maintained teaching resources and taught engineers across the company
 
