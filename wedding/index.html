@@ -4,13 +4,89 @@
     <head>
         <title>Wedding info</title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="reset.css">
+        <!-- <link rel="stylesheet" href="mvp.css"> -->
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <main>
-            <h1>Testing</h1>
-        </main>
+        <section id="intro">
+            <header>
+                <h3 class="noto-sans">PLEASE JOIN US FOR</h3>
+                <h1 class="ms-madi">The Wedding Of</h1>
+                <h2 class="playfair-display">TANYA <span class="ms-madi">and</span> JON</h2>
+            </header>
+
+            <hr>
+
+            <main class="dark-font">
+                <p>October 26th, 2024 at 5pm</p>
+                <p>Marshall, NC 28753</p>
+                <p>Reception to follow</p>
+            </main>
+        </section>
+
+        <section id="details">
+            <header>
+                <h2 class="ms-madi">The Details</h2>
+            </header>
+
+            <main>
+                <div id="ceremony" class="area">
+                    <h3 class="playfair-display">The Ceremony</h3>
+
+                    <h4 class="dark-font">October 26th, 2024 at 5pm</h4>
+
+                    <div id="ceremony-directions">
+                        <div class="address">
+                            <address>
+                                <a
+                                    href="https://www.google.com/maps/dir/?api=1&destination=65%20Oakley%20Freeman%20Rd%2C%20Marshall%2C%20NC%2028753&waypoints=621%20Baileys%20Branch%20Rd%2C%20Marshall%2C%20NC%2028753&travelmode=driving">
+                                    65 Oakley Freeman Rd,<br>
+                                    Marshall, NC 28753
+                                </a>
+                            </address>
+
+                            <div class="map-guide">
+                                <img src="directions-guide.png" alt="AVOID THE GATE">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="reception" class="area">
+                    <h3 class="playfair-display">The Reception</h3>
+
+                    <h4 class="dark-font">The Wine Cellar @ Bargello</h4>
+
+                    <div class="address">
+                        <address>
+                            <a
+                                href="https://www.google.com/maps/dir/?api=1&destination=7%20Patton%20Ave%2C%20Asheville%2C%20NC%2028801&tranvelmode=driving">
+                                7 Patton Ave, Asheville, NC 28801
+                            </a>
+                        </address>
+                    </div>
+
+                    <p>Cocktails at 8:00 | Dinner at 8:30</p>
+                </div>
+            </main>
+        </section>
     </body>
 
 </html>

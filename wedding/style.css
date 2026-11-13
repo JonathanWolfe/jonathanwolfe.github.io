@@ -1,6 +1,146 @@
-main {
-    width: 100%;
-    height: 100%;
-    max-width: 780px;
-    margin: auto auto;
+.ms-madi {
+	font-family: "Ms Madi", cursive;
+}
+
+.noto-sans {
+	font-family: "Noto Sans", sans-serif;
+	font-variation-settings: "wdth" 100;
+}
+
+.playfair-display {
+	font-family: "Playfair Display", serif;
+	font-optical-sizing: auto;
+}
+
+html,
+body {
+	font-family: "Noto Sans", sans-serif;
+	font-variation-settings: "wdth" 100;
+	font-size: 26px;
+	color: #12444a;
+	background-color: #f3f0ec;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #194b30;
+}
+
+hr {
+	color: #b6826a;
+	background-color: #b6826a;
+	height: 3px;
+}
+
+.dark-font {
+	color: #051314;
+}
+
+html {
+	display: block;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 5rem 2rem;
+}
+
+@media (width >= 1000px) {
+	html,
+	body {
+		font-size: 20px;
+	}
+
+	body {
+		max-width: 960px;
+	}
+}
+
+section {
+	width: 100%;
+	padding: 2rem 0;
+}
+
+section + section {
+	border-top: 3px solid #b6826a;
+	margin-top: 2rem;
+}
+
+p {
+	padding-top: 1rem;
+}
+
+#intro {
+	text-align: center;
+}
+
+#intro h3 {
+	font-size: 2rem;
+	font-weight: 200;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+
+#intro h1 {
+	font-size: 7rem;
+	font-weight: 300;
+	margin-bottom: 1rem;
+}
+
+#intro h2 {
+	font-size: 5rem;
+	font-weight: 500;
+	margin-bottom: 5rem;
+}
+
+#intro main {
+	font-size: 2rem;
+	padding-top: 3rem;
+}
+
+#details h2 {
+	font-size: 7rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+#details main {
+	padding: 0 0 2rem 0;
+}
+
+#details .area {
+	padding: 2rem;
+}
+
+#details h3 {
+	font-size: 3rem;
+	font-weight: 500;
+	margin-bottom: 1.5rem;
+}
+
+#details h4 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+}
+
+#details address {
+	font-size: 1.33rem;
+}
+
+.map-guide {
+	width: 100%;
+}
+
+.map-guide img {
+	max-width: 100%;
 }
