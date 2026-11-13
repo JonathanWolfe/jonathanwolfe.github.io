@@ -1,6 +1,8 @@
 
 # Jon Wolfe
 
+Fullstack Developer
+
 ![Profile Picture](https://jonathanwolfe.github.io/square-headshot.jpg)
 
 ## Contact
@@ -19,13 +21,12 @@ Country: NY
 [LinkedIn - jonathanwolfe5](https://www.linkedin.com/in/jonathanwolfe5/)  
 [Github - JonathanWolfe](https://github.com/JonathanWolfe)  
 [Twitter - _JonWolfe](https://twitter.com/_JonWolfe)  
-[Instagram - Jon_Wolfe](https://www.instagram.com/jon_wolfe/)  
 
 ## Summary
 
-I&#x27;ve been a developer for over 13 years, and over that time I&#x27;ve grown from a PSD slicer, to a static site developer, to building CMS templates, to a dedicated Frontend Developer, and now a fullstack developer. I&#x27;ve watched the web as an industry grow and mature from Java Applets, then to PHP &amp; jQuery, next the MVC framework explosion, and now the meta-framework era. With each turn of the ages, I grew and evolved alongside the industry, making sure I was always riding the most-likely big waves and learning not just how a singular library or framework worked, but how they were built and how the underlying fundamentals interacted to create the interactions and patterns we used. 
+I've been a developer for over 13 years, and over that time I've grown from a PSD slicer, to a static site developer, to building CMS templates, to a dedicated Frontend Developer, and now a fullstack developer. I've watched the web as an industry grow and mature from Java Applets, then to PHP & jQuery, next the MVC framework explosion, and now the meta-framework era. With each turn of the ages, I grew and evolved alongside the industry, making sure I was always riding the most-likely big waves and learning not just how a singular library or framework worked, but how they were built and how the underlying fundamentals interacted to create the interactions and patterns we used. 
 
- I see myself currently as someone who strives to create software that brings direct value to users, and does so while being built on patterns and systems that should let the software outlive me. I&#x27;ve spent much of the past 8 years of my career moving legacy systems over to modern toolsets, leading projects to help scale systems to new orders of magnitude, and creating tooling that brings more speed and reliability to developers and companies.
+ I see myself currently as someone who strives to create software that brings direct value to users, and does so while being built on patterns and systems that should let the software outlive me. I've spent much of the past 8 years of my career moving legacy systems over to modern toolsets, leading projects to help scale systems to new orders of magnitude, and creating tooling that brings more speed and reliability to developers and companies.
 
 ## Work
 
@@ -64,7 +65,7 @@ Primary developer on a full stack Next.JS client and node-based API for managing
 * Improved UI performance by 7x
 * Decreased page weight by 1-4mb (down to 200kb-1mb depending on the page)
 
-Refactor and replace a legacy prototype shipped to production with a modern, web-components based UI for Mindsphere&#x27;s &quot;Big Data&quot; Analytics product, Product Intelligence. Built with Polymer 1 (web components v0), sass, and lots of reusable and composable components that are the being used as the base line for quality for the rest of Mindsphere UI.
+Refactor and replace a legacy prototype shipped to production with a modern, web-components based UI for Mindsphere's "Big Data" Analytics product, Product Intelligence. Built with Polymer 1 (web components v0), sass, and lots of reusable and composable components that are the being used as the base line for quality for the rest of Mindsphere UI.
 
 ### Frontend Developer, [Socialtopias](https://socialtopias.com)
 ##### 2015-03 - 2016-03
@@ -74,7 +75,7 @@ Refactor and replace a legacy prototype shipped to production with a modern, web
 * Eliminated some 500+ bugs
 * Rewrote most of the app to be much simpler and more capable of reuse
 
-Initially brought on to salvage the original product of the same name which was a large scale social network intent on bringing people together at real life physical locations and helping them plan their future endeavors and plans.  The app also helped business to connect and identify their clientele and offer them much more direct engagement.  After stabilizing the project and fixing all bugs, a mostly comprehensive overhaul was done which drastically improved the application&#x27;s responsiveness, features, and usability.
+Initially brought on to salvage the original product of the same name which was a large scale social network intent on bringing people together at real life physical locations and helping them plan their future endeavors and plans.  The app also helped business to connect and identify their clientele and offer them much more direct engagement.  After stabilizing the project and fixing all bugs, a mostly comprehensive overhaul was done which drastically improved the application's responsiveness, features, and usability.
 
 ### Frontend Developer, [The Idea People](http://theideapeople.com/)
 ##### 2015-01 - 2015-03
@@ -82,7 +83,7 @@ Initially brought on to salvage the original product of the same name which was 
 * Built modern Wordpress templates with fully responsive capabilities
 * Helped teach co-workers how to use Git and other tools
 
-Was tasked with handling the company&#x27;s agency work while most of it&#x27;s developers where engaged in building the Socialtopias App (see next company).  After failing to complete the project and losing the contract, I was let go for monetary reasons.
+Was tasked with handling the company's agency work while most of it's developers where engaged in building the Socialtopias App (see next company).  After failing to complete the project and losing the contract, I was let go for monetary reasons.
 
 ### Frontend Developer - Consultant, [Mythic](http://bemythic.com/)
 ##### 2014-08 - 2014-11
@@ -95,11 +96,11 @@ Maintained many existing company and business sites as well implemented new feat
 ### Owner and Sole Developer, Fire Studios
 ##### 2005-02 - 2013-02
 
-* Worked across several languages like JS &amp; PHP
+* Worked across several languages like JS & PHP
 * Worked with various size companies and the semi-local University of South Carolina
 * Where I honed most of my development skills
 
-Owned and operated a small freelance company that covered both back-endDate PHP work as well as front-endDate contracts (HTML, CSS, JS). Outsourced any excess work and managed those contractors.
+Owned and operated a small freelance company that covered both back-end PHP work as well as front-end contracts (HTML, CSS, JS). Outsourced any excess work and managed those contractors.
 
 
 
@@ -127,7 +128,7 @@ Owned and operated a small freelance company that covered both back-endDate PHP 
 
 * Computer Programming (Video Game Programming, IDE / Text Editors, UI Programming Languages/Libraries)
 * Video Games (JRPGs, City building sims, League of Legends)
-* Trivia (How It&#x27;s Made, How Do They Do It, Unwrapped)
+* Trivia (How It's Made, How Do They Do It, Unwrapped)
 * Reading / Writing (Manga, High Fantasy Novels, Sci-fi thrillers, Techno Dystopia/Utopia Thrillers)
 
 ## References
@@ -135,6 +136,6 @@ Owned and operated a small freelance company that covered both back-endDate PHP 
 > Jon is a talented software engineer with a strong vision for how to design and implement pragmatic solutions to complex product goals. He is a strong advocate for well-organized and clean code, and supports his peers in meeting those standards. I appreciate the time we spent working together and would be happy to work with him again in the future. -- <cite>Heath Morrison - CTO - Doxy.me</cite>
 > Jon is a highly skilled developer with a unique capacity to cut through noise and identify an optimal path to a technical solution. He is consistent in his output, and can be relied upon to produce at a steady, predictable pace. This is in regards to not only his work ethic, but also his ability to move through previously un-encountered technical challenges. Give Jon a codebase in which he has not previously worked, and he will sort it out and be producing with it in very short order. He is very aware of current and emerging technologies, but applies them to solutions in a sensible manner (rather than using personal interest as a primary motivator). -- <cite>Nick Hendricks - System Administrator - PigKnows</cite>
 > Jon is one of the best developers I had pleasure to work with. He is passionate about what he is doing and never cuts corners. Never afraid to raise his concerns and propose the best solution for given problem. I have learned a lot from him and think he is going to be a great addition to any team. -- <cite>Yury Katko - Advanced Software Engineer - Siemens</cite>
-> It’s rare that you come across standout talent and mind like Jon&#x27;s. I hired Jon as a front end web developer and he is quite skilled in this area. Jon always has a handle on the latest available technologies and tools and went beyond his role as developer to also help out other team members with other aspects of our tech stack outside the front end web application development arena. He is also masterful with git version control tools, which helped a lot as our project was ramping up and we were creating the internal tools and processes to get things done. Jon is punctual and reliable too. Jon would be good on any web app team. -- <cite>Corky Kaericher - CTO - Socialtopias</cite>
+> It’s rare that you come across standout talent and mind like Jon's. I hired Jon as a front end web developer and he is quite skilled in this area. Jon always has a handle on the latest available technologies and tools and went beyond his role as developer to also help out other team members with other aspects of our tech stack outside the front end web application development arena. He is also masterful with git version control tools, which helped a lot as our project was ramping up and we were creating the internal tools and processes to get things done. Jon is punctual and reliable too. Jon would be good on any web app team. -- <cite>Corky Kaericher - CTO - Socialtopias</cite>
 > A wonderful and talented developer. -- <cite>Bill McCowen - Owner - The Idea People</cite>
 > Every bit the developer he claimed to be and then some. -- <cite>Sara Garces Roselli - Mythic</cite>
