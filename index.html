@@ -3,218 +3,28 @@
 
 	<head>
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+
+		<!-- Open Graph data -->
+		<meta property="og:url" content="https://jonathanwolfe.github.io" />
+		<meta property="og:title" content="Jon Wolfe - Frontend Developer" />
+		<meta property="og:type" content="profile" />
+		<meta property="og:image" content="https://secure.gravatar.com/avatar/fe74dec545cfd8b6f22cf55357ab1819?size=1028" />
+		<meta property="og:description" content="A talented frontend developer looking for a new job." />
+		<meta property="og:site_name" content="Jon Wolfe" />
+		<meta property="profile:first_name" content="Jon" />
+		<meta property="profile:last_name" content="Wolfe" />
+
 
 		<title>Jon Wolfe</title>
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.min.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700" />
 
-		<style type="text/css">
-			@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-
-			body {
-				background: #fff;
-				font-family: Lato, sans-serif;
-				margin: 0 0 80px;
-			}
-
-			a {
-				color: #2ecc71;
-			}
-
-			a:focus,
-			a:hover {
-				color: #f1c40f;
-				text-decoration: none;
-			}
-
-			p {
-				line-height: 1.5;
-				margin: 0;
-			}
-
-			p + p {
-				margin-top: 10px;
-			}
-
-			h1,
-			h2,
-			h3,
-			h4 {
-				margin-top: 0
-			}
-
-			section {
-				margin-top: 30px;
-			}
-
-			li {
-				line-height: 1.8;
-				list-style: none;
-			}
-
-			li:before {
-				content: "\f052";
-				float: left;
-				font: 13px Octicons;
-				margin-top: 6px;
-				margin-left: -20px;
-				opacity: .1;
-				position: absolute;
-			}
-
-			blockquote {
-				border-left: 5px solid #e7e9ec;
-				font-size: 14px;
-			}
-
-			em {
-				color: #95a5a6;
-				font-weight: normal;
-				font-style: normal;
-			}
-
-			h4 span:first-child {
-				color: #000;
-				font-weight: bold;
-			}
-
-			.container {
-				max-width: 750px;
-				padding: 0 30px;
-			}
-
-			.col-sm-6 {
-				margin-bottom: 10px;
-			}
-
-			.col-sm-12 h4 {
-				margin-top: 12px;
-			}
-
-			.col-sm-12 + .col-sm-12 {
-				margin-top: 30px;
-			}
-
-			#header {
-				background: #f4f6f6;
-				padding: 50px 0;
-				margin-bottom: 30px;
-			}
-
-			#header h2 {
-				color: #95a5a6;
-				font-size: 24px;
-			}
-
-			#content h3 {
-				color: #f1c40f;
-				font-size: 26px;
-				margin-top: -4px;
-			}
-
-			#content aside {
-				text-align: right;
-				padding-right: 30px;
-			}
-
-			#profiles .network {
-				text-transform: capitalize;
-			}
-
-			#work .position,
-			#volunteer .position {
-				font-weight: bold;
-				margin-bottom: 8px;
-			}
-
-			#education .area {
-				font-weight: bold;
-			}
-
-			#education .area:before {
-				content: "\f0d7";
-				font: 16px Octicons;
-				margin-right: 6px;
-			}
-
-			#education .studyType {
-				margin-left: 25px;
-			}
-
-			#awards .summary,
-			#publications .summary {
-				margin-top: 8px;
-			}
-
-			#publications .website a:before {
-				content: attr(href);
-			}
-
-			@media (min-width: 480px) {
-				.strike-through {
-					border-top: 1px solid #f4f6f6;
-					height: 20px;
-					margin-top: 12px;
-					margin-bottom: -2px;
-					position: relative;
-				}
-				.strike-through span,
-				.strike-through a {
-					background: #fff;
-					position: absolute;
-				}
-				.strike-through span:first-child {
-					padding-right: 20px;
-					margin-top: -12px;
-				}
-				.strike-through span + span {
-					font-size: 14px;
-					margin-top: -10px;
-					padding-left: 20px;
-					right: 0;
-				}
-			}
-
-			@media (max-width: 768px) {
-				.col-sm-6:last-child {
-					margin-bottom: 0px;
-				}
-				#content aside {
-					margin-bottom: 20px;
-					padding-right: 0;
-					text-align: left;
-				}
-				#publications .website a:before {
-					content: "View publication";
-				}
-			}
-
-			@media (max-width: 480px) {
-				h1 {
-					font-size: 26px;
-				}
-				.date {
-					font-size: 14px;
-					margin-bottom: 5px;
-				}
-				.strike-through span:first-child {
-					margin-bottom: 7px;
-				}
-				.strike-through span {
-					display: block;
-				}
-				#header {
-					margin-bottom: 10px;
-					padding: 40px 0;
-				}
-				#actions {
-					display: none;
-				}
-			}
-		</style>
+		<link rel="stylesheet" href="css/compiled.css" />
 
 	</head>
 
@@ -223,7 +33,10 @@
 		<header id="header">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-9 col-sm-push-3">
+					<div class="col-sm-3">
+						<img src="https://secure.gravatar.com/avatar/fe74dec545cfd8b6f22cf55357ab1819?size=200" alt="Jon Wolfe" class="circle-img" height="100" />
+					</div>
+					<div class="col-sm-9">
 						<h1>Jon Wolfe</h1>
 						<h2>Frontend Developer</h2>
 					</div>
@@ -257,6 +70,7 @@
 				</div>
 			</section>
 
+
 			<section id="about" class="row">
 				<aside class="col-sm-3">
 					<h3>About</h3>
@@ -265,6 +79,7 @@
 					<p>Originally from Greenville, SC and then Charlotte, NC, Jon has spent a lot of time moving around the Carolinas. He obtained a degree in Social Psychology while at Appalachian State University. Jon got his start in web development early on in his life during middle school and has continued that ever since. When he's not programming for a client or making a small tool for himself or his friends, he can usually be found enjoying a book, manga, movie, or anime (that is if he's not playing a video game with his friends).</p>
 				</div>
 			</section>
+
 
 			<section id="profiles" class="row">
 				<aside class="col-sm-3">
@@ -276,7 +91,7 @@
 							<strong class="network">Twitter</strong>
 							<div class="username">
 								<div class="url">
-									<a href="https://twitter.com/_jonwolfe">_JonWolfe</a>
+									<a href="https://twitter.com/_jonwolfe">https://twitter.com/_JonWolfe</a>
 								</div>
 							</div>
 						</div>
@@ -284,13 +99,56 @@
 							<strong class="network">Github</strong>
 							<div class="username">
 								<div class="url">
-									<a href="https://github.com/jonathanwolfe">JonathanWolfe</a>
+									<a href="https://github.com/jonathanwolfe">https://github.com/JonathanWolfe</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
+
+			<section id="skills" class="row">
+				<aside class="col-sm-3">
+					<h3>Skills</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="name">
+								<h4>Frontend Development</h4>
+							</div>
+							<ul class="keywords">
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JavaScript</li>
+								<li>Riot.JS</li>
+								<li>Gulp</li>
+								<li>Ember</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<div class="name">
+								<h4>Backend Development</h4>
+							</div>
+							<ul class="keywords">
+								<li>PHP</li>
+								<li>Node.JS</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<div class="name">
+								<h4>Software Architecture</h4>
+							</div>
+							<ul class="keywords">
+								<li>Nginx</li>
+								<li>Node.JS</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
 
 			<section id="work" class="row">
 				<aside class="col-sm-3">
@@ -331,7 +189,7 @@
 								</span>
 							</h4>
 							<div class="website pull-right">
-								<a href="http://theideapeople.com/">http://theideapeople.com/</a>
+								<a href="http://theideapeople.com/">http://theideapeople.com</a>
 							</div>
 							<div class="position">
 								Frontend Developer
@@ -354,7 +212,7 @@
 								</span>
 							</h4>
 							<div class="website pull-right">
-								<a href="http://bemythic.com/">http://bemythic.com/</a>
+								<a href="http://bemythic.com/">http://bemythic.com</a>
 							</div>
 							<div class="position">
 								Frontend Developer - Consultant
@@ -416,25 +274,6 @@
 							<div class="studyType">
 								Bachelor of Arts
 							</div>
-							<h4>Courses</h4>
-							<ul class="courses">
-								<li>Foundation of Human Communication</li>
-								<li>How Organizations Behave</li>
-								<li>Public Speaking</li>
-								<li>Psychology of Human Growth &amp; Development</li>
-								<li>Abnormal Psychology</li>
-								<li>Reasoning with Statistics</li>
-								<li>Research Methods in Psychology</li>
-								<li>Principles of Learning</li>
-								<li>Cognitive Processes</li>
-								<li>Psychology of Personality</li>
-								<li>History &amp; Systems of Psychology</li>
-								<li>Sociological Theory</li>
-								<li>Organizational Psychology</li>
-								<li>Industrial Psychology</li>
-								<li>Sociology of Wolrd &amp; Organizations</li>
-								<li>Contemporary Issues in Psychology</li>
-							</ul>
 						</div>
 					</div>
 				</div>
@@ -507,47 +346,6 @@
 				</div>
 			</section>
 
-			<section id="skills" class="row">
-				<aside class="col-sm-3">
-					<h3>Skills</h3>
-				</aside>
-				<div class="col-sm-9">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="name">
-								<h4>Frontend Development</h4>
-							</div>
-							<ul class="keywords">
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>JavaScript</li>
-								<li>Riot.JS</li>
-								<li>Gulp</li>
-								<li>Ember</li>
-							</ul>
-						</div>
-						<div class="col-sm-6">
-							<div class="name">
-								<h4>Backend Development</h4>
-							</div>
-							<ul class="keywords">
-								<li>PHP</li>
-								<li>Node.JS</li>
-							</ul>
-						</div>
-						<div class="col-sm-6">
-							<div class="name">
-								<h4>Software Architecture</h4>
-							</div>
-							<ul class="keywords">
-								<li>Nginx</li>
-								<li>Node.JS</li>
-								<li>Linux</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
 
 			<section id="languages" class="row">
 				<aside class="col-sm-3">
@@ -574,6 +372,7 @@
 					</div>
 				</div>
 			</section>
+
 
 			<section id="interests" class="row">
 				<aside class="col-sm-3">
@@ -625,6 +424,7 @@
 					</div>
 				</div>
 			</section>
+
 
 			<section id="references" class="row">
 				<aside class="col-sm-3">
