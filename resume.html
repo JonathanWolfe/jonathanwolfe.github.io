@@ -1,1025 +1,1136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-		<title>Jon Wolfe</title>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
-		<style>
-			@font-face {
-				font-family: "Josefin Sans";
-				font-style: normal;
-				font-weight: 300;
-				src: local("Josefin Sans Light"), local("JosefinSans-Light"),
-					url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04zwV_pQ1T3xN3K1c3sB361us.ttf) format("truetype");
-			}
-
-			@font-face {
-				font-family: "Josefin Sans";
-				font-style: normal;
-				font-weight: 700;
-				src: local("Josefin Sans Bold"), local("JosefinSans-Bold"),
-					url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z306qf9KHRHwsVx7iw5MXmY.ttf) format("truetype");
-			}
-
-			@font-face {
-				font-family: "Lato";
-				font-style: normal;
-				font-weight: 300;
-				src: local("Lato Light"), local("Lato-Light"),
-					url(https://fonts.gstatic.com/s/lato/v11/nj47mAZe0mYUIySgfn0wpQ.ttf) format("truetype");
-			}
-
-			@font-face {
-				font-family: "Lato";
-				font-style: normal;
-				font-weight: 400;
-				src: local("Lato Regular"), local("Lato-Regular"),
-					url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format("truetype");
-			}
-
-			@font-face {
-				font-family: "Lato";
-				font-style: normal;
-				font-weight: 700;
-				src: local("Lato Bold"), local("Lato-Bold"),
-					url(https://fonts.gstatic.com/s/lato/v11/DvlFBScY1r-FMtZSYIYoYw.ttf) format("truetype");
-			}
-
-			@font-face {
-				font-family: "Lato";
-				font-style: italic;
-				font-weight: 300;
-				src: local("Lato Light Italic"), local("Lato-LightItalic"),
-					url(https://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivKCWcynf_cDxXwCLxiixG1c.ttf) format("truetype");
-			}
-
-			@font-face {
-				font-family: "Lato";
-				font-style: italic;
-				font-weight: 400;
-				src: local("Lato Italic"), local("Lato-Italic"),
-					url(https://fonts.gstatic.com/s/lato/v11/LqowQDslGv4DmUBAfWa2Vw.ttf) format("truetype");
-			}
-
-			@font-face {
-				font-family: "Lato";
-				font-style: italic;
-				font-weight: 700;
-				src: local("Lato Bold Italic"), local("Lato-BoldItalic"),
-					url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEKCWcynf_cDxXwCLxiixG1c.ttf) format("truetype");
-			}
-
-			body {
-				font-family: "Lato", Helvetica, Arial, sans-serif;
-				font-weight: 400;
-				background: #393e46;
-				margin: 0;
-				color: #39424b;
-				line-height: 1.6;
-			}
-
-			h1,
-			h2,
-			h3,
-			h4,
-			h5,
-			h6 {
-				margin: 0;
-			}
-
-			h1 {
-				font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-				font-weight: 700;
-				font-size: 40px;
-				letter-spacing: 1px;
-			}
-
-			h2 {
-				font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-				font-weight: 300;
-				font-size: 16px;
-				letter-spacing: 0.5px;
-			}
-
-			h3 {
-				font-family: "Lato", Helvetica, Arial, sans-serif;
-				font-weight: 300;
-				letter-spacing: 0.4px;
-				padding-top: 4px;
-				padding-left: 10px;
-				padding-right: 10px;
-			}
-
-			h3.bold {
-				font-weight: 700;
-				padding-left: 0;
-			}
-
-			h4 {
-				font-family: "Lato", Helvetica, Arial, sans-serif;
-				font-weight: 300;
-			}
-
-			h4.bold {
-				font-weight: 700;
-			}
-
-			h5 {
-				font-family: "Lato", Helvetica, Arial, sans-serif;
-				font-weight: 300;
-				font-size: 14px;
-			}
-
-			h5.italic {
-				font-style: italic;
-			}
-
-			h6 {
-				font-family: "Lato", Helvetica, Arial, sans-serif;
-				font-weight: 400;
-				font-size: 12px;
-			}
-
-			a {
-				color: inherit;
-				text-decoration: inherit;
-			}
-
-			a:hover,
-			a:hover>i.fa-external-link,
-			.info-tag-container a:hover .fa.fa-external-link {
-				color: #2895f1;
-			}
-
-			a .fa-external-link {
-				font-size: 8px;
-				margin-left: 2px;
-				vertical-align: text-top;
-				color: #999;
-			}
-
-			p,
-			li {
-				font-weight: 200;
-				letter-spacing: 0.4px;
-			}
-
-			blockquote {
-				font-family: "Lato", Helvetica, Arial, sans-serif;
-				font-weight: 400;
-				font-style: italic;
-				margin: 10px 25px;
-			}
-
-			em {
-				color: #999;
-			}
-
-			ul {
-				margin: 10px 0 0;
-				-webkit-padding-start: 25px;
-			}
-
-			ul li {
-				padding-left: 10px;
-			}
-
-			ul.minimal {
-				list-style: none;
-				padding: 0;
-			}
-
-			ul.minimal li {
-				margin-bottom: 3px;
-				padding-left: 0;
-			}
-
-			ul.two-column {
-				-webkit-column-count: 2;
-				-webkit-column-gap: 28px;
-				-moz-column-count: 2;
-				column-count: 2;
-				-moz-column-gap: 28px;
-				column-gap: 28px;
-			}
-
-			ul.two-column li {
-				padding-left: 0;
-				padding-bottom: 5px;
-			}
-
-			@page {
-				size: letter;
-			}
-
-			.container {
-				padding-top: 20px;
-			}
-
-			.keyline {
-				width: 45px;
-				margin: 4px 0 10px;
-				border-top: 1px solid #ff5701;
-			}
-
-			.pull-left {
-				float: left;
-			}
-
-			.pull-right {
-				float: right;
-			}
-
-			.display-block {
-				display: block;
-			}
-
-			.display-inline {
-				display: inline;
-			}
-
-			.clearfix:after {
-				content: "";
-				display: table;
-				clear: both;
-			}
-
-			.profile-pic img {
-				height: 150px;
-				border-radius: 10%;
-				padding: 2px;
-				border: 2px solid #ff5701;
-				object-fit: cover;
-				background: #ffffff;
-				float: right;
-			}
-
-			.summary {
-				margin: 5px 0 5px;
-			}
-
-			/* Layouts */
-			.page {
-				background: #222831;
-				color: #eeeeee;
-				min-height: 792px;
-				display: block;
-				margin: 0 auto;
-				border-top: 10px solid #ff5701;
-				padding: 50px;
-				box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-				max-width: 1000px;
-			}
-
-			.page:after {
-				content: "";
-				display: table;
-				clear: both;
-			}
-
-			.left-column,
-			.profile-header {
-				float: left;
-				width: 300px;
-				margin-right: 50px;
-				word-wrap: break-word;
-			}
-
-			.right-column,
-			.profile-pic {
-				width: auto;
-				overflow: hidden;
-				max-width: 850px;
-				margin: 0 auto;
-			}
-
-			.item {
-				margin-top: 20px;
-				padding-top: 20px;
-				border-top: 1px solid #393e46;
-			}
-
-			.item:first-child,
-			.title+.item {
-				margin-top: 0;
-				padding-top: 0;
-				border-top: none;
-			}
-
-			.title {
-				background-color: #393e46;
-			}
-
-			.title>i {
-				float: left;
-				padding-top: 11px;
-				padding-left: 10px;
-				padding-right: 10px;
-			}
-
-			.right-column>.container>.title {
-				margin-bottom: 15px;
-			}
-
-			.gpa {
-				border: 1px solid #ffffff;
-				border-radius: 35%;
-				padding: 2px;
-				margin-left: 5px;
-			}
-
-			@media only screen and (max-width: 800px) {
-				.page {
-					padding: 35px;
-				}
-
-				.left-column,
-				.right-column {
-					width: 100%;
-					margin: 0;
-				}
-
-				.skills-container>section>ul>li {
-					display: inline;
-				}
-
-				.skills-container>section>ul>li>h6 {
-					padding-right: 10px;
-					display: inline;
-				}
-
-				.item {
-					margin-top: 10px;
-					padding-top: 10px;
-				}
-			}
-
-			@media print {
-				body {
-					margin: 0;
-					background: #ffffff;
-					color: #000;
-				}
-
-				main {
-					background: #ffffff !important;
-					color: black !important;
-				}
-
-				@page {
-					border-top: 2px solid #ffffff;
-				}
-
-				.page {
-					color: #000;
-					width: 100%;
-					height: 100%;
-					margin: 0;
-					padding: 35px 0 35px;
-					box-shadow: none;
-				}
-
-				.title {
-					background-color: #393e46;
-					color: #ffffff;
-					page-break-inside: avoid;
-				}
-
-				.keyline {
-					width: 45px;
-					margin: 4px 0 10px;
-					border-top: 2px solid #ff5701;
-				}
-
-				.page .resume-header,
-				.page .resume-content {
-					padding: 0 35px 0 35px;
-				}
-
-				.left-column {
-					width: 250px;
-					margin-right: 35px;
-				}
-
-				.left-column .container {
-					page-break-inside: avoid;
-				}
-
-				.fa-external-link {
-					display: none;
-				}
-
-				.gpa {
-					border: 1px solid #393e46;
-					margin-left: 10px;
-				}
-			}
-
-			/* Components */
-			.info-tag-container {
-				margin-bottom: 5px;
-			}
-
-			.info-tag-container .fa {
-				width: 12px;
-				margin-right: 5px;
-				text-align: center;
-				vertical-align: middle;
-			}
-
-			.info-tag-container .fa.fa-external-link {
-				width: auto;
-				font-size: 8px;
-				margin-left: 2px;
-				vertical-align: text-top;
-				color: #999;
-			}
-
-			.info-tag-container .info-text {
-				font-size: 14px;
-				display: inline-block;
-				vertical-align: middle;
-			}
-
-		</style>
-	</head>
-
-	<body>
-		<main id="resume" class="page">
-			<header class="resume-header clearfix">
-				<div class="profile-header">
-					<h1 class="display-block">Jon Wolfe</h1>
-					<h2 class="display-block">Fullstack Developer</h2>
-				</div>
-				<div class="profile-pic">
-					<img src="https://jonathanwolfe.github.io/square-headshot.jpg" alt="profile-pic">
-				</div>
-			</header>
-			<div class="resume-content">
-				<aside class="left-column">
-					<div class="container about-container">
-						<div class="title">
-							<h3>About</h3>
-							<div class="keyline"></div>
-						</div>
-
-						<div class="info-tag-container">
-							<i class="fa fa-map-marker"></i>
-
-							<h6 class="info-text">Queens NY 11358</h6>
-						</div>
-
-						<div class="info-tag-container">
-							<i class="fa fa-envelope"></i>
-
-							<h6 class="info-text">jonathanwolfe5@gmail.com</h6>
-						</div>
-
-						<div class="info-tag-container">
-							<i class="fa fa-mobile-alt"></i>
-
-							<h6 class="info-text"><a href="tel:+17043017568">704-301-7568</a></h6>
-						</div>
-
-						<div class="info-tag-container">
-							<i class="fa fa-desktop"></i>
-
-							<h6 class="info-text">
-								<a href="https://jonathanwolfe.github.io" target="_blank">
-									jonathanwolfe.github.io <i class="fa fa-external-link" aria-hidden="true"></i>
-								</a>
-							</h6>
-						</div>
-
-						<div class="info-tag-container">
-							<i class="fa fa-linkedin-square"></i>
-
-							<h6 class="info-text">
-								<a href="https://www.linkedin.com/in/jonathanwolfe5/" target="_blank">
-									in/jonathanwolfe5 <i class="fa fa-external-link" aria-hidden="true"></i>
-								</a>
-							</h6>
-						</div>
-						<div class="info-tag-container">
-							<i class="fab fa-github"></i>
-
-							<h6 class="info-text">
-								<a href="https://github.com/JonathanWolfe" target="_blank">
-									JonathanWolfe <i class="fa fa-external-link" aria-hidden="true"></i>
-								</a>
-							</h6>
-						</div>
-						<div class="info-tag-container">
-							<i class="fa fa-twitter"></i>
-
-							<h6 class="info-text">
-								<a href="https://twitter.com/_JonWolfe" target="_blank">
-									_JonWolfe <i class="fa fa-external-link" aria-hidden="true"></i>
-								</a>
-							</h6>
-						</div>
-						<div class="info-tag-container">
-							<i class="fa fa-instagram"></i>
-
-							<h6 class="info-text">
-								<a href="https://www.instagram.com/jon_wolfe/" target="_blank">
-									Jon_Wolfe <i class="fa fa-external-link" aria-hidden="true"></i>
-								</a>
-							</h6>
-						</div>
-					</div>
-					<div class="skills-container">
-						<section class="container">
-							<div class="title">
-								<h3>Frontend Development</h3>
-								<div class="keyline"></div>
-							</div>
-							<h4 class="bold">Master</h4>
-							<ul class="minimal">
-								<li>
-									<h6>HTML</h6>
-								</li>
-								<li>
-									<h6>CSS</h6>
-								</li>
-								<li>
-									<h6>JavaScript</h6>
-								</li>
-								<li>
-									<h6>TypeScript</h6>
-								</li>
-								<li>
-									<h6>React</h6>
-								</li>
-								<li>
-									<h6>Next.js</h6>
-								</li>
-								<li>
-									<h6>Polymer</h6>
-								</li>
-								<li>
-									<h6>Ember</h6>
-								</li>
-							</ul>
-						</section>
-						<section class="container">
-							<div class="title">
-								<h3>Backend Development</h3>
-								<div class="keyline"></div>
-							</div>
-							<h4 class="bold">Intermediate</h4>
-							<ul class="minimal">
-								<li>
-									<h6>NodeJS</h6>
-								</li>
-								<li>
-									<h6>Python</h6>
-								</li>
-								<li>
-									<h6>SQL</h6>
-								</li>
-							</ul>
-						</section>
-						<section class="container">
-							<div class="title">
-								<h3>Software Architecture</h3>
-								<div class="keyline"></div>
-							</div>
-							<h4 class="bold">Intermediate</h4>
-							<ul class="minimal">
-								<li>
-									<h6>IaC</h6>
-								</li>
-								<li>
-									<h6>Serverless</h6>
-								</li>
-								<li>
-									<h6>SaaS</h6>
-								</li>
-								<li>
-									<h6>PaaS</h6>
-								</li>
-							</ul>
-						</section>
-					</div>
-					<div class="container languages-container">
-						<div class="title">
-							<h3>Languages</h3>
-							<div class="keyline"></div>
-						</div>
-
-						<ul class="minimal">
-							<li>
-								<h6>English <em class="pull-right ">(Native Speaker)</em></h6>
-							</li>
-							<li>
-								<h6>German <em class="pull-right ">(Beginner)</em></h6>
-							</li>
-						</ul>
-					</div>
-					<div class="container interests-container">
-						<div class="title">
-							<h3>Interests</h3>
-							<div class="keyline"></div>
-						</div>
-
-						<section class="item">
-							<h4 class="bold">Computer Programming</h4>
-							<ul class="minimal">
-								<li>Video Game Programming</li>
-								<li>IDE / Text Editors</li>
-								<li>UI Programming Languages/Libraries</li>
-							</ul>
-						</section>
-						<section class="item">
-							<h4 class="bold">Video Games</h4>
-							<ul class="minimal">
-								<li>JRPGs</li>
-								<li>City building sims</li>
-								<li>League of Legends</li>
-							</ul>
-						</section>
-						<section class="item">
-							<h4 class="bold">Trivia</h4>
-							<ul class="minimal">
-								<li>How It&#x27;s Made</li>
-								<li>How Do They Do It</li>
-								<li>Unwrapped</li>
-							</ul>
-						</section>
-						<section class="item">
-							<h4 class="bold">Reading / Writing</h4>
-							<ul class="minimal">
-								<li>Manga</li>
-								<li>High Fantasy Novels</li>
-								<li>Sci-fi thrillers</li>
-								<li>Techno Dystopia/Utopia Thrillers</li>
-							</ul>
-						</section>
-					</div>
-				</aside>
-				<div class="right-column">
-					<div class="container summary-container">
-						<div class="title">
-							<i class="fa fas fa-file-alt"></i>
-							<h3>Summary</h3>
-							<div class="keyline"></div>
-						</div>
-						<p class="summary">
-						<p>Over more than a dozen years as a developer, I&#39;ve grown from a PSD slicer, to a static
-							site developer, to building CMS templates, to a dedicated Frontend Developer, and now a
-							fullstack developer. I&#39;ve watched the web as an industry grow and mature from Java
-							Applets, then to PHP &amp; jQuery, next the MVC framework explosion, and now the
-							meta-framework era. With each turn of the ages, I grew and evolved alongside the industry,
-							making sure I was always riding the most-likely big waves and learning not just how a
-							singular library or framework worked, but how they were built and how the underlying
-							fundamentals interacted to create the interactions and patterns we used. </p>
-						<p> I see myself currently as someone who strives to create software that brings direct value
-							to users, and does so while being built on patterns and systems that should let the software
-							outlive me. I&#39;ve spent a majority of the second half of my career moving legacy systems
-							over to modern toolsets, leading projects to help scale systems to new orders of magnitude,
-							and creating tooling that brings more speed and reliability to developers and companies.</p>
-
-						</p>
-					</div>
-					<div class="container work-container">
-						<div class="title">
-							<i class="fa fas fa-user-tie"></i>
-							<h3>Experience</h3>
-							<div class="keyline"></div>
-						</div>
-
-						<section class="item">
-							<div class="section-header clearfix">
-								<h3 class="bold pull-left">
-									<a href="https://doxy.me" target="_blank">
-										Doxy.me <i class="fa fa-external-link" aria-hidden="true"></i>
-									</a>
-								</h3>
-								<h5 class="italic pull-right">
-									<span class="startDate">05/2021</span>
-									<span class="endDate"> - Present</span>
-								</h5>
-							</div>
-
-							<h4>Lead FullStack Developer</h4>
-
-							<p class="summary">
-							<p>Tech lead for the Growth team. Launched large additions to the payment/subscription
-								system to allow for international currencies and automatic tax collection. Converted the
-								marketing site to a headless CMS to allow for legacy content and new components to
-								coexist. Owned and integrated a feature-flag and experiment system into the product with
-								strong adoption across all teams.</p>
-							</p>
-
-							<ul>
-								<li>Increased TypeScript adoption and coverage throughout the codebase</li>
-								<li>Acting engineering manager for the team for 2 years</li>
-								<li>Maintained a collection of teaching resources for others to use and learn from</li>
-							</ul>
-						</section>
-						<section class="item">
-							<div class="section-header clearfix">
-								<h3 class="bold pull-left">
-									<a href="https://pigknows.com" target="_blank">
-										PigKnows <i class="fa fa-external-link" aria-hidden="true"></i>
-									</a>
-								</h3>
-								<h5 class="italic pull-right">
-									<span class="startDate">12/2019</span>
-									<span class="endDate"> - 04/2021</span>
-								</h5>
-							</div>
-
-							<h4>Lead Developer</h4>
-
-							<p class="summary">
-							<p>Primary developer on a full stack Next.JS client and node-based API for managing pig
-								farms and the animals life-cycles throughout. Finished by building a feed ordering
-								feature-set to create rations and budgets, track order history, and notify supplier of
-								new orders.</p>
-							</p>
-
-							<ul>
-								<li>Converted a large portion of both projects to Typescript</li>
-								<li>Added 4 third-party integrations to sync data between for customers who used
-									multiple vendors</li>
-								<li>Created a feed tracking and ordering system to send orders to mills and
-									veterinarians</li>
-								<li>Refactored critical custom keyboard controls resulting in a 10x rendering time
-									reduction</li>
-							</ul>
-						</section>
-						<section class="item">
-							<div class="section-header clearfix">
-								<h3 class="bold pull-left">
-									<a href="https://product-intelligence.mindsphere.io" target="_blank">
-										Siemens PLM <i class="fa fa-external-link" aria-hidden="true"></i>
-									</a>
-								</h3>
-								<h5 class="italic pull-right">
-									<span class="startDate">04/2015</span>
-									<span class="endDate"> - 12/2019</span>
-								</h5>
-							</div>
-
-							<h4>Advanced/Senior Software Developer</h4>
-
-							<p class="summary">
-							<p>Refactor and replace a legacy prototype shipped to production with a modern,
-								web-components based UI for Mindsphere&#39;s &quot;Big Data&quot; Analytics product,
-								Product Intelligence. Built with Polymer 1 (web components v0), sass, and lots of
-								reusable and composable components that are the being used as the base line for quality
-								for the rest of Mindsphere UI.</p>
-							</p>
-
-							<ul>
-								<li>Refactored a multi-million dollar application to modern standards</li>
-								<li>Improved UI performance by 7x</li>
-								<li>Decreased page weight by 1-4mb (down to 200kb-1mb depending on the page)</li>
-							</ul>
-						</section>
-						<section class="item">
-							<div class="section-header clearfix">
-								<h3 class="bold pull-left">
-									<a href="https://socialtopias.com" target="_blank">
-										Socialtopias <i class="fa fa-external-link" aria-hidden="true"></i>
-									</a>
-								</h3>
-								<h5 class="italic pull-right">
-									<span class="startDate">02/2015</span>
-									<span class="endDate"> - 02/2016</span>
-								</h5>
-							</div>
-
-							<h4>Frontend Developer</h4>
-
-							<p class="summary">
-							<p>Initially brought on to salvage the original product of the same name which was a large
-								scale social network intent on bringing people together at real life physical locations
-								and helping them plan their future endeavors and plans. The app also helped business to
-								connect and identify their clientele and offer them much more direct engagement. After
-								stabilizing the project and fixing all bugs, a mostly comprehensive overhaul was done
-								which drastically improved the application&#39;s responsiveness, features, and
-								usability.</p>
-							</p>
-
-							<ul>
-								<li>Salvaged a completely broken and unfinished large-scale product</li>
-								<li>Greatly improved existing feature set</li>
-								<li>Eliminated some 500+ bugs</li>
-								<li>Rewrote most of the app to be much simpler and more capable of reuse</li>
-							</ul>
-						</section>
-						<section class="item">
-							<div class="section-header clearfix">
-								<h3 class="bold pull-left">
-									<a href="http://theideapeople.com/" target="_blank">
-										The Idea People <i class="fa fa-external-link" aria-hidden="true"></i>
-									</a>
-								</h3>
-								<h5 class="italic pull-right">
-									<span class="startDate">12/2014</span>
-									<span class="endDate"> - 02/2015</span>
-								</h5>
-							</div>
-
-							<h4>Frontend Developer</h4>
-
-							<p class="summary">
-							<p>Was tasked with handling the company&#39;s agency work while most of it&#39;s developers
-								where engaged in building the Socialtopias App (see next company). After failing to
-								complete the project and losing the contract, I was let go for monetary reasons.</p>
-							</p>
-
-							<ul>
-								<li>Built modern Wordpress templates with fully responsive capabilities</li>
-								<li>Helped teach co-workers how to use Git and other tools</li>
-							</ul>
-						</section>
-						<section class="item">
-							<div class="section-header clearfix">
-								<h3 class="bold pull-left">
-									<a href="http://bemythic.com/" target="_blank">
-										Mythic <i class="fa fa-external-link" aria-hidden="true"></i>
-									</a>
-								</h3>
-								<h5 class="italic pull-right">
-									<span class="startDate">07/2014</span>
-									<span class="endDate"> - 10/2014</span>
-								</h5>
-							</div>
-
-							<h4>Frontend Developer - Consultant</h4>
-
-							<p class="summary">
-							<p>Maintained many existing company and business sites as well implemented new features and
-								fixes for those. Crafted new products for their budding digital presence.</p>
-							</p>
-
-							<ul>
-								<li>Integrated new online payment platform and interactions</li>
-								<li>Constructed a complete real estate platform with fully responsive elements</li>
-							</ul>
-						</section>
-						<section class="item">
-							<div class="section-header clearfix">
-								<h3 class="bold pull-left">
-									Fire Studios
-								</h3>
-								<h5 class="italic pull-right">
-									<span class="startDate">01/2005</span>
-									<span class="endDate"> - 01/2013</span>
-								</h5>
-							</div>
-
-							<h4>Owner and Sole Developer</h4>
-
-							<p class="summary">
-							<p>Owned and operated a small freelance company that covered both back-endDate PHP work as
-								well as front-endDate contracts (HTML, CSS, JS). Outsourced any excess work and managed
-								those contractors.</p>
-							</p>
-
-							<ul>
-								<li>Worked across several languages like JS &amp; PHP</li>
-								<li>Worked with various size companies and the semi-local University of South Carolina
-								</li>
-								<li>Where I honed most of my development skills</li>
-							</ul>
-						</section>
-					</div>
-					<div class="container volunteer-container">
-						<div class="title">
-							<i class="fa fas fa-hands-helping"></i>
-							<h3>Volunteer</h3>
-							<div class="keyline"></div>
-						</div>
-
-						<section class="item">
-							<div class="section-header clearfix">
-								<h3 class="bold pull-left">
-									<a href="http://www.myrestorationranch.org/" target="_blank">
-										Restoration Ranch <i class="fa fa-external-link" aria-hidden="true"></i>
-									</a>
-								</h3>
-								<h5 class="italic pull-right">
-								</h5>
-							</div>
-							<h5>Volunteer</h5>
-
-							<p class="summary">
-							<p>Helped dig troughs for the water pipes to the building</p>
-							</p>
-
-						</section>
-					</div>
-					<div class="container education-container">
-						<div class="title">
-							<i class="fa fas fa-user-graduate"></i>
-							<h3>Education</h3>
-							<div class="keyline"></div>
-						</div>
-
-						<section class="item">
-							<div class="section-header clearfix">
-								<h3 class="bold pull-left">
-									Appalachian State University
-								</h3>
-								<h5 class="italic pull-right">
-									<span class="startDate">07/2010</span>
-									<span class="endDate"> - 04/2014</span>
-								</h5>
-							</div>
-
-							<h4 class="display-inline">Bachelor - Social Psychology</h4>
-
-
-						</section>
-					</div>
-					<div class="container references-container">
-						<div class="title">
-							<i class="fa fas fa-asterisk"></i>
-							<h3>References</h3>
-							<div class="keyline"></div>
-						</div>
-
-						<section class="item clearfix">
-							<i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
-							<blockquote>
-								Jon is a talented software engineer with a strong vision for how to design and implement
-								pragmatic solutions to complex product goals. He is a strong advocate for well-organized
-								and clean code, and supports his peers in meeting those standards. I appreciate the time
-								time we spent working together and would be happy to work with him again in the future.
-							</blockquote>
-
-							<h5 class="pull-right"> — Heath Morrison - CTO - Doxy.me</h5>
-						</section>
-						<section class="item clearfix">
-							<i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
-							<blockquote>
-								Jon is a highly skilled developer with a unique capacity to cut through noise and
-								identify an optimal path to a technical solution. He is consistent in his output, and
-								can be relied upon to produce at a steady, predictable pace. This is in regards to not
-								only his work ethic, but also his ability to move through previously un-encountered
-								technical challenges. Give Jon a codebase in which he has not previously worked, and he
-								will sort it out and be producing with it in very short order. He is very aware of
-								current and emerging technologies, but applies them to solutions in a sensible manner
-								(rather than using personal interest as a primary motivator).
-							</blockquote>
-
-							<h5 class="pull-right"> — Nick Hendricks - System Administrator - PigKnows</h5>
-						</section>
-						<section class="item clearfix">
-							<i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
-							<blockquote>
-								Jon is one of the best developers I had pleasure to work with. He is passionate about
-								what he is doing and never cuts corners. Never afraid to raise his concerns and propose
-								the best solution for given problem. I have learned a lot from him and think he is going
-								to be a great addition to any team.
-							</blockquote>
-
-							<h5 class="pull-right"> — Yury Katko - Advanced Software Engineer - Siemens</h5>
-						</section>
-						<section class="item clearfix">
-							<i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
-							<blockquote>
-								It’s rare that you come across standout talent and mind like Jon&#x27;s. I hired Jon as
-								a front end web developer and he is quite skilled in this area. Jon always has a handle
-								on the latest available technologies and tools and went beyond his role as developer to
-								also help out other team members with other aspects of our tech stack outside the front
-								end web application development arena. He is also masterful with git version control
-								tools, which helped a lot as our project was ramping up and we were creating the
-								internal tools and processes to get things done. Jon is punctual and reliable too. Jon
-								would be good on any web app team.
-							</blockquote>
-
-							<h5 class="pull-right"> — Corky Kaericher - CTO - Socialtopias</h5>
-						</section>
-						<section class="item clearfix">
-							<i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
-							<blockquote>
-								A wonderful and talented developer.
-							</blockquote>
-
-							<h5 class="pull-right"> — Bill McCowen - Owner - The Idea People</h5>
-						</section>
-						<section class="item clearfix">
-							<i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
-							<blockquote>
-								Every bit the developer he claimed to be and then some.
-							</blockquote>
-
-							<h5 class="pull-right"> — Sara Garces Roselli - Mythic</h5>
-						</section>
-					</div>
-				</div>
-			</div>
-		</main>
-	</body>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimal-ui"
+    />
+    <title>Jon Wolfe</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css"
+    />
+    <style>
+      @font-face {
+        font-family: "Josefin Sans";
+        font-style: normal;
+        font-weight: 300;
+        src: local("Josefin Sans Light"), local("JosefinSans-Light"),
+          url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04zwV_pQ1T3xN3K1c3sB361us.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "Josefin Sans";
+        font-style: normal;
+        font-weight: 700;
+        src: local("Josefin Sans Bold"), local("JosefinSans-Bold"),
+          url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z306qf9KHRHwsVx7iw5MXmY.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 300;
+        src: local("Lato Light"), local("Lato-Light"),
+          url(https://fonts.gstatic.com/s/lato/v11/nj47mAZe0mYUIySgfn0wpQ.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        src: local("Lato Regular"), local("Lato-Regular"),
+          url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        src: local("Lato Bold"), local("Lato-Bold"),
+          url(https://fonts.gstatic.com/s/lato/v11/DvlFBScY1r-FMtZSYIYoYw.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "Lato";
+        font-style: italic;
+        font-weight: 300;
+        src: local("Lato Light Italic"), local("Lato-LightItalic"),
+          url(https://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivKCWcynf_cDxXwCLxiixG1c.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "Lato";
+        font-style: italic;
+        font-weight: 400;
+        src: local("Lato Italic"), local("Lato-Italic"),
+          url(https://fonts.gstatic.com/s/lato/v11/LqowQDslGv4DmUBAfWa2Vw.ttf)
+            format("truetype");
+      }
+
+      @font-face {
+        font-family: "Lato";
+        font-style: italic;
+        font-weight: 700;
+        src: local("Lato Bold Italic"), local("Lato-BoldItalic"),
+          url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEKCWcynf_cDxXwCLxiixG1c.ttf)
+            format("truetype");
+      }
+
+      body {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        background: #393e46;
+        margin: 0;
+        color: #39424b;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+
+      h1 {
+        font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: 1px;
+      }
+
+      h2 {
+        font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+      }
+
+      h3 {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+        padding-top: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      h3.bold {
+        font-weight: 700;
+        padding-left: 0;
+      }
+
+      h4 {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+      }
+
+      h4.bold {
+        font-weight: 700;
+      }
+
+      h5 {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+      }
+
+      h5.italic {
+        font-style: italic;
+      }
+
+      h6 {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+
+      a:hover,
+      a:hover > i.fa-external-link,
+      .info-tag-container a:hover .fa.fa-external-link {
+        color: #2895f1;
+      }
+
+      a .fa-external-link {
+        font-size: 8px;
+        margin-left: 2px;
+        vertical-align: text-top;
+        color: #999;
+      }
+
+      p,
+      li {
+        font-weight: 200;
+        letter-spacing: 0.4px;
+      }
+
+      blockquote {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        margin: 10px 25px;
+      }
+
+      em {
+        color: #999;
+      }
+
+      ul {
+        margin: 10px 0 0;
+        -webkit-padding-start: 25px;
+      }
+
+      ul li {
+        padding-left: 10px;
+      }
+
+      ul.minimal {
+        list-style: none;
+        padding: 0;
+      }
+
+      ul.minimal li {
+        margin-bottom: 3px;
+        padding-left: 0;
+      }
+
+      ul.two-column {
+        -webkit-column-count: 2;
+        -webkit-column-gap: 28px;
+        -moz-column-count: 2;
+        column-count: 2;
+        -moz-column-gap: 28px;
+        column-gap: 28px;
+      }
+
+      ul.two-column li {
+        padding-left: 0;
+        padding-bottom: 5px;
+      }
+
+      @page {
+        size: letter;
+      }
+
+      .container {
+        padding-top: 20px;
+      }
+
+      .keyline {
+        width: 45px;
+        margin: 4px 0 10px;
+        border-top: 1px solid #ff5701;
+      }
+
+      .pull-left {
+        float: left;
+      }
+
+      .pull-right {
+        float: right;
+      }
+
+      .display-block {
+        display: block;
+      }
+
+      .display-inline {
+        display: inline;
+      }
+
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .profile-pic img {
+        height: 150px;
+        border-radius: 10%;
+        padding: 2px;
+        border: 2px solid #ff5701;
+        object-fit: cover;
+        background: #ffffff;
+        float: right;
+      }
+
+      .summary {
+        margin: 5px 0 5px;
+      }
+
+      /* Layouts */
+      .page {
+        background: #222831;
+        color: #eeeeee;
+        min-height: 792px;
+        display: block;
+        margin: 0 auto;
+        border-top: 10px solid #ff5701;
+        padding: 50px;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+        max-width: 1000px;
+      }
+
+      .page:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .left-column,
+      .profile-header {
+        float: left;
+        width: 300px;
+        margin-right: 50px;
+        word-wrap: break-word;
+      }
+
+      .right-column,
+      .profile-pic {
+        width: auto;
+        overflow: hidden;
+        max-width: 850px;
+        margin: 0 auto;
+      }
+
+      .item {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #393e46;
+      }
+
+      .item:first-child,
+      .title + .item {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+      }
+
+      .title {
+        background-color: #393e46;
+      }
+
+      .title > i {
+        float: left;
+        padding-top: 11px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .right-column > .container > .title {
+        margin-bottom: 15px;
+      }
+
+      .gpa {
+        border: 1px solid #ffffff;
+        border-radius: 35%;
+        padding: 2px;
+        margin-left: 5px;
+      }
+
+      @media only screen and (max-width: 800px) {
+        .page {
+          padding: 35px;
+        }
+
+        .left-column,
+        .right-column {
+          width: 100%;
+          margin: 0;
+        }
+
+        .skills-container > section > ul > li {
+          display: inline;
+        }
+
+        .skills-container > section > ul > li > h6 {
+          padding-right: 10px;
+          display: inline;
+        }
+
+        .item {
+          margin-top: 10px;
+          padding-top: 10px;
+        }
+      }
+
+      @media print {
+        body {
+          margin: 0;
+          background: #ffffff;
+          color: #000;
+        }
+
+        main {
+          background: #ffffff !important;
+          color: black !important;
+        }
+
+        @page {
+          border-top: 2px solid #ffffff;
+        }
+
+        .page {
+          color: #000;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 35px 0 35px;
+          box-shadow: none;
+        }
+
+        .title {
+          background-color: #393e46;
+          color: #ffffff;
+          page-break-inside: avoid;
+        }
+
+        .keyline {
+          width: 45px;
+          margin: 4px 0 10px;
+          border-top: 2px solid #ff5701;
+        }
+
+        .page .resume-header,
+        .page .resume-content {
+          padding: 0 35px 0 35px;
+        }
+
+        .left-column {
+          width: 250px;
+          margin-right: 35px;
+        }
+
+        .left-column .container {
+          page-break-inside: avoid;
+        }
+
+        .fa-external-link {
+          display: none;
+        }
+
+        .gpa {
+          border: 1px solid #393e46;
+          margin-left: 10px;
+        }
+      }
+
+      /* Components */
+      .info-tag-container {
+        margin-bottom: 5px;
+      }
+
+      .info-tag-container .fa {
+        width: 12px;
+        margin-right: 5px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .info-tag-container .fa.fa-external-link {
+        width: auto;
+        font-size: 8px;
+        margin-left: 2px;
+        vertical-align: text-top;
+        color: #999;
+      }
+
+      .info-tag-container .info-text {
+        font-size: 14px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main id="resume" class="page">
+      <header class="resume-header clearfix">
+        <div class="profile-header">
+          <h1 class="display-block">Jon Wolfe</h1>
+          <h2 class="display-block">Fullstack Developer</h2>
+        </div>
+        <div class="profile-pic">
+          <img
+            src="https://jonathanwolfe.github.io/square-headshot.jpg"
+            alt="profile-pic"
+          />
+        </div>
+      </header>
+      <div class="resume-content">
+        <aside class="left-column">
+          <div class="container about-container">
+            <div class="title">
+              <h3>About</h3>
+              <div class="keyline"></div>
+            </div>
+
+            <div class="info-tag-container">
+              <i class="fa fa-map-marker"></i>
+
+              <h6 class="info-text">Queens NY 11358</h6>
+            </div>
+
+            <div class="info-tag-container">
+              <i class="fa fa-envelope"></i>
+
+              <h6 class="info-text">jonathanwolfe5@gmail.com</h6>
+            </div>
+
+            <div class="info-tag-container">
+              <i class="fa fa-mobile-alt"></i>
+
+              <h6 class="info-text">
+                <a href="tel:+17043017568">704-301-7568</a>
+              </h6>
+            </div>
+
+            <div class="info-tag-container">
+              <i class="fa fa-desktop"></i>
+
+              <h6 class="info-text">
+                <a href="https://jonathanwolfe.github.io" target="_blank">
+                  jonathanwolfe.github.io
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </h6>
+            </div>
+
+            <div class="info-tag-container">
+              <i class="fa fa-linkedin-square"></i>
+
+              <h6 class="info-text">
+                <a
+                  href="https://www.linkedin.com/in/jonathanwolfe5/"
+                  target="_blank"
+                >
+                  in/jonathanwolfe5
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </h6>
+            </div>
+            <div class="info-tag-container">
+              <i class="fab fa-github"></i>
+
+              <h6 class="info-text">
+                <a href="https://github.com/JonathanWolfe" target="_blank">
+                  JonathanWolfe
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </h6>
+            </div>
+            <div class="info-tag-container">
+              <i class="fa fa-twitter"></i>
+
+              <h6 class="info-text">
+                <a href="https://twitter.com/_JonWolfe" target="_blank">
+                  _JonWolfe
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </h6>
+            </div>
+            <div class="info-tag-container">
+              <i class="fa fa-instagram"></i>
+
+              <h6 class="info-text">
+                <a href="https://www.instagram.com/jon_wolfe/" target="_blank">
+                  Jon_Wolfe
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </h6>
+            </div>
+          </div>
+          <div class="skills-container">
+            <section class="container">
+              <div class="title">
+                <h3>Frontend Development</h3>
+                <div class="keyline"></div>
+              </div>
+              <h4 class="bold">Master</h4>
+              <ul class="minimal">
+                <li>
+                  <h6>HTML</h6>
+                </li>
+                <li>
+                  <h6>CSS</h6>
+                </li>
+                <li>
+                  <h6>JavaScript</h6>
+                </li>
+                <li>
+                  <h6>TypeScript</h6>
+                </li>
+                <li>
+                  <h6>React</h6>
+                </li>
+                <li>
+                  <h6>Next.js</h6>
+                </li>
+                <li>
+                  <h6>Polymer</h6>
+                </li>
+                <li>
+                  <h6>Ember</h6>
+                </li>
+              </ul>
+            </section>
+            <section class="container">
+              <div class="title">
+                <h3>Backend Development</h3>
+                <div class="keyline"></div>
+              </div>
+              <h4 class="bold">Intermediate</h4>
+              <ul class="minimal">
+                <li>
+                  <h6>NodeJS</h6>
+                </li>
+                <li>
+                  <h6>Python</h6>
+                </li>
+                <li>
+                  <h6>SQL</h6>
+                </li>
+              </ul>
+            </section>
+            <section class="container">
+              <div class="title">
+                <h3>Software Architecture</h3>
+                <div class="keyline"></div>
+              </div>
+              <h4 class="bold">Intermediate</h4>
+              <ul class="minimal">
+                <li>
+                  <h6>IaC</h6>
+                </li>
+                <li>
+                  <h6>Serverless</h6>
+                </li>
+                <li>
+                  <h6>SaaS</h6>
+                </li>
+                <li>
+                  <h6>PaaS</h6>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="container languages-container">
+            <div class="title">
+              <h3>Languages</h3>
+              <div class="keyline"></div>
+            </div>
+
+            <ul class="minimal">
+              <li>
+                <h6>English <em class="pull-right">(Native Speaker)</em></h6>
+              </li>
+              <li>
+                <h6>German <em class="pull-right">(Beginner)</em></h6>
+              </li>
+            </ul>
+          </div>
+          <div class="container interests-container">
+            <div class="title">
+              <h3>Interests</h3>
+              <div class="keyline"></div>
+            </div>
+
+            <section class="item">
+              <h4 class="bold">Computer Programming</h4>
+              <ul class="minimal">
+                <li>Video Game Programming</li>
+                <li>IDE / Text Editors</li>
+                <li>UI Programming Languages/Libraries</li>
+              </ul>
+            </section>
+            <section class="item">
+              <h4 class="bold">Video Games</h4>
+              <ul class="minimal">
+                <li>JRPGs</li>
+                <li>City building sims</li>
+                <li>League of Legends</li>
+              </ul>
+            </section>
+            <section class="item">
+              <h4 class="bold">Trivia</h4>
+              <ul class="minimal">
+                <li>How It&#x27;s Made</li>
+                <li>How Do They Do It</li>
+                <li>Unwrapped</li>
+              </ul>
+            </section>
+            <section class="item">
+              <h4 class="bold">Reading / Writing</h4>
+              <ul class="minimal">
+                <li>Manga</li>
+                <li>High Fantasy Novels</li>
+                <li>Sci-fi thrillers</li>
+                <li>Techno Dystopia/Utopia Thrillers</li>
+              </ul>
+            </section>
+          </div>
+        </aside>
+        <div class="right-column">
+          <div class="container summary-container">
+            <div class="title">
+              <i class="fa fas fa-file-alt"></i>
+              <h3>Summary</h3>
+              <div class="keyline"></div>
+            </div>
+            <div class="summary">
+              <p>
+                Over more than 13 years as a developer, I&#39;ve grown from a
+                PSD slicer, to a static site developer, to building CMS
+                templates, to a dedicated Frontend Developer, and now a
+                fullstack developer. I&#39;ve watched the web as an industry
+                grow and mature from Java Applets, then to PHP &amp; jQuery,
+                next the MVC framework explosion, and now the meta-framework
+                era. With each turn of the ages, I grew and evolved alongside
+                the industry, making sure I was always riding the most-likely
+                big waves and learning not just how a singular library or
+                framework worked, but how they were built and how the underlying
+                fundamentals interacted to create the interactions and patterns
+                we used.
+              </p>
+              <p>
+                I see myself currently as someone who strives to create software
+                that brings direct value to users, and does so while being built
+                on patterns and systems that should let the software outlive me.
+                I&#39;ve spent the much of the past 8 years of my career moving
+                legacy systems over to modern toolsets, leading projects to help
+                scale systems to new orders of magnitude, and creating tooling
+                that brings more speed and reliability to developers and
+                companies.
+              </p>
+            </div>
+          </div>
+          <div class="container work-container">
+            <div class="title">
+              <i class="fa fas fa-user-tie"></i>
+              <h3>Experience</h3>
+              <div class="keyline"></div>
+            </div>
+
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                  <a href="https://doxy.me" target="_blank">
+                    Doxy.me
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+                </h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">05/2021</span>
+                  <span class="endDate"> - Present</span>
+                </h5>
+              </div>
+
+              <h4>Lead FullStack Developer</h4>
+
+              <div class="summary">
+                <p>
+                  Tech lead for the Growth team. Launched large additions to the
+                  payment/subscription system to allow for international
+                  currencies and automatic tax collection. Converted the
+                  marketing site to a headless CMS to allow for legacy content
+                  and new components to coexist. Owned and integrated a
+                  feature-flag and experiment system into the product with
+                  strong adoption across all teams.
+                </p>
+              </div>
+
+              <ul>
+                <li>
+                  Increased TypeScript adoption and coverage throughout the
+                  codebase
+                </li>
+                <li>Acting engineering manager for the team for 2 years</li>
+                <li>
+                  Maintained a collection of teaching resources for others to
+                  use and learn from
+                </li>
+              </ul>
+            </section>
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                  <a href="https://pigknows.com" target="_blank">
+                    PigKnows
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+                </h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">12/2019</span>
+                  <span class="endDate"> - 04/2021</span>
+                </h5>
+              </div>
+
+              <h4>Lead Developer</h4>
+
+              <div class="summary">
+                <p>
+                  Primary developer on a full stack Next.JS client and
+                  node-based API for managing pig farms and the animals
+                  life-cycles throughout. Finished by building a feed ordering
+                  feature-set to create rations and budgets, track order
+                  history, and notify supplier of new orders.
+                </p>
+              </div>
+
+              <ul>
+                <li>
+                  Converted a large portion of both projects to Typescript
+                </li>
+                <li>
+                  Added 4 third-party integrations to sync data between for
+                  customers who used multiple vendors
+                </li>
+                <li>
+                  Created a feed tracking and ordering system to send orders to
+                  mills and veterinarians
+                </li>
+                <li>
+                  Refactored critical custom keyboard controls resulting in a
+                  10x rendering time reduction
+                </li>
+              </ul>
+            </section>
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                  <a
+                    href="https://product-intelligence.mindsphere.io"
+                    target="_blank"
+                  >
+                    Siemens PLM
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+                </h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">04/2015</span>
+                  <span class="endDate"> - 12/2019</span>
+                </h5>
+              </div>
+
+              <h4>Advanced/Senior Software Developer</h4>
+
+              <div class="summary">
+                <p>
+                  Refactor and replace a legacy prototype shipped to production
+                  with a modern, web-components based UI for Mindsphere&#39;s
+                  &quot;Big Data&quot; Analytics product, Product Intelligence.
+                  Built with Polymer 1 (web components v0), sass, and lots of
+                  reusable and composable components that are the being used as
+                  the base line for quality for the rest of Mindsphere UI.
+                </p>
+              </div>
+
+              <ul>
+                <li>
+                  Refactored a multi-million dollar application to modern
+                  standards
+                </li>
+                <li>Improved UI performance by 7x</li>
+                <li>
+                  Decreased page weight by 1-4mb (down to 200kb-1mb depending on
+                  the page)
+                </li>
+              </ul>
+            </section>
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                  <a href="https://socialtopias.com" target="_blank">
+                    Socialtopias
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+                </h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">02/2015</span>
+                  <span class="endDate"> - 02/2016</span>
+                </h5>
+              </div>
+
+              <h4>Frontend Developer</h4>
+
+              <div class="summary">
+                <p>
+                  Initially brought on to salvage the original product of the
+                  same name which was a large scale social network intent on
+                  bringing people together at real life physical locations and
+                  helping them plan their future endeavors and plans. The app
+                  also helped business to connect and identify their clientele
+                  and offer them much more direct engagement. After stabilizing
+                  the project and fixing all bugs, a mostly comprehensive
+                  overhaul was done which drastically improved the
+                  application&#39;s responsiveness, features, and usability.
+                </p>
+              </div>
+
+              <ul>
+                <li>
+                  Salvaged a completely broken and unfinished large-scale
+                  product
+                </li>
+                <li>Greatly improved existing feature set</li>
+                <li>Eliminated some 500+ bugs</li>
+                <li>
+                  Rewrote most of the app to be much simpler and more capable of
+                  reuse
+                </li>
+              </ul>
+            </section>
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                  <a href="http://theideapeople.com/" target="_blank">
+                    The Idea People
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+                </h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">12/2014</span>
+                  <span class="endDate"> - 02/2015</span>
+                </h5>
+              </div>
+
+              <h4>Frontend Developer</h4>
+
+              <div class="summary">
+                <p>
+                  Was tasked with handling the company&#39;s agency work while
+                  most of it&#39;s developers where engaged in building the
+                  Socialtopias App (see next company). After failing to complete
+                  the project and losing the contract, I was let go for monetary
+                  reasons.
+                </p>
+              </div>
+
+              <ul>
+                <li>
+                  Built modern Wordpress templates with fully responsive
+                  capabilities
+                </li>
+                <li>Helped teach co-workers how to use Git and other tools</li>
+              </ul>
+            </section>
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                  <a href="http://bemythic.com/" target="_blank">
+                    Mythic
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+                </h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">07/2014</span>
+                  <span class="endDate"> - 10/2014</span>
+                </h5>
+              </div>
+
+              <h4>Frontend Developer - Consultant</h4>
+
+              <div class="summary">
+                <p>
+                  Maintained many existing company and business sites as well
+                  implemented new features and fixes for those. Crafted new
+                  products for their budding digital presence.
+                </p>
+              </div>
+
+              <ul>
+                <li>Integrated new online payment platform and interactions</li>
+                <li>
+                  Constructed a complete real estate platform with fully
+                  responsive elements
+                </li>
+              </ul>
+            </section>
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">Fire Studios</h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">01/2005</span>
+                  <span class="endDate"> - 01/2013</span>
+                </h5>
+              </div>
+
+              <h4>Owner and Sole Developer</h4>
+
+              <div class="summary">
+                <p>
+                  Owned and operated a small freelance company that covered both
+                  back-endDate PHP work as well as front-endDate contracts
+                  (HTML, CSS, JS). Outsourced any excess work and managed those
+                  contractors.
+                </p>
+              </div>
+
+              <ul>
+                <li>Worked across several languages like JS &amp; PHP</li>
+                <li>
+                  Worked with various size companies and the semi-local
+                  University of South Carolina
+                </li>
+                <li>Where I honed most of my development skills</li>
+              </ul>
+            </section>
+          </div>
+          <div class="container volunteer-container">
+            <div class="title">
+              <i class="fa fas fa-hands-helping"></i>
+              <h3>Volunteer</h3>
+              <div class="keyline"></div>
+            </div>
+
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">
+                  <a href="http://www.myrestorationranch.org/" target="_blank">
+                    Restoration Ranch
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                  </a>
+                </h3>
+                <h5 class="italic pull-right"></h5>
+              </div>
+              <h5>Volunteer</h5>
+
+              <div class="summary">
+                <p>Helped dig troughs for the water pipes to the building</p>
+              </div>
+            </section>
+          </div>
+          <div class="container education-container">
+            <div class="title">
+              <i class="fa fas fa-user-graduate"></i>
+              <h3>Education</h3>
+              <div class="keyline"></div>
+            </div>
+
+            <section class="item">
+              <div class="section-header clearfix">
+                <h3 class="bold pull-left">Appalachian State University</h3>
+                <h5 class="italic pull-right">
+                  <span class="startDate">07/2010</span>
+                  <span class="endDate"> - 04/2014</span>
+                </h5>
+              </div>
+
+              <h4 class="display-inline">Bachelor - Social Psychology</h4>
+            </section>
+          </div>
+          <div class="container references-container">
+            <div class="title">
+              <i class="fa fas fa-asterisk"></i>
+              <h3>References</h3>
+              <div class="keyline"></div>
+            </div>
+
+            <section class="item clearfix">
+              <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+              <blockquote>
+                Jon is a talented software engineer with a strong vision for how
+                to design and implement pragmatic solutions to complex product
+                goals. He is a strong advocate for well-organized and clean
+                code, and supports his peers in meeting those standards. I
+                appreciate the time we spent working together and would be happy
+                to work with him again in the future.
+              </blockquote>
+
+              <h5 class="pull-right">— Heath Morrison - CTO - Doxy.me</h5>
+            </section>
+            <section class="item clearfix">
+              <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+              <blockquote>
+                Jon is a highly skilled developer with a unique capacity to cut
+                through noise and identify an optimal path to a technical
+                solution. He is consistent in his output, and can be relied upon
+                to produce at a steady, predictable pace. This is in regards to
+                not only his work ethic, but also his ability to move through
+                previously un-encountered technical challenges. Give Jon a
+                codebase in which he has not previously worked, and he will sort
+                it out and be producing with it in very short order. He is very
+                aware of current and emerging technologies, but applies them to
+                solutions in a sensible manner (rather than using personal
+                interest as a primary motivator).
+              </blockquote>
+
+              <h5 class="pull-right">
+                — Nick Hendricks - System Administrator - PigKnows
+              </h5>
+            </section>
+            <section class="item clearfix">
+              <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+              <blockquote>
+                Jon is one of the best developers I had pleasure to work with.
+                He is passionate about what he is doing and never cuts corners.
+                Never afraid to raise his concerns and propose the best solution
+                for given problem. I have learned a lot from him and think he is
+                going to be a great addition to any team.
+              </blockquote>
+
+              <h5 class="pull-right">
+                — Yury Katko - Advanced Software Engineer - Siemens
+              </h5>
+            </section>
+            <section class="item clearfix">
+              <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+              <blockquote>
+                It’s rare that you come across standout talent and mind like
+                Jon&#x27;s. I hired Jon as a front end web developer and he is
+                quite skilled in this area. Jon always has a handle on the
+                latest available technologies and tools and went beyond his role
+                as developer to also help out other team members with other
+                aspects of our tech stack outside the front end web application
+                development arena. He is also masterful with git version control
+                tools, which helped a lot as our project was ramping up and we
+                were creating the internal tools and processes to get things
+                done. Jon is punctual and reliable too. Jon would be good on any
+                web app team.
+              </blockquote>
+
+              <h5 class="pull-right">— Corky Kaericher - CTO - Socialtopias</h5>
+            </section>
+            <section class="item clearfix">
+              <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+              <blockquote>A wonderful and talented developer.</blockquote>
+
+              <h5 class="pull-right">
+                — Bill McCowen - Owner - The Idea People
+              </h5>
+            </section>
+            <section class="item clearfix">
+              <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+              <blockquote>
+                Every bit the developer he claimed to be and then some.
+              </blockquote>
+
+              <h5 class="pull-right">— Sara Garces Roselli - Mythic</h5>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
