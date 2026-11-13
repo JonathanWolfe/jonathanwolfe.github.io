@@ -33,7 +33,7 @@ Fullstack developer with 18 years of experience, from freelance sites to staff-l
 - Led the frontend rebuild of the entire product in about 6 months, on observables, strict module boundaries, and MVVM
 - Led the auditor API rebuild and a new auth system, and co-led frontend architecture
 - Added TypeScript and contributed 13,000+ lint rules and fixes
-- Built AI determinism benchmark tooling to refine LLM context
+- Built AI determinism benchmark and eval tooling, and used it to improve coding-guideline adherence and reduce LLM context usage
 - Worked across all areas of the business as a fullstack staff developer
 - Focused on developer experience, AI tools, and type correctness
 
@@ -42,10 +42,10 @@ Fullstack developer with 18 years of experience, from freelance sites to staff-l
 ##### 2021-06 - 2023-03
 
 - Tech lead for the Growth team and acting engineering manager for 2 years
-- Launched international currencies and automatic tax collection in the payment and subscription system
-- Converted the marketing site to a headless CMS and integrated a feature-flag and experiment system adopted by all teams
-- Increased TypeScript adoption and coverage across the codebase
-- Maintained a collection of teaching resources for others to learn from
+- Launched multi-currency payments and automatic tax collection for subscriptions, built to support every currency Stripe offers
+- Converted the marketing site to a headless CMS so legacy content and new components could coexist, and integrated a feature-flag and experiment system that every team adopted
+- Took TypeScript from a small fraction of the codebase to most of it
+- Maintained teaching resources and taught engineers across the company
 
 ### Lead Developer, [PigKnows](https://pigknows.com)
 
@@ -55,7 +55,7 @@ Fullstack developer with 18 years of experience, from freelance sites to staff-l
 - Cut rendering time 10x by refactoring critical custom keyboard controls
 - Built feed ordering for rations, budgets, and orders to mills and veterinarians
 - Added 4 third-party integrations to sync data for customers who use multiple vendors
-- Converted a large portion of both projects to TypeScript
+- Converted about half of both projects to TypeScript
 
 ### Advanced/Senior Software Developer, [Siemens PLM](https://product-intelligence.mindsphere.io)
 
@@ -63,8 +63,7 @@ Fullstack developer with 18 years of experience, from freelance sites to staff-l
 
 - Replaced a legacy production prototype with a Polymer web-components UI for MindSphere Product Intelligence
 - Improved UI performance 7x and cut page weight by 1-4 MB, to 200 KB-1 MB per page
-- Refactored a multi-million dollar application to modern standards
-- Built with Polymer 1, Sass, and reusable, composable components now used as the quality baseline for the rest of MindSphere UI
+- Built reusable web-components, now the quality baseline for the rest of MindSphere UI
 
 ### Frontend Developer, [Socialtopias](https://socialtopias.com)
 
@@ -96,7 +95,7 @@ Fullstack developer with 18 years of experience, from freelance sites to staff-l
 
 - Started in 2005 as a freelance web developer for companies of all sizes
 - Built PHP backends and HTML, CSS, and JavaScript frontends
-- Worked with clients including the University of South Carolina
+- Built sites for clients including the University of South Carolina
 - Outsourced overflow work and managed contractors
 
 ## Education
