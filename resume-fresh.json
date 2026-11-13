@@ -1,0 +1,241 @@
+{
+    "name": "Jon Wolfe",
+    "meta": {
+        "format": "FRESH@0.6.0",
+        "version": "1.0.0"
+    },
+    "info": {
+        "label": "Frontend Developer",
+        "characterClass": "Programmer",
+        "image": "https://scontent-iad3-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/11692524_10207153247408203_4755448860691554071_n.jpg?oh=d6b5e60e9c161d4bf9aa1e8c45a4f499&oe=56F62991",
+        "brief": "Originally from Greenville, SC and then Charlotte, NC, Jon has spent a lot of time moving around the Carolinas. He obtained a degree in Social Psychology while at Appalachian State University. Jon got his start in web development early on in his life during middle school and has continued that ever since. When he's not programming for a client or making a small tool for himself or his friends, he can usually be found enjoying a book, manga, movie, or anime (that is if he's not playing a video game with his friends)."
+    },
+    "contact": {
+        "website": "https://jonathanwolfe.github.io",
+        "phone": "704-301-7568",
+        "email": "jonathanwolfe5@gmail.com"
+    },
+    "location": {
+        "address": "335 Doggett St. Apt 410",
+        "city": "Charlotte",
+        "region": "NC",
+        "code": "28203",
+        "country": "US"
+    },
+    "social": [{
+        "label": "Twitter",
+        "network": "Twitter",
+        "user": "_JonWolfe",
+        "url": "https://twitter.com/_jonwolfe"
+    }, {
+        "label": "Github",
+        "network": "Github",
+        "user": "JonathanWolfe",
+        "url": "https://github.com/jonathanwolfe"
+    }],
+    "projects": [{
+        "title": "Better Manga Reader",
+        "category": "FOSS",
+        "role": "author",
+        "url": "https://github.com/JonathanWolfe/BetterMangaReader",
+        "start": "2014-05",
+        "repo": "https://github.com/JonathanWolfe/BetterMangaReader",
+        "description": "A chrome plugin to keep track of your manga, be notified of updates, and have a better reading experience",
+        "summary": "A chrome plugin to keep track of your manga, be notified of updates, and have a better reading experience",
+        "keywords": ["JavaScript", "ES6", "Chrome APIs"],
+        "media": [{
+            "category": "download",
+            "url": "https://chrome.google.com/webstore/detail/bettermangareader/gecohlfddhgfhkadmdghjjmijdpabmlp?hl=en&gl=US"
+        }]
+    }],
+    "employment": {
+        "summary": "10+ years of web development.",
+        "history": [{
+            "employer": "Socialtopias",
+            "position": "Frontend Developer",
+            "url": "https://socialtopias.com",
+            "start": "2015-03",
+            "end": "2016-03",
+            "summary": "Initially brought on to salvage the original product of the same name which was a large scale social network intent on bringing people together at real life physical locations and helping them plan their future endeavors and plans.  The app also helped business to connect and identify their clientele and offer them much more direct engagement.  After stabilizing the project and fixing all bugs, a mostly comprehensive overhaul was done which drastically improved the application's responsiveness, features, and usability.",
+            "keywords": ["Ember.js", "Node.js", "Riot.js", "JavaScript", "HTML", "CSS", "PostCSS", "Sass", "SPA", "Server-side Rendering"],
+            "highlights": [
+                "Salvaged a completely broken and unfinished large-scale product",
+                "Greatly improved existing feature set",
+                "Eliminated some 500+ bugs",
+                "Rewrote most of the app to be much simpler and more capable of reuse"
+            ]
+        }, {
+            "employer": "The Idea People",
+            "position": "Frontend Developer",
+            "url": "http://theideapeople.com/",
+            "start": "2015-01-04",
+            "end": "2015-03-01",
+            "summary": "Was tasked with handling the company's agency work while most of it's developers where engaged in building the Socialtopias App (see next employer).  After failing to complete the project and losing the contract, I was let go for monetary reasons.",
+            "keywords": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"],
+            "highlights": [
+                "Built modern Wordpress templates with fully responsive capabilities",
+                "Helped teach co-workers how to use Git and other tools"
+            ]
+        }, {
+            "employer": "Mythic",
+            "position": "Frontend Developer - Consultant",
+            "url": "http://bemythic.com/",
+            "start": "2014-08-10",
+            "end": "2014-11-24",
+            "summary": "Maintained many existing company and business sites as well implemented new features and fixes for those. Crafted new products for their budding digital presence.",
+            "keywords": ["HTML", "CSS", "JavaScript", "PHP", "SPA"],
+            "highlights": [
+                "Integrated new online payment platform and interactions",
+                "Constructed a complete real estate platform with fully responsive elements"
+            ]
+        }, {
+            "employer": "Fire Studios",
+            "position": "Owner & Sole Developer",
+            "start": "2005-02-12",
+            "end": "2013-02-12",
+            "summary": "Owned and operated a small freelance company that covered both back-end PHP work as well as front-end contracts (HTML, CSS, JS). Outsourced any excess work and managed those contractors.",
+            "keywords": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"],
+            "highlights": [
+                "Worked across several languages like JS & PHP",
+                "Worked with various size companies and the semi-local University of South Carolina",
+                "Where I honed most of my development skills"
+            ]
+        }]
+    },
+    "education": {
+        "summary": "",
+        "level": "degree",
+        "degree": "BA",
+        "history": [{
+            "institution": "Appalachian State University",
+            "url": "http://appstate.edu",
+            "title": "BA of Social Psychology",
+            "summary": "Obtained a Bachelor of Arts degree in Social Psychology which focused on the interaction and thinking of people in various environments.",
+            "start": "2010-08-15",
+            "end": "2014-05-05",
+            "grade": "3.0"
+        }]
+    },
+    "writing": [{
+        "title": "How to Write a \"Most Popular By Views\" WordPress Plugin",
+        "flavor": "article",
+        "publisher": {
+            "name": "Tuts+",
+            "url": "https://tutsplus.com"
+        },
+        "date": "2010-06-17",
+        "url": "https://code.tutsplus.com/tutorials/how-to-write-a-most-popular-by-views-wordpress-plugin--wp-12425",
+        "summary": "As you continue writing for WordPress more and more, the level of difficulty and complexity of your plugins will eventually reach far beyond the simple back-end data manipulation, as demonstrated in our beginner's article. In this installment we'll cover in-depth: database interaction, Admin Widgets, and Sidebar Widgets. Today's example will be a custom built \"Most Popular by Views\" plugin, which creates an admin area widget for us to view, and a sidebar widget for visitors to see."
+    }, {
+        "title": "Your First WordPress Plugin: Simple Optimization",
+        "flavor": "article",
+        "publisher": {
+            "name": "Tuts+",
+            "url": "https://tutsplus.com"
+        },
+        "date": "2010-06-01",
+        "url": "https://code.tutsplus.com/articles/your-first-wordpress-plugin-simple-optimization--net-11869",
+        "summary": "WordPress is the largest blogging platform available on the internet today; and with the official release of version three just around the corner, it's only going to get bigger. As such, over the next few self-contained tuts, we're going to learn the ins and outs of WordPress plugin development, starting with the creation of our first simple plugin, \"Simple Optimization.\""
+    }, {
+        "title": "Building a Custom “Search By Category” WordPress Plugin",
+        "flavor": "article",
+        "publisher": {
+            "name": "Tuts+",
+            "url": "https://tutsplus.com"
+        },
+        "date": "2009-07-15",
+        "url": "https://code.tutsplus.com/tutorials/building-a-custom-search-by-category-wordpress-plugin--net-5826",
+        "summary": "With an ever increasing amount of content building on your Wordpress site, your users will inevitably need to search your site to find that specific helpful article from way back. To help narrow the search results, I'm going to show you how to code a plugin that allows the user to search based on category."
+    }],
+    "skills": {
+        "sets": [{
+            "name": "Frontend Development",
+            "level": "Master",
+            "skills": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Riot.js",
+                "Gulp",
+                "Ember"
+            ]
+        }, {
+            "name": "Backend Development",
+            "level": "Intermediate",
+            "skills": [
+                "PHP",
+                "Node.JS"
+            ]
+        }, {
+            "name": "Software Architecture",
+            "level": "Intermediate",
+            "skills": [
+                "Nginx",
+                "Node.JS",
+                "Linux"
+            ]
+        }]
+    },
+    "testimonials": [{
+        "name": "Bill McCowen - The Idea People",
+        "flavor": "professional",
+        "quote": "A wonderful and talented developer."
+    }, {
+        "name": "Sara Garces Roselli - Mythic",
+        "flavor": "professional",
+        "quote": "Every bit the developer he claimed to be and then some."
+    }],
+    "languages": [{
+        "language": "English",
+        "fluency": "Native speaker"
+    }, {
+        "language": "German",
+        "fluency": "Intermediate",
+        "years": 2
+    }],
+    "interests": [{
+        "name": "Computer Programming",
+        "summary": "Jon seriously loves programming and computer science.",
+        "keywords": [
+            "List Sorting",
+            "Video Game Programming",
+            "IDE / Text Editors"
+        ]
+    }, {
+        "name": "Video Game Playing",
+        "summary": "Jon's a big fan of Japanese role-playing games and various other games inbetween play throughs.",
+        "keywords": [
+            "JRPGs",
+            "League of Legends",
+            "Competitive Shooters"
+        ]
+    }, {
+        "name": "Trivia",
+        "summary": "Jon frequently hears \"Why do you even know that!?\"",
+        "keywords": [
+            "How It's Made",
+            "How Do They Do It",
+            "Unwrapped"
+        ]
+    }, {
+        "name": "Reading / Writing",
+        "summary": "Jon enjoys reading when he needs a break from everything else.",
+        "keywords": [
+            "Manga",
+            "High Fantasy Novels",
+            "Sci-fi thrillers",
+            "Techno Dystopia/Utopia Thrillers"
+        ]
+    }],
+    "reading": [{
+        "title": "r/programming",
+        "flavor": "website",
+        "url": "https://www.reddit.com/r/programming/",
+        "summary": "Subscriber and pilferer."
+    }, {
+        "title": "Hacker News / YCombinator",
+        "flavor": "website",
+        "url": "https://news.ycombinator.com/",
+        "summary": "Frequent visitor."
+    }]
+}
