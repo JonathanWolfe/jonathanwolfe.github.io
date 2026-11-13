@@ -3,6 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "description": "resume for jon wolfe",
+  "homepage": "https://github.com/JonathanWolfe/jonathanwolfe.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/JonathanWolfe/jonathanwolfe.github.io/issues"
+  },
+  "license": "MIT",
+  "author": "Jon Wolfe",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanWolfe/jonathanwolfe.github.io.git"
+  },
   "main": "index.html",
   "scripts": {
     "optimize": "bun optimize.ts",
@@ -10,21 +20,11 @@
     "build:sidebar": "bun optimize.ts && bun build.ts --template sidebar",
     "lint": "bun check && bun fmt --check build.ts optimize.ts src templates"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JonathanWolfe/jonathanwolfe.github.io.git"
+  "devDependencies": {
+    "@types/bun": "^1.4.4"
   },
-  "author": "Jon Wolfe",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JonathanWolfe/jonathanwolfe.github.io/issues"
-  },
-  "homepage": "https://github.com/JonathanWolfe/jonathanwolfe.github.io#readme",
-  "packageManager": "bun@1.4.4",
   "engines": {
     "bun": ">=1.4.4"
   },
-  "devDependencies": {
-    "@types/bun": "^1.4.4"
-  }
+  "packageManager": "bun@1.4.4"
 }

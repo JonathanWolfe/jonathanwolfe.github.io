@@ -15,11 +15,5 @@
     "resume.png",
     "bun.lock"
   ],
-  "lsp": {
-    "biome": {
-      "settings": {
-        "require_config_file": true
-      }
-    }
-  }
+  "lsp": { "biome": { "settings": { "require_config_file": true } } }
 }

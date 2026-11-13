@@ -108,7 +108,7 @@ h2 {
 }
 
 h2::after {
-  content: "";
+  content: '';
   display: block;
   width: 45px;
   margin: 4px 0 6px;

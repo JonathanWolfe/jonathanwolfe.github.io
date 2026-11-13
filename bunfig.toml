@@ -1,3 +1,20 @@
+telemetry = false
+env = false
+
 [fmt]
-printWidth = 120
-# semi = false
+sortImports = true
+semi = true
+singleQuote = true
+objectWrap = "collapse"
+proseWrap = "never"
+experimentalOperatorPosition = "start"
+sortPackageJson = true
+
+[install]
+ignoreScripts = true
+minimumReleaseAge = 604800
+
+[run]
+shell = "bun"
+bun = true
+noOrphans = true

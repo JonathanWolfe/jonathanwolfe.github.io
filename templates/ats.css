@@ -39,7 +39,7 @@ header {
 h1 {
   font:
     400 32px Georgia,
-    "Times New Roman",
+    'Times New Roman',
     serif;
 }
 
@@ -47,7 +47,7 @@ h1 {
   margin-top: 4px;
   font:
     italic 14px Georgia,
-    "Times New Roman",
+    'Times New Roman',
     serif;
   color: #555;
 }
@@ -64,7 +64,7 @@ h2 {
   margin: 22px 0 8px;
   font:
     700 12px Georgia,
-    "Times New Roman",
+    'Times New Roman',
     serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
