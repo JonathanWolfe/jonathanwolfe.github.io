@@ -5,10 +5,10 @@ import { renderDocx } from './src/docx';
 import { path, resume } from './src/resume';
 import type { Template } from './src/template';
 
-const templates = {
-  ats: () => import('./templates/ats'),
-  sidebar: () => import('./templates/sidebar'),
-} satisfies Record<string, () => Promise<Template>>;
+const templates = { ats: () => import('./templates/ats') } satisfies Record<
+  string,
+  () => Promise<Template>
+>;
 
 type TemplateName = keyof typeof templates;
 
@@ -53,6 +53,8 @@ async function renderBrowserOutputs() {
   const pdf = await view.cdp<{ data: string }>('Page.printToPDF', {
     printBackground: true,
     preferCSSPageSize: true,
+    generateTaggedPDF: true,
+    generateDocumentOutline: true,
   });
 
   await Bun.write(path('resume.png'), Buffer.from(shot.data, 'base64'));
@@ -64,6 +66,6 @@ await Bun.write(path('resume.html'), await template.render(resume));
 
 await Bun.$`${process.execPath} fmt ${path('resume.html')}`.quiet();
 
-await Bun.write(path('resume.docx'), await renderDocx(resume, template.ats));
+await Bun.write(path('resume.docx'), renderDocx(resume));
 
 await renderBrowserOutputs();

@@ -3,25 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jon Wolfe</title>
+    <meta name="color-scheme" content="light" />
+    <title>Jon Wolfe - Resume</title>
     <style>
+      :root {
+        color-scheme: light;
+        --lead: 1.4;
+        --unit: calc(var(--lead) * 1rem);
+        --text: #000;
+        --muted: #404040;
+        --serif: Georgia, 'Times New Roman', serif;
+        --sans: Arial, Helvetica, sans-serif;
+      }
+
       * {
         box-sizing: border-box;
       }
 
       body {
-        margin: 0;
+        max-width: 38rem;
+        margin: 0 auto;
+        padding: var(--unit) 1.25rem;
         background: #fff;
-        color: #000;
-        font:
-          10.5pt/1.45 Arial,
-          Helvetica,
-          sans-serif;
+        color: var(--text);
+        font: 1rem/var(--lead) var(--sans);
       }
 
       a {
         color: inherit;
-        text-decoration: none;
+        text-decoration: underline;
+        text-decoration-thickness: 0.0625rem;
+        text-underline-offset: 0.15em;
+      }
+
+      a:focus-visible {
+        outline: 0.1875rem solid var(--text);
+        outline-offset: 0.125rem;
       }
 
       h1,
@@ -29,14 +46,10 @@
       h3,
       p,
       ul,
-      blockquote {
+      figure,
+      blockquote,
+      address {
         margin: 0;
-      }
-
-      .page {
-        max-width: 8.5in;
-        margin: 0 auto;
-        padding: 0.5in;
       }
 
       header {
@@ -44,104 +57,96 @@
       }
 
       h1 {
-        font:
-          400 32px Georgia,
-          'Times New Roman',
-          serif;
+        font: 400 2rem/1.2 var(--serif);
       }
 
       .label {
-        margin-top: 4px;
-        font:
-          italic 14px Georgia,
-          'Times New Roman',
-          serif;
-        color: #555;
+        margin-top: 0.25rem;
+        color: var(--muted);
+        font: italic 1.1667rem/var(--lead) var(--serif);
       }
 
       address {
-        margin: 14px 0 0;
-        padding: 8px 0;
-        border-top: 1px solid #444;
-        border-bottom: 1px solid #444;
+        margin-top: var(--unit);
+        padding: calc(var(--unit) / 2) 0;
+        border-top: 0.0625rem solid var(--muted);
+        border-bottom: 0.0625rem solid var(--muted);
         font-style: normal;
       }
 
+      section {
+        margin-top: calc(var(--unit) * 2);
+      }
+
       h2 {
-        margin: 22px 0 8px;
-        font:
-          700 12px Georgia,
-          'Times New Roman',
-          serif;
+        margin-bottom: calc(var(--unit) / 2);
+        font: 700 1rem/var(--lead) var(--serif);
         letter-spacing: 0.08em;
         text-transform: uppercase;
       }
 
+      h3 {
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
       p + p {
-        margin-top: 6px;
+        margin-top: calc(var(--unit) / 2);
       }
 
-      article {
-        margin-top: 14px;
-      }
-
-      h2 + article {
-        margin-top: 0;
+      article + article {
+        margin-top: var(--unit);
       }
 
       .head {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        gap: 16px;
-      }
-
-      h3 {
-        font-size: inherit;
-        font-weight: 400;
+        column-gap: 1rem;
       }
 
       .title {
         font-weight: 700;
-        text-transform: uppercase;
       }
 
       .dates {
+        color: var(--muted);
+        font-variant-numeric: tabular-nums lining-nums;
         white-space: nowrap;
       }
 
       article p {
-        margin: 2px 0;
+        margin-top: 0.25rem;
       }
 
       ul {
-        padding-left: 22px;
+        padding-left: 1.5em;
       }
 
-      li {
-        padding-left: 2px;
+      article ul {
+        margin-top: 0.25rem;
+      }
+
+      figure + figure {
+        margin-top: var(--unit);
       }
 
       blockquote {
-        margin-top: 10px;
-      }
-
-      blockquote p {
         font-style: italic;
       }
 
-      footer {
+      figcaption {
+        color: var(--muted);
         text-align: right;
-        color: #555;
       }
 
       @page {
         size: letter;
-        margin: 0.5in;
+        margin: 6.5rem;
       }
 
       @media print {
-        .page {
-          max-width: none;
+        body {
           padding: 0;
         }
 
@@ -151,43 +156,41 @@
         }
 
         li,
-        blockquote {
+        figure {
           break-inside: avoid;
         }
       }
     </style>
   </head>
   <body>
-    <main class="page">
-      <header>
-        <h1>Jon Wolfe</h1>
-        <p class="label">Fullstack Developer</p>
-        <address>
-          <p>
-            Queens NY 11358 | 704-301-7568 |
-            <a href="mailto:jonathanwolfe5@gmail.com"
-              >jonathanwolfe5@gmail.com</a
-            >
-            |
-            <a href="https://jonathanwolfe.github.io"
-              >jonathanwolfe.github.io</a
-            >
-          </p>
-          <p>
-            <a href="https://www.linkedin.com/in/jonathanwolfe5/"
-              >linkedin.com/in/jonathanwolfe5</a
-            >
-            |
-            <a href="https://github.com/JonathanWolfe"
-              >github.com/JonathanWolfe</a
-            >
-            | <a href="https://twitter.com/_JonWolfe">twitter.com/_JonWolfe</a>
-          </p>
-        </address>
-      </header>
+    <header>
+      <h1>Jon Wolfe</h1>
+      <p class="label">Fullstack Developer</p>
+      <address>
+        <p>
+          Queens NY 11358<span aria-hidden="true"> | </span>704-301-7568<span
+            aria-hidden="true"
+          >
+            | </span
+          ><a href="mailto:jonathanwolfe5@gmail.com">jonathanwolfe5@gmail.com</a
+          ><span aria-hidden="true"> | </span
+          ><a href="https://jonathanwolfe.github.io">jonathanwolfe.github.io</a>
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/jonathanwolfe5/"
+            >linkedin.com/in/jonathanwolfe5</a
+          ><span aria-hidden="true"> | </span
+          ><a href="https://github.com/JonathanWolfe"
+            >github.com/JonathanWolfe</a
+          ><span aria-hidden="true"> | </span
+          ><a href="https://twitter.com/_JonWolfe">twitter.com/_JonWolfe</a>
+        </p>
+      </address>
+    </header>
 
-      <section>
-        <h2>Professional Summary</h2>
+    <main>
+      <section aria-labelledby="professional-summary">
+        <h2 id="professional-summary">Professional Summary</h2>
         <p>
           I've been a developer for over 13 years, and over that time I've grown
           from a PSD slicer, to a static site developer, to building CMS
@@ -212,16 +215,19 @@
         </p>
       </section>
 
-      <section>
-        <h2>Work Experience</h2>
+      <section aria-labelledby="work-experience">
+        <h2 id="work-experience">Work Experience</h2>
 
         <article>
           <div class="head">
             <h3>
-              <span class="title">Staff Software Engineer</span> |
-              <a href="https://drata.com">Drata</a>
+              <span class="title">Staff Software Engineer</span
+              ><span aria-hidden="true"> | </span
+              ><a href="https://drata.com">Drata</a>
             </h3>
-            <span class="dates">MAY 2023 – PRESENT</span>
+            <span class="dates"
+              ><time datetime="2023-05">May 2023</time> - Present</span
+            >
           </div>
 
           <p>
@@ -253,10 +259,14 @@
         <article>
           <div class="head">
             <h3>
-              <span class="title">Lead FullStack Developer</span> |
-              <a href="https://doxy.me">Doxy.me</a>
+              <span class="title">Lead FullStack Developer</span
+              ><span aria-hidden="true"> | </span
+              ><a href="https://doxy.me">Doxy.me</a>
             </h3>
-            <span class="dates">JUN 2021 – MAR 2023</span>
+            <span class="dates"
+              ><time datetime="2021-06">Jun 2021</time> -
+              <time datetime="2023-03">Mar 2023</time></span
+            >
           </div>
 
           <p>
@@ -283,10 +293,14 @@
         <article>
           <div class="head">
             <h3>
-              <span class="title">Lead Developer</span> |
-              <a href="https://pigknows.com">PigKnows</a>
+              <span class="title">Lead Developer</span
+              ><span aria-hidden="true"> | </span
+              ><a href="https://pigknows.com">PigKnows</a>
             </h3>
-            <span class="dates">JAN 2020 – MAY 2021</span>
+            <span class="dates"
+              ><time datetime="2020-01">Jan 2020</time> -
+              <time datetime="2021-05">May 2021</time></span
+            >
           </div>
 
           <p>
@@ -316,12 +330,16 @@
         <article>
           <div class="head">
             <h3>
-              <span class="title">Advanced/Senior Software Developer</span> |
-              <a href="https://product-intelligence.mindsphere.io"
+              <span class="title">Advanced/Senior Software Developer</span
+              ><span aria-hidden="true"> | </span
+              ><a href="https://product-intelligence.mindsphere.io"
                 >Siemens PLM</a
               >
             </h3>
-            <span class="dates">MAY 2015 – JAN 2020</span>
+            <span class="dates"
+              ><time datetime="2015-05">May 2015</time> -
+              <time datetime="2020-01">Jan 2020</time></span
+            >
           </div>
 
           <p>
@@ -348,10 +366,14 @@
         <article>
           <div class="head">
             <h3>
-              <span class="title">Frontend Developer</span> |
-              <a href="https://socialtopias.com">Socialtopias</a>
+              <span class="title">Frontend Developer</span
+              ><span aria-hidden="true"> | </span
+              ><a href="https://socialtopias.com">Socialtopias</a>
             </h3>
-            <span class="dates">MAR 2015 – MAR 2016</span>
+            <span class="dates"
+              ><time datetime="2015-03">Mar 2015</time> -
+              <time datetime="2016-03">Mar 2016</time></span
+            >
           </div>
 
           <p>
@@ -381,10 +403,14 @@
         <article>
           <div class="head">
             <h3>
-              <span class="title">Frontend Developer</span> |
-              <a href="http://theideapeople.com/">The Idea People</a>
+              <span class="title">Frontend Developer</span
+              ><span aria-hidden="true"> | </span
+              ><a href="http://theideapeople.com/">The Idea People</a>
             </h3>
-            <span class="dates">JAN 2015 – MAR 2015</span>
+            <span class="dates"
+              ><time datetime="2015-01">Jan 2015</time> -
+              <time datetime="2015-03">Mar 2015</time></span
+            >
           </div>
 
           <p>
@@ -406,10 +432,14 @@
         <article>
           <div class="head">
             <h3>
-              <span class="title">Frontend Developer - Consultant</span> |
-              <a href="http://bemythic.com/">Mythic</a>
+              <span class="title">Frontend Developer - Consultant</span
+              ><span aria-hidden="true"> | </span
+              ><a href="http://bemythic.com/">Mythic</a>
             </h3>
-            <span class="dates">AUG 2014 – NOV 2014</span>
+            <span class="dates"
+              ><time datetime="2014-08">Aug 2014</time> -
+              <time datetime="2014-11">Nov 2014</time></span
+            >
           </div>
 
           <p>
@@ -430,9 +460,13 @@
         <article>
           <div class="head">
             <h3>
-              <span class="title">Owner and Sole Developer</span> | Fire Studios
+              <span class="title">Owner and Sole Developer</span
+              ><span aria-hidden="true"> | </span>Fire Studios
             </h3>
-            <span class="dates">FEB 2005 – FEB 2013</span>
+            <span class="dates"
+              ><time datetime="2005-02">Feb 2005</time> -
+              <time datetime="2013-02">Feb 2013</time></span
+            >
           </div>
 
           <p>
@@ -452,22 +486,22 @@
         </article>
       </section>
 
-      <section>
-        <h2>Education</h2>
+      <section aria-labelledby="education">
+        <h2 id="education">Education</h2>
 
         <article>
           <div class="head">
             <h3>
-              <span class="title">Bachelor in Social Psychology</span> |
-              Appalachian State University
+              <span class="title">Bachelor in Social Psychology</span
+              ><span aria-hidden="true"> | </span>Appalachian State University
             </h3>
             <span class="dates">Graduated: 2014</span>
           </div>
         </article>
       </section>
 
-      <section>
-        <h2>Skills</h2>
+      <section aria-labelledby="skills">
+        <h2 id="skills">Skills</h2>
 
         <ul>
           <li>
@@ -481,8 +515,8 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Languages</h2>
+      <section aria-labelledby="languages">
+        <h2 id="languages">Languages</h2>
 
         <ul>
           <li>Native Speaker in English</li>
@@ -490,8 +524,8 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Interests</h2>
+      <section aria-labelledby="interests">
+        <h2 id="interests">Interests</h2>
 
         <ul>
           <li>
@@ -507,73 +541,91 @@
         </ul>
       </section>
 
-      <section>
-        <h2>References</h2>
+      <section aria-labelledby="references">
+        <h2 id="references">References</h2>
 
-        <blockquote>
-          <p>
-            Jon is a talented software engineer with a strong vision for how to
-            design and implement pragmatic solutions to complex product goals.
-            He is a strong advocate for well-organized and clean code, and
-            supports his peers in meeting those standards. I appreciate the time
-            we spent working together and would be happy to work with him again
-            in the future.
-          </p>
-          <footer>— Heath Morrison - CTO - Doxy.me</footer>
-        </blockquote>
+        <figure>
+          <blockquote>
+            <p>
+              Jon is a talented software engineer with a strong vision for how
+              to design and implement pragmatic solutions to complex product
+              goals. He is a strong advocate for well-organized and clean code,
+              and supports his peers in meeting those standards. I appreciate
+              the time we spent working together and would be happy to work with
+              him again in the future.
+            </p>
+          </blockquote>
+          <figcaption>Heath Morrison - CTO - Doxy.me</figcaption>
+        </figure>
 
-        <blockquote>
-          <p>
-            Jon is a highly skilled developer with a unique capacity to cut
-            through noise and identify an optimal path to a technical solution.
-            He is consistent in his output, and can be relied upon to produce at
-            a steady, predictable pace. This is in regards to not only his work
-            ethic, but also his ability to move through previously
-            un-encountered technical challenges. Give Jon a codebase in which he
-            has not previously worked, and he will sort it out and be producing
-            with it in very short order. He is very aware of current and
-            emerging technologies, but applies them to solutions in a sensible
-            manner (rather than using personal interest as a primary motivator).
-          </p>
-          <footer>— Nick Hendricks - System Administrator - PigKnows</footer>
-        </blockquote>
+        <figure>
+          <blockquote>
+            <p>
+              Jon is a highly skilled developer with a unique capacity to cut
+              through noise and identify an optimal path to a technical
+              solution. He is consistent in his output, and can be relied upon
+              to produce at a steady, predictable pace. This is in regards to
+              not only his work ethic, but also his ability to move through
+              previously un-encountered technical challenges. Give Jon a
+              codebase in which he has not previously worked, and he will sort
+              it out and be producing with it in very short order. He is very
+              aware of current and emerging technologies, but applies them to
+              solutions in a sensible manner (rather than using personal
+              interest as a primary motivator).
+            </p>
+          </blockquote>
+          <figcaption>
+            Nick Hendricks - System Administrator - PigKnows
+          </figcaption>
+        </figure>
 
-        <blockquote>
-          <p>
-            Jon is one of the best developers I had pleasure to work with. He is
-            passionate about what he is doing and never cuts corners. Never
-            afraid to raise his concerns and propose the best solution for given
-            problem. I have learned a lot from him and think he is going to be a
-            great addition to any team.
-          </p>
-          <footer>— Yury Katko - Advanced Software Engineer - Siemens</footer>
-        </blockquote>
+        <figure>
+          <blockquote>
+            <p>
+              Jon is one of the best developers I had pleasure to work with. He
+              is passionate about what he is doing and never cuts corners. Never
+              afraid to raise his concerns and propose the best solution for
+              given problem. I have learned a lot from him and think he is going
+              to be a great addition to any team.
+            </p>
+          </blockquote>
+          <figcaption>
+            Yury Katko - Advanced Software Engineer - Siemens
+          </figcaption>
+        </figure>
 
-        <blockquote>
-          <p>
-            It’s rare that you come across standout talent and mind like Jon's.
-            I hired Jon as a front end web developer and he is quite skilled in
-            this area. Jon always has a handle on the latest available
-            technologies and tools and went beyond his role as developer to also
-            help out other team members with other aspects of our tech stack
-            outside the front end web application development arena. He is also
-            masterful with git version control tools, which helped a lot as our
-            project was ramping up and we were creating the internal tools and
-            processes to get things done. Jon is punctual and reliable too. Jon
-            would be good on any web app team.
-          </p>
-          <footer>— Corky Kaericher - CTO - Socialtopias</footer>
-        </blockquote>
+        <figure>
+          <blockquote>
+            <p>
+              It's rare that you come across standout talent and mind like
+              Jon's. I hired Jon as a front end web developer and he is quite
+              skilled in this area. Jon always has a handle on the latest
+              available technologies and tools and went beyond his role as
+              developer to also help out other team members with other aspects
+              of our tech stack outside the front end web application
+              development arena. He is also masterful with git version control
+              tools, which helped a lot as our project was ramping up and we
+              were creating the internal tools and processes to get things done.
+              Jon is punctual and reliable too. Jon would be good on any web app
+              team.
+            </p>
+          </blockquote>
+          <figcaption>Corky Kaericher - CTO - Socialtopias</figcaption>
+        </figure>
 
-        <blockquote>
-          <p>A wonderful and talented developer.</p>
-          <footer>— Bill McCowen - Owner - The Idea People</footer>
-        </blockquote>
+        <figure>
+          <blockquote>
+            <p>A wonderful and talented developer.</p>
+          </blockquote>
+          <figcaption>Bill McCowen - Owner - The Idea People</figcaption>
+        </figure>
 
-        <blockquote>
-          <p>Every bit the developer he claimed to be and then some.</p>
-          <footer>— Sara Garces Roselli - Mythic</footer>
-        </blockquote>
+        <figure>
+          <blockquote>
+            <p>Every bit the developer he claimed to be and then some.</p>
+          </blockquote>
+          <figcaption>Sara Garces Roselli - Mythic</figcaption>
+        </figure>
       </section>
     </main>
   </body>

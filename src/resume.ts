@@ -1,6 +1,4 @@
-import { basename } from 'node:path';
-
-export const root = `${import.meta.dir}/..`;
+const root = `${import.meta.dir}/..`;
 
 export const path = (name: string) => `${root}/${name}`;
 
@@ -16,8 +14,6 @@ const source = await Bun.file(path('readme.md')).text();
 const lines = source.split('\n').map((line) => line.trimEnd());
 
 const nameIndex = lines.findIndex((line) => line.startsWith('# '));
-
-const imageUrl = source.match(/!\[[^\]]*\]\(([^)]+)\)/)![1];
 
 const sections = new Map<string, string[]>();
 
@@ -38,7 +34,7 @@ const isBullet = (line: string) => /^[*-] /.test(line);
 const bullets = (block: string[]) =>
   block.filter(isBullet).map((line) => line.slice(2));
 
-export const paragraphs = (block: string[]) =>
+const paragraphs = (block: string[]) =>
   block
     .join('\n')
     .split(/\n{2,}/)
@@ -70,23 +66,25 @@ function entries(title: string): Entry[] {
     });
 }
 
-const formatDate = (iso: string) => iso.replace(/^(\d{4})-(\d{2})$/, '$2/$1');
+const MONTH_FORMAT = new Intl.DateTimeFormat('en-US', {
+  month: 'short',
+  year: 'numeric',
+  timeZone: 'UTC',
+});
 
-export function formatDates(range: string) {
+export const monthYear = (iso: string) =>
+  MONTH_FORMAT.format(new Date(`${iso}-01T00:00:00Z`));
+
+export function parseDates(range: string) {
   const [start, end] = range.split(' - ');
 
-  return `${formatDate(start)} - ${end ? formatDate(end) : 'Present'}`;
+  return { start, end };
 }
 
-const MONTHS = 'JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC'.split(' ');
+export function formatDates(range: string) {
+  const { start, end } = parseDates(range);
 
-const monthYear = (iso: string) =>
-  `${MONTHS[Number(iso.slice(5, 7)) - 1]} ${iso.slice(0, 4)}`;
-
-export function formatDatesLong(range: string) {
-  const [start, end] = range.split(' - ');
-
-  return `${monthYear(start)} – ${end ? monthYear(end) : 'PRESENT'}`;
+  return `${monthYear(start)} - ${end ? monthYear(end) : 'Present'}`;
 }
 
 export const graduated = (range: string) =>
@@ -128,42 +126,10 @@ const location = [contact.City, contact.Country, contact['Postal Code']].join(
   ' ',
 );
 
-const profiles = section('Profiles').filter(Boolean);
-
 const urlOf = (markdown: string) => markdown.match(/\]\(([^)]+)\)/)![1];
 
 const visibleLink = (url: string) =>
   `[${url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}](${url})`;
-
-const skillBullets = bullets(section('Skills'));
-
-const languageBullets = bullets(section('Languages'));
-
-const interestBullets = bullets(section('Interests'));
-
-const skills = skillBullets.map((line) => {
-  const match = line.match(/^(.+?) in (.+?) \((.+)\)$/);
-
-  return match
-    ? { level: match[1], title: match[2], items: match[3].split(', ') }
-    : { level: '', title: line, items: [] };
-});
-
-const languages = languageBullets.map((line) => {
-  const match = line.match(/^(.+?) in (.+)$/);
-
-  return match
-    ? { language: match[2], level: match[1] }
-    : { language: line, level: '' };
-});
-
-const interests = interestBullets.map((line) => {
-  const match = line.match(/^(.+?) \((.+)\)$/);
-
-  return match
-    ? { title: match[1], items: match[2].split(', ') }
-    : { title: line, items: [] };
-});
 
 const references = [
   ...section('References')
@@ -180,22 +146,16 @@ export const resume = {
     .slice(nameIndex + 1)
     .find((line) => line.trim() && !line.startsWith('!'))!,
 
-  imageName: basename(imageUrl),
-
-  image: Bun.file(path(basename(imageUrl))),
-
-  about: [location, contact.Email, contact.Website, contact.Phone],
-
-  profiles,
-
-  atsContact: [
+  contact: [
     location,
     contact.Phone,
     contact.Email,
     visibleLink(urlOf(contact.Website)),
   ],
 
-  atsProfiles: profiles.map((profile) => visibleLink(urlOf(profile))),
+  profiles: section('Profiles')
+    .filter(Boolean)
+    .map((profile) => visibleLink(urlOf(profile))),
 
   summary: paragraphs(section('Summary')),
 
@@ -203,17 +163,11 @@ export const resume = {
 
   education: entries('Education'),
 
-  skillBullets,
+  skills: bullets(section('Skills')),
 
-  languageBullets,
+  languages: bullets(section('Languages')),
 
-  interestBullets,
-
-  skills,
-
-  languages,
-
-  interests,
+  interests: bullets(section('Interests')),
 
   references,
 };

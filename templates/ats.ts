@@ -1,19 +1,22 @@
 import {
   type Entry,
   escapeXml,
-  formatDatesLong,
   graduated,
   inline,
+  monthYear,
+  parseDates,
   type Resume,
   splitEducation,
   splitHeading,
 } from '../src/resume';
 
-export const ats = true;
+export const screenshot = { width: 816, scale: 2 } as const;
 
-export const screenshot = { width: 900, scale: 2 };
+const SEPARATOR = '<span aria-hidden="true"> | </span>' as const;
 
 const lines = (items: string[]) => items.join('\n');
+
+const slug = (title: string) => title.toLowerCase().replace(/\W+/g, '-');
 
 const paragraph = (text: string) => `<p>${inline(text)}</p>`;
 
@@ -25,18 +28,27 @@ const list = (items: string[]) => `
   </ul>
 `;
 
-const joined = (items: string[]) => items.map(inline).join(' | ');
+const joined = (items: string[]) => items.map(inline).join(SEPARATOR);
 
 const section = (title: string, content: string) => `
-  <section>
-    <h2>${title}</h2>
+  <section aria-labelledby="${slug(title)}">
+    <h2 id="${slug(title)}">${title}</h2>
     ${content}
   </section>
 `;
 
+const time = (iso: string) =>
+  `<time datetime="${iso}">${monthYear(iso)}</time>`;
+
+function renderDates(range: string) {
+  const { start, end } = parseDates(range);
+
+  return `${time(start)} - ${end ? time(end) : 'Present'}`;
+}
+
 const head = (title: string, organization: string, dates: string) => `
   <div class="head">
-    <h3><span class="title">${title}</span> | ${organization}</h3>
+    <h3><span class="title">${title}</span>${SEPARATOR}${organization}</h3>
     <span class="dates">${dates}</span>
   </div>
 `;
@@ -46,7 +58,7 @@ function renderWork(entry: Entry) {
 
   return `
     <article>
-      ${head(role, inline(company), formatDatesLong(entry.dates))}
+      ${head(role, inline(company), renderDates(entry.dates))}
       ${paragraph(entry.text)}
       ${list(entry.bullets)}
     </article>
@@ -64,10 +76,12 @@ function renderEducation(entry: Entry) {
 }
 
 const renderReference = (reference: Resume['references'][number]) => `
-  <blockquote>
-    <p>${reference.quote}</p>
-    <footer>— ${reference.author}</footer>
-  </blockquote>
+  <figure>
+    <blockquote>
+      <p>${reference.quote}</p>
+    </blockquote>
+    <figcaption>${reference.author}</figcaption>
+  </figure>
 `;
 
 const renderHeader = (resume: Resume) => `
@@ -75,8 +89,8 @@ const renderHeader = (resume: Resume) => `
     <h1>${resume.name}</h1>
     <p class="label">${resume.label}</p>
     <address>
-      <p>${joined(resume.atsContact)}</p>
-      <p>${joined(resume.atsProfiles)}</p>
+      <p>${joined(resume.contact)}</p>
+      <p>${joined(resume.profiles)}</p>
     </address>
   </header>
 `;
@@ -89,24 +103,25 @@ export async function render(resume: Resume) {
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>${escapeXml(resume.name)}</title>
+        <meta name="color-scheme" content="light">
+        <title>${escapeXml(resume.name)} - Resume</title>
         <style>${css}</style>
       </head>
       <body>
-        <main class="page">
-          ${renderHeader(resume)}
+        ${renderHeader(resume)}
 
+        <main>
           ${section('Professional Summary', lines(resume.summary.map(paragraph)))}
 
           ${section('Work Experience', lines(resume.work.map(renderWork)))}
 
           ${section('Education', lines(resume.education.map(renderEducation)))}
 
-          ${section('Skills', list(resume.skillBullets))}
+          ${section('Skills', list(resume.skills))}
 
-          ${section('Languages', list(resume.languageBullets))}
+          ${section('Languages', list(resume.languages))}
 
-          ${section('Interests', list(resume.interestBullets))}
+          ${section('Interests', list(resume.interests))}
 
           ${section('References', lines(resume.references.map(renderReference)))}
         </main>

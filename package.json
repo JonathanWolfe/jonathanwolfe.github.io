@@ -17,7 +17,6 @@
   "scripts": {
     "optimize": "bun optimize.ts",
     "build": "bun optimize.ts && bun build.ts",
-    "build:sidebar": "bun optimize.ts && bun build.ts --template sidebar",
     "lint": "bun check && bun fmt --check build.ts optimize.ts src templates"
   },
   "devDependencies": {
