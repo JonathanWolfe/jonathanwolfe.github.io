@@ -29,10 +29,11 @@ Fullstack developer with 18 years of experience, from freelance sites to staff-l
 ##### 2023-05
 
 - Led the frontend rebuild of the entire product in about 6 months, on observables, strict module boundaries, and MVVM
-- Co-led frontend code and architecture
+- Built Drata's AI development workflow: ideas become prototypes, tickets, and projects, then go to remote agents for implementation
+- Built AI determinism benchmark and eval tooling, and used it to improve coding-guideline adherence and reduce LLM context usage
 - Built a state-machine auth system with SSO, magic links, and multi-tab sessions
 - Added TypeScript and contributed 13,000+ lint rules and fixes
-- Built AI determinism benchmark and eval tooling, and used it to improve coding-guideline adherence and reduce LLM context usage
+- Co-led frontend code and architecture
 - Worked across all areas of the business as a fullstack staff developer
 - Focused on developer experience, AI tools, and type correctness
 
