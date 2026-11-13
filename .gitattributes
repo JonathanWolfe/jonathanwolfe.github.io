@@ -1,0 +1,12 @@
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.pdf binary
+*.docx binary
+
+resume.html linguist-generated
+resume.docx linguist-generated
+resume.pdf linguist-generated
+resume.png linguist-generated
+square-headshot.jpg linguist-generated

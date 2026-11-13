@@ -117,7 +117,11 @@ export function splitEducation(heading: string) {
 const contact = Object.fromEntries(
   section('Contact')
     .filter((line) => line.includes(': '))
-    .map((line) => line.split(/: (.*)/s).slice(0, 2)),
+    .map((line): [string, string] => {
+      const [key, value] = line.split(/: (.*)/s);
+
+      return [key, value];
+    }),
 );
 
 const location = [contact.City, contact.Country, contact['Postal Code']].join(
