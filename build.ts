@@ -15,12 +15,16 @@ async function renderBrowserOutputs() {
   await view.evaluate("document.fonts.ready.then(() => true)");
 
   const height = (await view.evaluate("document.documentElement.scrollHeight")) as number;
-  const shot = await view.cdp("Page.captureScreenshot", {
+
+  const shot = (await view.cdp("Page.captureScreenshot", {
     format: "png",
     captureBeyondViewport: true,
     clip: { x: 0, y: 0, width, height, scale },
-  });
-  const pdf = await view.cdp("Page.printToPDF", { printBackground: true, preferCSSPageSize: true });
+  })) as { data: string };
+
+  const pdf = (await view.cdp("Page.printToPDF", { printBackground: true, preferCSSPageSize: true })) as {
+    data: string;
+  };
 
   await Bun.write(path("resume.png"), Buffer.from(shot.data, "base64"));
   await Bun.write(path("resume.pdf"), Buffer.from(pdf.data, "base64"));

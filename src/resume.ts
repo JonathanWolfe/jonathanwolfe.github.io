@@ -35,10 +35,19 @@ function entries(title: string): Entry[] {
     .slice(1)
     .map((chunk) => {
       const [heading, ...rest] = chunk.split("\n");
-      const dates = rest.find((l) => l.startsWith("##### "))?.slice(6).trim() ?? "";
+      const dates =
+        rest
+          .find((l) => l.startsWith("##### "))
+          ?.slice(6)
+          .trim() ?? "";
       const body = rest.filter((l) => !l.startsWith("##### "));
 
-      return { heading, dates, bullets: bullets(body), text: paragraphs(body.filter((l) => !/^[*-] /.test(l))).join(" ") };
+      return {
+        heading,
+        dates,
+        bullets: bullets(body),
+        text: paragraphs(body.filter((l) => !/^[*-] /.test(l))).join(" "),
+      };
     });
 }
 
@@ -107,7 +116,9 @@ export const resume = {
   skills: bullets(section("Skills")).map((line) => {
     const match = line.match(/^(.+?) in (.+?) \((.+)\)$/);
 
-    return match ? { level: match[1], title: match[2], items: match[3].split(", ") } : { level: "", title: line, items: [] };
+    return match
+      ? { level: match[1], title: match[2], items: match[3].split(", ") }
+      : { level: "", title: line, items: [] };
   }),
   languages: bullets(section("Languages")).map((line) => {
     const match = line.match(/^(.+?) in (.+)$/);

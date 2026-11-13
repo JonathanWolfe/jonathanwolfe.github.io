@@ -14,7 +14,11 @@ body {
   margin: 0;
   background: var(--bar);
   color: var(--text);
-  font: 300 15px/1.6 Lato, Helvetica, Arial, sans-serif;
+  font:
+    300 15px/1.6 Lato,
+    Helvetica,
+    Arial,
+    sans-serif;
   letter-spacing: 0.4px;
 }
 
@@ -56,12 +60,20 @@ blockquote {
 }
 
 .header h1 {
-  font: 700 40px Josefin Sans, Helvetica, Arial, sans-serif;
+  font:
+    700 40px Josefin Sans,
+    Helvetica,
+    Arial,
+    sans-serif;
   letter-spacing: 1px;
 }
 
 .header p {
-  font: 300 16px Josefin Sans, Helvetica, Arial, sans-serif;
+  font:
+    300 16px Josefin Sans,
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
 .header img {

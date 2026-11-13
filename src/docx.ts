@@ -1,5 +1,13 @@
 import { deflateRawSync } from "node:zlib";
-import { escapeXml, formatDates, formatDatesLong, graduated, splitEducation, splitHeading, type Resume } from "./resume";
+import {
+  escapeXml,
+  formatDates,
+  formatDatesLong,
+  graduated,
+  splitEducation,
+  splitHeading,
+  type Resume,
+} from "./resume";
 
 function zip(files: [string, Uint8Array][]) {
   const chunks: Uint8Array[] = [];
@@ -80,7 +88,9 @@ export async function renderDocx(resume: Resume, ats: boolean) {
       .join("");
 
   const para = (content: string, props = "") => `<w:p>${props ? `<w:pPr>${props}</w:pPr>` : ""}${content}</w:p>`;
-  const sectionTitles: Record<string, string> = ats ? { Summary: "Professional Summary", Experience: "Work Experience" } : {};
+  const sectionTitles: Record<string, string> = ats
+    ? { Summary: "Professional Summary", Experience: "Work Experience" }
+    : {};
   const heading = (text: string) => para(run(sectionTitles[text] ?? text), `<w:pStyle w:val="Heading1"/>`);
   const bullet = (text: string) => para(runs(text), `<w:pStyle w:val="ListBullet"/>`);
   const muted = `<w:i/><w:color w:val="666666"/>`;
@@ -138,7 +148,9 @@ export async function renderDocx(resume: Resume, ats: boolean) {
     const { role, company } = splitHeading(entry.heading);
 
     body.push(
-      ...(ats ? [atsHead(role, run(" | ") + runs(company), formatDatesLong(entry.dates))] : entryHead(company, entry.dates, role)),
+      ...(ats
+        ? [atsHead(role, run(" | ") + runs(company), formatDatesLong(entry.dates))]
+        : entryHead(company, entry.dates, role)),
       para(runs(entry.text), `<w:spacing w:after="60"/>`),
       ...entry.bullets.map(bullet),
     );
@@ -148,7 +160,11 @@ export async function renderDocx(resume: Resume, ats: boolean) {
   for (const entry of resume.education) {
     const { school, degree } = splitEducation(entry.heading);
 
-    body.push(...(ats ? [atsHead(degree, run(" | ") + runs(school), graduated(entry.dates))] : entryHead(school, entry.dates, degree)));
+    body.push(
+      ...(ats
+        ? [atsHead(degree, run(" | ") + runs(school), graduated(entry.dates))]
+        : entryHead(school, entry.dates, degree)),
+    );
   }
 
   body.push(heading("Skills"), ...resume.skillBullets.map(bullet));
@@ -211,6 +227,8 @@ export async function renderDocx(resume: Resume, ats: boolean) {
     ["word/styles.xml", text(styles)],
     ["word/numbering.xml", text(numbering)],
     ["word/_rels/document.xml.rels", text(documentRels)],
-    ...(ats ? [] : [[`word/media/${imageName}`, new Uint8Array(await resume.image.arrayBuffer())] as [string, Uint8Array]]),
+    ...(ats
+      ? []
+      : [[`word/media/${imageName}`, new Uint8Array(await resume.image.arrayBuffer())] as [string, Uint8Array]]),
   ]);
 }

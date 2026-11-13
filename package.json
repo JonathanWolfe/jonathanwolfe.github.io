@@ -7,7 +7,8 @@
   "scripts": {
     "optimize": "bun optimize.ts",
     "build": "bun optimize.ts && bun build.ts",
-    "build:sidebar": "bun optimize.ts && bun build.ts --template sidebar"
+    "build:sidebar": "bun optimize.ts && bun build.ts --template sidebar",
+    "lint": "bun check && bun fmt --check build.ts optimize.ts src templates"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "packageManager": "bun@1.4.4",
   "engines": {
     "bun": ">=1.4.4"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4"
   }
 }

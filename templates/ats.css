@@ -6,7 +6,10 @@ body {
   margin: 0;
   background: #fff;
   color: #000;
-  font: 10.5pt/1.45 Arial, Helvetica, sans-serif;
+  font:
+    10.5pt/1.45 Arial,
+    Helvetica,
+    sans-serif;
 }
 
 a {
@@ -34,12 +37,18 @@ header {
 }
 
 h1 {
-  font: 400 32px Georgia, "Times New Roman", serif;
+  font:
+    400 32px Georgia,
+    "Times New Roman",
+    serif;
 }
 
 .label {
   margin-top: 4px;
-  font: italic 14px Georgia, "Times New Roman", serif;
+  font:
+    italic 14px Georgia,
+    "Times New Roman",
+    serif;
   color: #555;
 }
 
@@ -53,7 +62,10 @@ address {
 
 h2 {
   margin: 22px 0 8px;
-  font: 700 12px Georgia, "Times New Roman", serif;
+  font:
+    700 12px Georgia,
+    "Times New Roman",
+    serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }

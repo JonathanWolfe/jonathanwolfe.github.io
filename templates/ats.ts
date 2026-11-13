@@ -1,4 +1,13 @@
-import { escapeXml, formatDatesLong, graduated, inline, splitEducation, splitHeading, type Entry, type Resume } from "../src/resume";
+import {
+  escapeXml,
+  formatDatesLong,
+  graduated,
+  inline,
+  splitEducation,
+  splitHeading,
+  type Entry,
+  type Resume,
+} from "../src/resume";
 
 export const ats = true;
 export const screenshot = { width: 900, scale: 2 };
