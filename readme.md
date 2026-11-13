@@ -10,10 +10,8 @@ Email: [jonathanwolfe5@gmail.com](mailto:jonathanwolfe5@gmail.com)
 Website: [https://jonathanwolfe.github.io](https://jonathanwolfe.github.io)  
 Phone: 704-301-7568
 
-City: Queens  
-Postal Code: 11358
-
-Country: NY
+City: Asheville  
+Country: NC
 
 ## Profiles
 
