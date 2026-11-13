@@ -7,11 +7,11 @@
 
 Email: [jonathanwolfe5@gmail.com](mailto:jonathanwolfe5@gmail.com)
 Website: [https://jonathanwolfe.github.io](https://jonathanwolfe.github.io)
-Phone: (704) 301-7568
+Phone: 704-301-7568
 
-City: NYC
-Postal Code: 11358
+City: Queens
 State: NY
+Postal Code: 11358
 
 ## Profiles
 
@@ -22,7 +22,9 @@ State: NY
 
 ## Summary
 
-Frontend Developer of 13 years turned Fullstack when Node.JS exploded in popularity. Specializing in converting legacy systems/apps to modern toolsets and practices, as well as full rebuilds when a new architecture is wanted. Currently thinking very seriously about creating a new UI language that brings concepts like reactivity and state management flows similar to mobx or redux into the core (RIP to my free time if I decide to do this).
+Over more than a dozen years as a developer, I&#x27;ve grown from a PSD slicer, to a static site developer, to building CMS templates, to a dedicated Frontend Developer, and now a fullstack developer. I&#x27;ve watched the web as an industry grow and mature from Java Applets, then to PHP &amp; jQuery, next the MVC framework explosion, and now the meta-framework era. With each turn of the ages, I grew and evolved alongside the industry, making sure I was always riding the most-likely big waves and learning not just how a singular library or framework worked, but how they were built and how the underlying fundamentals interacted to create the interactions and patterns we used.
+
+ I see myself currently as a someone who strives to create software that brings direct value to users, and does so while being built on patterns and systems that should let the software outlive me. I&#x27;ve spent a majority of the second half of my career moving legacy systems over to modern toolsets, leading projects to help scale systems to new orders of magnitude, and creating tooling that brings more speed and reliability to developers and companies.
 
 ## Work
 
@@ -43,7 +45,7 @@ Tech lead for the Growth team. Launched large additions to the payment/subscript
 * Created a feed tracking and ordering system to send orders to mills and veterinarians
 * Refactored critical custom keyboard controls resulting in a 10x rendering time reduction
 
-Primary developer on a full stack Next.JS client and node-based API for managing pig farms and the animals lifecycles throughout. Finished by building a feed ordering featureset to create rations and budgets, track order history, and notify supplier of new orders.
+Primary developer on a full stack Next.JS client and node-based API for managing pig farms and the animals life-cycles throughout. Finished by building a feed ordering feature-set to create rations and budgets, track order history, and notify supplier of new orders.
 
 ### Advanced/Senior Software Developer, [Siemens PLM](https://product-intelligence.mindsphere.io)
 ##### 2015-05 - 2020-01
@@ -110,9 +112,9 @@ Helped dig troughs for the water pipes to the building
 
 ## Skills
 
-* Master in Frontend Development (HTML, CSS, JavaScript, TypeScript, Gulp, Ember, Polymer, Next.js, React)
-* Intermediate in Backend Development (Python, Node.JS, MySQL)
-* Intermediate in Software Architecture (Terraform, AWS, Nginx, Linux)
+* Master in Frontend Development (HTML, CSS, JavaScript, TypeScript, React, Next.js, Polymer, Ember)
+* Intermediate in Backend Development (NodeJS, Python, SQL)
+* Intermediate in Software Architecture (IaC, Serverless, SaaS, PaaS)
 
 ## Languages
 
@@ -122,18 +124,20 @@ Helped dig troughs for the water pipes to the building
 ## Interests
 
 * Computer Programming (Video Game Programming, IDE / Text Editors, UI Programming Languages/Libraries)
-* Video Games (JRPGs, League of Legends)
+* Video Games (JRPGs, City building sims, League of Legends)
 * Trivia (How It&#x27;s Made, How Do They Do It, Unwrapped)
 * Reading / Writing (Manga, High Fantasy Novels, Sci-fi thrillers, Techno Dystopia/Utopia Thrillers)
 
 ## References
 
-> Jon is a highly skilled developer with a unique capacity to cut through noise and identify an optimal path to a technical solution. He is consistent in his output, and can be relied upon to produce at a steady, predictable pace. This is in regards to not only his work ethic, but also his ability to move through previously un-encountered technical challenges. Give Jon a codebase in which he has not previously worked, and he will sort it out and be producing with it in very short order. He is very aware of current and emerging technologies, but applies them to solutions in a sensible manner (rather than using personal interest as a primary motivator). -- <cite>Nick Hendricks - PigKnows</cite>
->
-> Jon is one of the best developers I had pleasure to work with. He is passionate about what he is doing and never cuts corners. Never afraid to raise his concerns and propose the best solution for given problem. I have learned a lot from him and think he is going to be a great addition to any team. -- <cite>Yury Katko - Siemens</cite>
->
-> It’s rare that you come across standout talent and mind like Jon&#x27;s. I hired Jon as a front end web developer and he is quite skilled in this area. Jon always has a handle on the latest available technologies and tools and went beyond his role as developer to also help out other team members with other aspects of our tech stack outside the front end web application development arena. He is also masterful with git version control tools, which helped a lot as our project was ramping up and we were creating the internal tools and processes to get things done. Jon is punctual and reliable too. Jon would be good on any web app team. -- <cite>Corky Kaericher - Socialtopias</cite>
->
-> A wonderful and talented developer. -- <cite>Bill McCowen - The Idea People</cite>
->
+> Jon is a talented software engineer with a strong vision for how to design and implement pragmatic solutions to complex product goals. He is a strong advocate for well-organized and clean code, and supports his peers in meeting those standards. I appreciate the time time we spent working together and would be happy to work with him again in the future. -- <cite>Heath Morrison - CTO - Doxy.me</cite>
+
+> Jon is a highly skilled developer with a unique capacity to cut through noise and identify an optimal path to a technical solution. He is consistent in his output, and can be relied upon to produce at a steady, predictable pace. This is in regards to not only his work ethic, but also his ability to move through previously un-encountered technical challenges. Give Jon a codebase in which he has not previously worked, and he will sort it out and be producing with it in very short order. He is very aware of current and emerging technologies, but applies them to solutions in a sensible manner (rather than using personal interest as a primary motivator). -- <cite>Nick Hendricks - System Administrator - PigKnows</cite>
+
+> Jon is one of the best developers I had pleasure to work with. He is passionate about what he is doing and never cuts corners. Never afraid to raise his concerns and propose the best solution for given problem. I have learned a lot from him and think he is going to be a great addition to any team. -- <cite>Yury Katko - Advanced Software Engineer - Siemens</cite>
+
+> It’s rare that you come across standout talent and mind like Jon&#x27;s. I hired Jon as a front end web developer and he is quite skilled in this area. Jon always has a handle on the latest available technologies and tools and went beyond his role as developer to also help out other team members with other aspects of our tech stack outside the front end web application development arena. He is also masterful with git version control tools, which helped a lot as our project was ramping up and we were creating the internal tools and processes to get things done. Jon is punctual and reliable too. Jon would be good on any web app team. -- <cite>Corky Kaericher - CTO - Socialtopias</cite>
+
+> A wonderful and talented developer. -- <cite>Bill McCowen - Owner - The Idea People</cite>
+
 > Every bit the developer he claimed to be and then some. -- <cite>Sara Garces Roselli - Mythic</cite>
