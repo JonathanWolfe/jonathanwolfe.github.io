@@ -18,14 +18,11 @@ Country: NY
 ## Profiles
 
 [LinkedIn - jonathanwolfe5](https://www.linkedin.com/in/jonathanwolfe5/)  
-[Github - JonathanWolfe](https://github.com/JonathanWolfe)  
-[Twitter - _JonWolfe](https://twitter.com/_JonWolfe)
+[Github - JonathanWolfe](https://github.com/JonathanWolfe)
 
 ## Summary
 
-I've been a developer for over 13 years, and over that time I've grown from a PSD slicer, to a static site developer, to building CMS templates, to a dedicated Frontend Developer, and now a fullstack developer. I've watched the web as an industry grow and mature from Java Applets, then to PHP & jQuery, next the MVC framework explosion, and now the meta-framework era. With each turn of the ages, I grew and evolved alongside the industry, making sure I was always riding the most-likely big waves and learning not just how a singular library or framework worked, but how they were built and how the underlying fundamentals interacted to create the interactions and patterns we used.
-
-I see myself currently as someone who strives to create software that brings direct value to users, and does so while being built on patterns and systems that should let the software outlive me. I've spent much of the past 8 years of my career moving legacy systems over to modern toolsets, leading projects to help scale systems to new orders of magnitude, and creating tooling that brings more speed and reliability to developers and companies.
+Fullstack developer with 18 years of experience, from freelance sites to staff-level frontend architecture. I move legacy systems to modern tools, scale them by orders of magnitude, and build tooling that makes developers faster and more reliable.
 
 ## Work
 
@@ -33,81 +30,74 @@ I see myself currently as someone who strives to create software that brings dir
 
 ##### 2023-05
 
-- Lead the rebuild of the entire frontend product in ~6 months
-- Improved codebase correctness by adding TypeScript and contributed over 13,000 lint rules and fixes
-- Created AI determinism benchmark tooling to more emperically refine our LLM context and contributions.
+- Led the frontend rebuild of the entire product in about 6 months, on observables, strict module boundaries, and MVVM
+- Led the auditor API rebuild and a new auth system, and co-led frontend architecture
+- Added TypeScript and contributed 13,000+ lint rules and fixes
+- Built AI determinism benchmark tooling to refine LLM context
+- Worked across all areas of the business as a fullstack staff developer
+- Focused on developer experience, AI tools, and type correctness
 
-Fullstack Staff developer working across all areas of the business. Co-leader of all frontend code and architecture. Lead multiple special initiatives including rebuilding of the auditor api; creating a new Auth system; and re-designing and re-building the entire application in under 6 months on a modern tech stack of observables, strict module boundaries, and MVVM patterns. Currently spending a large amount of time and focus on developer experience, AI tools, and type correctness.
-
-### Lead FullStack Developer, [Doxy.me](https://doxy.me)
+### Lead Fullstack Developer, [Doxy.me](https://doxy.me)
 
 ##### 2021-06 - 2023-03
 
-- Increased TypeScript adoption and coverage throughout the codebase
-- Acting engineering manager for the team for 2 years
-- Maintained a collection of teaching resources for others to use and learn from
-
-Tech lead for the Growth team. Launched large additions to the payment/subscription system to allow for international currencies and automatic tax collection. Converted the marketing site to a headless CMS to allow for legacy content and new components to coexist. Owned and integrated a feature-flag and experiment system into the product with strong adoption across all teams.
+- Tech lead for the Growth team and acting engineering manager for 2 years
+- Launched international currencies and automatic tax collection in the payment and subscription system
+- Converted the marketing site to a headless CMS and integrated a feature-flag and experiment system adopted by all teams
+- Increased TypeScript adoption and coverage across the codebase
+- Maintained a collection of teaching resources for others to learn from
 
 ### Lead Developer, [PigKnows](https://pigknows.com)
 
 ##### 2020-01 - 2021-05
 
-- Converted a large portion of both projects to Typescript
-- Added 4 third-party integrations to sync data between for customers who used multiple vendors
-- Created a feed tracking and ordering system to send orders to mills and veterinarians
-- Refactored critical custom keyboard controls resulting in a 10x rendering time reduction
-
-Primary developer on a full stack Next.JS client and node-based API for managing pig farms and the animals life-cycles throughout. Finished by building a feed ordering feature-set to create rations and budgets, track order history, and notify supplier of new orders.
+- Primary developer of a fullstack Next.js and Node app for managing pig farms
+- Cut rendering time 10x by refactoring critical custom keyboard controls
+- Built feed ordering for rations, budgets, and orders to mills and veterinarians
+- Added 4 third-party integrations to sync data for customers who use multiple vendors
+- Converted a large portion of both projects to TypeScript
 
 ### Advanced/Senior Software Developer, [Siemens PLM](https://product-intelligence.mindsphere.io)
 
 ##### 2015-05 - 2020-01
 
+- Replaced a legacy production prototype with a Polymer web-components UI for MindSphere Product Intelligence
+- Improved UI performance 7x and cut page weight by 1-4 MB, to 200 KB-1 MB per page
 - Refactored a multi-million dollar application to modern standards
-- Improved UI performance by 7x
-- Decreased page weight by 1-4mb (down to 200kb-1mb depending on the page)
-
-Refactor and replace a legacy prototype shipped to production with a modern, web-components based UI for Mindsphere's "Big Data" Analytics product, Product Intelligence. Built with Polymer 1 (web components v0), sass, and lots of reusable and composable components that are the being used as the base line for quality for the rest of Mindsphere UI.
+- Built with Polymer 1, Sass, and reusable, composable components now used as the quality baseline for the rest of MindSphere UI
 
 ### Frontend Developer, [Socialtopias](https://socialtopias.com)
 
 ##### 2015-03 - 2016-03
 
-- Salvaged a completely broken and unfinished large-scale product
-- Greatly improved existing feature set
-- Eliminated some 500+ bugs
-- Rewrote most of the app to be much simpler and more capable of reuse
-
-Initially brought on to salvage the original product of the same name which was a large scale social network intent on bringing people together at real life physical locations and helping them plan their future endeavors and plans. The app also helped business to connect and identify their clientele and offer them much more direct engagement. After stabilizing the project and fixing all bugs, a mostly comprehensive overhaul was done which drastically improved the application's responsiveness, features, and usability.
+- Salvaged a broken, unfinished large-scale social network product
+- Eliminated 500+ bugs
+- Improved responsiveness, features, and usability
+- Rewrote most of the app to be simpler and more reusable
 
 ### Frontend Developer, [The Idea People](http://theideapeople.com/)
 
 ##### 2015-01 - 2015-03
 
-- Built modern Wordpress templates with fully responsive capabilities
+- Built modern, fully responsive WordPress templates
 - Helped teach co-workers how to use Git and other tools
-
-Was tasked with handling the company's agency work while most of it's developers where engaged in building the Socialtopias App (see next company). After failing to complete the project and losing the contract, I was let go for monetary reasons.
 
 ### Frontend Developer - Consultant, [Mythic](http://bemythic.com/)
 
 ##### 2014-08 - 2014-11
 
-- Integrated new online payment platform and interactions
-- Constructed a complete real estate platform with fully responsive elements
+- Integrated a new online payment platform
+- Built a complete, fully responsive real estate platform
+- Maintained existing company and business sites, and shipped new features and fixes
 
-Maintained many existing company and business sites as well implemented new features and fixes for those. Crafted new products for their budding digital presence.
-
-### Owner and Sole Developer, Fire Studios
+### Owner and Developer, Fire Studios
 
 ##### 2005-02 - 2013-02
 
-- Worked across several languages like JS & PHP
-- Worked with various size companies and the semi-local University of South Carolina
-- Where I honed most of my development skills
-
-Owned and operated a small freelance company that covered both back-end PHP work as well as front-end contracts (HTML, CSS, JS). Outsourced any excess work and managed those contractors.
+- Started in 2005 as a freelance web developer for companies of all sizes
+- Built PHP backends and HTML, CSS, and JavaScript frontends
+- Worked with clients including the University of South Carolina
+- Outsourced overflow work and managed contractors
 
 ## Education
 
@@ -117,32 +107,4 @@ Owned and operated a small freelance company that covered both back-end PHP work
 
 ## Skills
 
-- Master in Frontend Development (HTML, CSS, JavaScript, TypeScript, React, Next.js, Polymer, Ember)
-- Intermediate in Backend Development (NodeJS, Python, SQL)
-- Intermediate in Software Architecture (IaC, Serverless, SaaS, PaaS)
-
-## Languages
-
-- Native Speaker in English
-- Beginner in German
-
-## Interests
-
-- Computer Programming (Video Game Programming, IDE / Text Editors, UI Programming Languages/Libraries)
-- Video Games (JRPGs, City building sims, League of Legends)
-- Trivia (How It's Made, How Do They Do It, Unwrapped)
-- Reading / Writing (Manga, High Fantasy Novels, Sci-fi thrillers, Techno Dystopia/Utopia Thrillers)
-
-## References
-
-> Jon is a talented software engineer with a strong vision for how to design and implement pragmatic solutions to complex product goals. He is a strong advocate for well-organized and clean code, and supports his peers in meeting those standards. I appreciate the time we spent working together and would be happy to work with him again in the future. -- <cite>Heath Morrison - CTO - Doxy.me</cite>
->
-> Jon is a highly skilled developer with a unique capacity to cut through noise and identify an optimal path to a technical solution. He is consistent in his output, and can be relied upon to produce at a steady, predictable pace. This is in regards to not only his work ethic, but also his ability to move through previously un-encountered technical challenges. Give Jon a codebase in which he has not previously worked, and he will sort it out and be producing with it in very short order. He is very aware of current and emerging technologies, but applies them to solutions in a sensible manner (rather than using personal interest as a primary motivator). -- <cite>Nick Hendricks - System Administrator - PigKnows</cite>
->
-> Jon is one of the best developers I had pleasure to work with. He is passionate about what he is doing and never cuts corners. Never afraid to raise his concerns and propose the best solution for given problem. I have learned a lot from him and think he is going to be a great addition to any team. -- <cite>Yury Katko - Advanced Software Engineer - Siemens</cite>
->
-> It's rare that you come across standout talent and mind like Jon's. I hired Jon as a front end web developer and he is quite skilled in this area. Jon always has a handle on the latest available technologies and tools and went beyond his role as developer to also help out other team members with other aspects of our tech stack outside the front end web application development arena. He is also masterful with git version control tools, which helped a lot as our project was ramping up and we were creating the internal tools and processes to get things done. Jon is punctual and reliable too. Jon would be good on any web app team. -- <cite>Corky Kaericher - CTO - Socialtopias</cite>
->
-> A wonderful and talented developer. -- <cite>Bill McCowen - Owner - The Idea People</cite>
->
-> Every bit the developer he claimed to be and then some. -- <cite>Sara Garces Roselli - Mythic</cite>
+HTML, CSS, Sass, JavaScript, TypeScript, React, Next.js, Node.js, Python, SQL, PHP, WordPress, Polymer, Ember, Web Components, MobX, RxJS, TanStack Query, styled-components, Zod, NestJS, Express, TypeORM, Redis, GraphQL, REST APIs, OpenAPI, Stripe, Datadog, Storybook, Vite, Webpack, SWC, Vitest, Jest, Playwright, Cypress, MSW, ESLint, oxlint, Biome, Prettier, Knip, ts-morph, Codemods, Bun, Git, GitHub, AWS, Infrastructure as Code (IaC), Serverless, SaaS, PaaS, MVVM, Frontend Architecture, Design Systems, Headless CMS, Feature Flags, Experimentation, Authentication, Payments, Subscriptions, Performance Optimization, Refactoring, Developer Experience, Technical Leadership, Engineering Management, AI Tooling, LLMs, Model Context Protocol (MCP), Claude Code

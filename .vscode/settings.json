@@ -1,4 +1,4 @@
 {
   "biome.enabled": false,
-  "files.exclude": { "resume.{docx,html,pdf,png}": true, "bun.lock": true }
+  "files.exclude": { "resume.{html,pdf}": true, "bun.lock": true }
 }

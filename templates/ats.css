@@ -6,19 +6,30 @@
   --muted: #404040;
   --serif: Georgia, 'Times New Roman', serif;
   --sans: Arial, Helvetica, sans-serif;
+  --keyword-size: 0.625rem;
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
-  max-width: 38rem;
+  position: relative;
+  box-sizing: content-box;
+  max-width: 60rem;
   margin: 0 auto;
-  padding: var(--unit) 1.25rem;
+  padding: var(--unit) 1rem;
   background: #fff;
   color: var(--text);
   font: 1rem/var(--lead) var(--sans);
+  font-kerning: normal;
+  hyphens: manual;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -58,12 +69,38 @@ h1 {
   font: italic 1.1667rem/var(--lead) var(--serif);
 }
 
+.name-sep {
+  display: none;
+}
+
 address {
   margin-top: var(--unit);
   padding: calc(var(--unit) / 2) 0;
   border-top: 0.0625rem solid var(--muted);
   border-bottom: 0.0625rem solid var(--muted);
   font-style: normal;
+}
+
+.pdf-link {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  padding: 0 0.5rem;
+  border: 0.0625rem solid var(--muted);
+  border-radius: 0.25rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.pdf-link:hover {
+  background: var(--text);
+  color: #fff;
 }
 
 section {
@@ -132,23 +169,211 @@ figcaption {
   text-align: right;
 }
 
+.keywords {
+  margin-top: calc(var(--unit) * 2);
+  padding: 0.75rem 1rem;
+  background: #f2f2f2;
+  font-size: var(--keyword-size);
+}
+
+.keywords section {
+  margin-top: 0;
+}
+
+.keywords section + section {
+  margin-top: 0.5rem;
+}
+
+.keywords h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1em;
+}
+
+.keywords h3 {
+  font-size: 1em;
+}
+
+.keywords ul {
+  padding: 0;
+  list-style: none;
+}
+
+.keywords article p,
+.keywords article ul {
+  margin-top: 0;
+}
+
+summary.head {
+  align-items: baseline;
+  cursor: pointer;
+  list-style: none;
+}
+
+summary.head::-webkit-details-marker {
+  display: none;
+}
+
+summary.head::before {
+  content: '';
+  flex: none;
+  align-self: center;
+  margin-right: 0.5rem;
+  border: 0.3rem solid transparent;
+  border-left-color: currentColor;
+  border-right-width: 0;
+  transition: transform 0.1s;
+}
+
+details[open] > summary.head::before {
+  transform: rotate(90deg);
+}
+
+summary.head h3 {
+  flex: 1;
+}
+
+summary.head:hover .title {
+  text-decoration: underline;
+}
+
+details ul {
+  margin-left: 1.3rem;
+}
+
+summary:focus-visible {
+  outline: 0.1875rem solid var(--text);
+  outline-offset: 0.125rem;
+}
+
+p,
+li,
+blockquote,
+figcaption {
+  text-wrap: pretty;
+  orphans: 3;
+  widows: 3;
+}
+
+h1,
+h2,
+h3,
+.label {
+  text-wrap: balance;
+}
+
+.item {
+  overflow-wrap: anywhere;
+}
+
 @page {
   size: letter;
-  margin: 6.5rem;
+  margin: 2.25rem 4rem;
 }
 
 @media print {
+  html {
+    font-size: 87.5%;
+  }
+
+  .pdf-link {
+    display: none;
+  }
+
+  summary.head {
+    cursor: auto;
+  }
+
+  details ul {
+    margin-left: 0;
+  }
+
+  summary.head::before {
+    display: none;
+  }
+
+  details::details-content {
+    content-visibility: visible;
+  }
+
+  .web-only {
+    display: none;
+  }
+
+  article.brief + article.brief {
+    margin-top: calc(var(--unit) * 0.25);
+  }
+
+  :root {
+    --lead: 1.4;
+    --keyword-size: 0.7143rem;
+  }
+
+  section {
+    margin-top: var(--unit);
+  }
+
+  h2 {
+    margin-bottom: calc(var(--unit) / 4);
+  }
+
+  article + article {
+    margin-top: calc(var(--unit) * 0.75);
+  }
+
+  .keywords {
+    margin-top: var(--unit);
+    padding: calc(var(--unit) / 4) 0;
+    border-top: 0.0625rem solid var(--muted);
+    border-bottom: 0.0625rem solid var(--muted);
+    background: none;
+  }
+
+  header {
+    padding-bottom: calc(var(--unit) / 2);
+    border-bottom: 0.0625rem solid var(--muted);
+    text-align: left;
+  }
+
+  .name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 0.5rem;
+  }
+
+  .name .label {
+    margin-top: 0;
+  }
+
+  .name-sep {
+    display: inline;
+  }
+
+  address {
+    margin-top: 0.25rem;
+    padding: 0;
+    border: 0;
+  }
+
+  address p + p {
+    margin-top: 0;
+  }
+
   body {
+    max-width: 41rem;
     padding: 0;
   }
 
+  h1,
   h2,
+  h3,
   .head {
     break-after: avoid;
   }
 
   li,
-  figure {
+  figure,
+  article {
     break-inside: avoid;
   }
 }

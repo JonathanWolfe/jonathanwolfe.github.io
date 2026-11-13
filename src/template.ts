@@ -1,6 +1,3 @@
 import type { Resume } from './resume';
 
-export type Template = {
-  screenshot: { width: number; scale: number };
-  render: (resume: Resume) => Promise<string>;
-};
+export type Template = { render: (resume: Resume) => Promise<string> };

@@ -81,16 +81,15 @@ export function parseDates(range: string) {
   return { start, end };
 }
 
-export function formatDates(range: string) {
-  const { start, end } = parseDates(range);
+const PRINT_BULLETS = [4, 4, 2, 2] as const;
 
-  return `${monthYear(start)} - ${end ? monthYear(end) : 'Present'}`;
-}
+export const printBullets = (index: number): number =>
+  PRINT_BULLETS[index] ?? 0;
 
 export const graduated = (range: string) =>
   `Graduated: ${range.split(' - ').pop()!.slice(0, 4)}`;
 
-export const escapeXml = (text: string) =>
+export const escapeHtml = (text: string) =>
   text
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
@@ -122,9 +121,7 @@ const contact = Object.fromEntries(
     }),
 );
 
-const location = [contact.City, contact.Country, contact['Postal Code']].join(
-  ' ',
-);
+const location = [contact.City, contact.Country].join(' ');
 
 const urlOf = (markdown: string) => markdown.match(/\]\(([^)]+)\)/)![1];
 
@@ -163,9 +160,7 @@ export const resume = {
 
   education: entries('Education'),
 
-  skills: bullets(section('Skills')),
-
-  languages: bullets(section('Languages')),
+  skills: paragraphs(section('Skills')),
 
   interests: bullets(section('Interests')),
 

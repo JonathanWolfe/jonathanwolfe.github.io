@@ -9,10 +9,8 @@
     "**/Thumbs.db",
     "**/.classpath",
     "**/.settings",
-    "resume.docx",
     "resume.html",
     "resume.pdf",
-    "resume.png",
     "bun.lock"
   ],
   "lsp": { "biome": { "settings": { "require_config_file": true } } }

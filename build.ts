@@ -1,14 +1,13 @@
 import { pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
 
-import { renderDocx } from './src/docx';
 import { path, resume } from './src/resume';
 import type { Template } from './src/template';
 
-const templates = { ats: () => import('./templates/ats') } satisfies Record<
-  string,
-  () => Promise<Template>
->;
+const templates = {
+  'skills-first': () => import('./templates/ats'),
+  'skills-last': () => import('./templates/skills-last'),
+} satisfies Record<string, () => Promise<Template>>;
 
 type TemplateName = keyof typeof templates;
 
@@ -16,7 +15,7 @@ const isTemplateName = (name?: string): name is TemplateName =>
   name !== undefined && name in templates;
 
 const { values } = parseArgs({
-  options: { template: { type: 'string', default: 'ats' } },
+  options: { template: { type: 'string', default: 'skills-last' } },
 });
 
 if (!isTemplateName(values.template)) {
@@ -27,11 +26,9 @@ if (!isTemplateName(values.template)) {
 
 const template = await templates[values.template]();
 
-async function renderBrowserOutputs() {
-  const { width, scale } = template.screenshot;
-
+async function renderPdf() {
   await using view = new Bun.WebView({
-    width,
+    width: 816,
     height: 1000,
     backend: 'chrome',
   });
@@ -40,15 +37,9 @@ async function renderBrowserOutputs() {
 
   await view.evaluate('document.fonts.ready.then(() => true)');
 
-  const height = await view.evaluate<number>(
-    'document.documentElement.scrollHeight',
+  await view.evaluate(
+    "document.querySelectorAll('details').forEach((d) => { d.open = true; })",
   );
-
-  const shot = await view.cdp<{ data: string }>('Page.captureScreenshot', {
-    format: 'png',
-    captureBeyondViewport: true,
-    clip: { x: 0, y: 0, width, height, scale },
-  });
 
   const pdf = await view.cdp<{ data: string }>('Page.printToPDF', {
     printBackground: true,
@@ -57,8 +48,6 @@ async function renderBrowserOutputs() {
     generateDocumentOutline: true,
   });
 
-  await Bun.write(path('resume.png'), Buffer.from(shot.data, 'base64'));
-
   await Bun.write(path('resume.pdf'), Buffer.from(pdf.data, 'base64'));
 }
 
@@ -66,6 +55,4 @@ await Bun.write(path('resume.html'), await template.render(resume));
 
 await Bun.$`${process.execPath} fmt ${path('resume.html')}`.quiet();
 
-await Bun.write(path('resume.docx'), renderDocx(resume));
-
-await renderBrowserOutputs();
+await renderPdf();

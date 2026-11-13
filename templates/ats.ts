@@ -1,16 +1,17 @@
 import {
   type Entry,
-  escapeXml,
+  escapeHtml,
   graduated,
   inline,
   monthYear,
   parseDates,
+  printBullets,
   type Resume,
   splitEducation,
   splitHeading,
 } from '../src/resume';
 
-export const screenshot = { width: 816, scale: 2 } as const;
+const OPEN_ENTRIES = 4 as const;
 
 const SEPARATOR = '<span aria-hidden="true"> | </span>' as const;
 
@@ -22,20 +23,33 @@ const paragraph = (text: string) => `<p>${inline(text)}</p>`;
 
 const listItem = (item: string) => `<li>${inline(item)}</li>`;
 
-const list = (items: string[]) => `
+const list = (items: string[]) =>
+  items.length
+    ? `
   <ul>
     ${lines(items.map(listItem))}
   </ul>
-`;
+`
+    : '';
 
-const joined = (items: string[]) => items.map(inline).join(SEPARATOR);
+const CONTACT_SEPARATOR =
+  '<span class="sep" aria-hidden="true"> | </span>' as const;
 
-const section = (title: string, content: string) => `
+const contactItem = (markdown: string) =>
+  `<span class="item">${inline(markdown)}</span>`;
+
+const joined = (items: string[]) =>
+  items.map(contactItem).join(CONTACT_SEPARATOR);
+
+const section = (title: string, content: string) =>
+  content.trim()
+    ? `
   <section aria-labelledby="${slug(title)}">
     <h2 id="${slug(title)}">${title}</h2>
     ${content}
   </section>
-`;
+`
+    : '';
 
 const time = (iso: string) =>
   `<time datetime="${iso}">${monthYear(iso)}</time>`;
@@ -46,21 +60,42 @@ function renderDates(range: string) {
   return `${time(start)} - ${end ? time(end) : 'Present'}`;
 }
 
-const head = (title: string, organization: string, dates: string) => `
-  <div class="head">
+const head = (
+  title: string,
+  organization: string,
+  dates: string,
+  tag: 'div' | 'summary' = 'div',
+) => `
+  <${tag} class="head">
     <h3><span class="title">${title}</span>${SEPARATOR}${organization}</h3>
     <span class="dates">${dates}</span>
-  </div>
+  </${tag}>
 `;
 
-function renderWork(entry: Entry) {
+const workBullets = (bullets: string[], limit: number) =>
+  bullets.length
+    ? `
+  <ul${limit === 0 ? ' class="web-only"' : ''}>
+    ${lines(
+      bullets.map(
+        (bullet, index) =>
+          `<li${index >= limit ? ' class="web-only"' : ''}>${inline(bullet)}</li>`,
+      ),
+    )}
+  </ul>
+`
+    : '';
+
+function renderWork(entry: Entry, index: number) {
   const { role, company } = splitHeading(entry.heading);
 
   return `
-    <article>
-      ${head(role, inline(company), renderDates(entry.dates))}
-      ${paragraph(entry.text)}
-      ${list(entry.bullets)}
+    <article${printBullets(index) === 0 ? ' class="brief"' : ''}>
+      <details${index < OPEN_ENTRIES ? ' open' : ''}>
+        ${head(role, inline(company), renderDates(entry.dates), 'summary')}
+        ${entry.text ? paragraph(entry.text) : ''}
+        ${workBullets(entry.bullets, printBullets(index))}
+      </details>
     </article>
   `;
 }
@@ -75,6 +110,14 @@ function renderEducation(entry: Entry) {
   `;
 }
 
+const renderKeywords = (resume: Resume) => `
+  <div class="keywords">
+    ${section('Skills', lines(resume.skills.map(paragraph)))}
+
+    ${section('Education', lines(resume.education.map(renderEducation)))}
+  </div>
+`;
+
 const renderReference = (reference: Resume['references'][number]) => `
   <figure>
     <blockquote>
@@ -86,16 +129,20 @@ const renderReference = (reference: Resume['references'][number]) => `
 
 const renderHeader = (resume: Resume) => `
   <header>
-    <h1>${resume.name}</h1>
-    <p class="label">${resume.label}</p>
+    <div class="name">
+      <h1>${resume.name}</h1>
+      <span class="name-sep" aria-hidden="true"> | </span>
+      <p class="label">${resume.label}</p>
+    </div>
     <address>
       <p>${joined(resume.contact)}</p>
       <p>${joined(resume.profiles)}</p>
     </address>
+    <a class="pdf-link" href="resume.pdf" aria-label="Download PDF version" title="Download PDF version">PDF</a>
   </header>
 `;
 
-export async function render(resume: Resume) {
+export async function renderPage(resume: Resume, keywordsOnTop: boolean) {
   const css = await Bun.file(`${import.meta.dir}/ats.css`).text();
 
   return `<!doctype html>
@@ -104,7 +151,8 @@ export async function render(resume: Resume) {
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="color-scheme" content="light">
-        <title>${escapeXml(resume.name)} - Resume</title>
+        <title>${escapeHtml(resume.name)} - Resume</title>
+        <link rel="alternate" type="application/pdf" href="resume.pdf" title="${escapeHtml(resume.name)} - Resume (PDF)">
         <style>${css}</style>
       </head>
       <body>
@@ -113,13 +161,11 @@ export async function render(resume: Resume) {
         <main>
           ${section('Professional Summary', lines(resume.summary.map(paragraph)))}
 
+          ${keywordsOnTop ? renderKeywords(resume) : ''}
+
           ${section('Work Experience', lines(resume.work.map(renderWork)))}
 
-          ${section('Education', lines(resume.education.map(renderEducation)))}
-
-          ${section('Skills', list(resume.skills))}
-
-          ${section('Languages', list(resume.languages))}
+          ${keywordsOnTop ? '' : renderKeywords(resume)}
 
           ${section('Interests', list(resume.interests))}
 
@@ -129,3 +175,5 @@ export async function render(resume: Resume) {
     </html>
   `;
 }
+
+export const render = (resume: Resume) => renderPage(resume, true);
