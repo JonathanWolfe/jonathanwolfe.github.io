@@ -226,16 +226,5 @@
             "Sci-fi thrillers",
             "Techno Dystopia/Utopia Thrillers"
         ]
-    }],
-    "reading": [{
-        "title": "r/programming",
-        "flavor": "website",
-        "url": "https://www.reddit.com/r/programming/",
-        "summary": "Subscriber and pilferer."
-    }, {
-        "title": "Hacker News / YCombinator",
-        "flavor": "website",
-        "url": "https://news.ycombinator.com/",
-        "summary": "Frequent visitor."
     }]
 }
